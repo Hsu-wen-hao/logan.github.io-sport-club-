@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velocity Sports Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar" aria-label="Club contact bar">
+    <div class="container topbar__inner">
+      <div class="topbar__info">
+        <a href="tel:+1234567890"><span class="topbar__icon" aria-hidden="true"></span>+1 234 567 890</a>
+        <a href="mailto:hello@velocityclub.com"><span class="topbar__icon" aria-hidden="true"></span>hello@velocityclub.com</a>
+        <span><span class="topbar__icon" aria-hidden="true"></span>Mon – Sat: 06.00 – 22.00</span>
+      </div>
+      <div class="topbar__actions">
+        <ul class="social-list">
+          <li><a href="#" aria-label="Facebook">Fb</a></li>
+          <li><a href="#" aria-label="Twitter">Tw</a></li>
+          <li><a href="#" aria-label="Instagram">Ig</a></li>
+        </ul>
+        <form class="topbar__search" role="search">
+          <label class="visually-hidden" for="top-search">Search</label>
+          <input id="top-search" type="search" placeholder="Search" />
+          <button type="submit" aria-label="Search"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" aria-label="Primary header">
+    <div class="container site-header__inner">
+      <a class="site-logo" href="#home">
+        <span class="site-logo__mark">V</span>
+        <span class="site-logo__text">Velocity Sports Club</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <button class="site-nav__toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+        <ul id="primary-menu" class="site-nav__list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#sports">Sports</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#memberships">Memberships</a></li>
+          <li><a href="#coaches">Coaches</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--accent" href="#memberships">Join now</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero" aria-label="Hero">
+      <div class="hero__slider" role="group" aria-roledescription="carousel">
+        <article class="hero__slide is-active">
+          <figure class="hero__media">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1600&q=80" alt="Athletes training inside an indoor stadium" />
+          </figure>
+          <div class="container hero__container">
+            <div class="hero__content">
+              <p class="hero__eyebrow">Elite Performance</p>
+              <h1 class="hero__title">Build your legacy with every match</h1>
+              <p class="hero__text">Velocity Sports Club brings multi-sport excellence, premier coaching, and electric competition together for athletes of every level.</p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#programs">Explore programs</a>
+                <a class="btn btn--ghost" href="#about">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="hero__slide" aria-hidden="true">
+          <figure class="hero__media">
+            <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1600&q=80" alt="Football team huddled before kickoff" />
+          </figure>
+          <div class="container hero__container">
+            <div class="hero__content">
+              <p class="hero__eyebrow">Train Together</p>
+              <h2 class="hero__title">Programs for squads and individual athletes</h2>
+              <p class="hero__text">From grassroots camps to elite-level drills, our certified coaches craft winning strategies for every sport.</p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#sports">Browse sports</a>
+                <a class="btn btn--ghost" href="#schedule">View schedule</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="hero__slide" aria-hidden="true">
+          <figure class="hero__media">
+            <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?auto=format&fit=crop&w=1600&q=80" alt="Swimmer diving into an Olympic pool" />
+          </figure>
+          <div class="container hero__container">
+            <div class="hero__content">
+              <p class="hero__eyebrow">Compete Fearlessly</p>
+              <h2 class="hero__title">World-class arenas for every discipline</h2>
+              <p class="hero__text">Train, recover, and perform in facilities tailored for basketball, football, tennis, swimming, athletics, and more.</p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#memberships">Membership plans</a>
+                <a class="btn btn--ghost" href="#contact">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="hero__dots" role="tablist" aria-label="Hero slides">
+          <button class="is-active" aria-label="Slide 1"></button>
+          <button aria-label="Slide 2"></button>
+          <button aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners" aria-label="Trusted partners">
+      <div class="container partners__inner">
+        <p class="partners__title">Trusted by leading sports brands</p>
+        <ul class="partners__list">
+          <li>HydrateX</li>
+          <li>EliteWear</li>
+          <li>Pulse Nutrition</li>
+          <li>Victory Labs</li>
+          <li>MoveWell</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="container about__inner">
+        <div class="about__media">
+          <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1200&q=80" alt="Team celebrating a trophy" />
+          <div class="about__badge">20+ Years of Excellence</div>
+        </div>
+        <div class="about__content">
+          <p class="section-eyebrow">About Velocity</p>
+          <h2 id="about-title">Championing athletes across every discipline</h2>
+          <p>Velocity Sports Club delivers a complete athletic ecosystem. Our mission is to cultivate community, competitive spirit, and high-performance pathways for athletes ranging from youth rookies to seasoned pros.</p>
+          <ul class="about__list">
+            <li>Comprehensive youth, collegiate, and adult programs.</li>
+            <li>Nutrition, physiotherapy, and recovery labs on site.</li>
+            <li>Community-first culture with over 15,000 members.</li>
+          </ul>
+          <div class="about__cta">
+            <a class="btn btn--primary" href="#contact">Book a tour</a>
+            <a class="btn btn--ghost" href="#events">Upcoming events</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="programs" aria-labelledby="programs-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Featured Programs</p>
+          <h2 id="programs-title">Tailored training built to elevate performance</h2>
+        </div>
+        <div class="programs__grid">
+          <article class="program-card">
+            <span class="program-card__icon" aria-hidden="true"></span>
+            <h3>Pro Clinics</h3>
+            <p>Masterclass weekends with national-level mentors delivering skill-specific sessions.</p>
+          </article>
+          <article class="program-card">
+            <span class="program-card__icon program-card__icon--fitness" aria-hidden="true"></span>
+            <h3>Conditioning Labs</h3>
+            <p>Strength, agility, and endurance plans personalised to your sport demands.</p>
+          </article>
+          <article class="program-card">
+            <span class="program-card__icon program-card__icon--camp" aria-hidden="true"></span>
+            <h3>Youth Camps</h3>
+            <p>Seasonal camps and leagues designed to nurture emerging champions.</p>
+          </article>
+          <article class="program-card">
+            <span class="program-card__icon program-card__icon--league" aria-hidden="true"></span>
+            <h3>Community Leagues</h3>
+            <p>Corporate and amateur tournaments fostering camaraderie and competition.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sports" class="sports" aria-labelledby="sports-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Sports Activities</p>
+          <h2 id="sports-title">Pick your favourite game &amp; join the squad</h2>
+          <p>We support over 25 indoor and outdoor sports with specialised arenas, top-grade equipment, and dedicated support staff.</p>
+        </div>
+        <div class="sports__grid">
+          <article class="sports-card sports-card--basketball">
+            <h3>Basketball</h3>
+            <p>NBA-sized courts, video analysis, and structured leagues.</p>
+          </article>
+          <article class="sports-card sports-card--football">
+            <h3>Football</h3>
+            <p>FIFA-approved turf pitches, academy programs, and weekend tournaments.</p>
+          </article>
+          <article class="sports-card sports-card--swimming">
+            <h3>Swimming</h3>
+            <p>Olympic pool, learn-to-swim classes, and high-performance lanes.</p>
+          </article>
+          <article class="sports-card sports-card--tennis">
+            <h3>Tennis</h3>
+            <p>Indoor &amp; outdoor courts with pro coaching and ladder matches.</p>
+          </article>
+          <article class="sports-card sports-card--athletics">
+            <h3>Athletics</h3>
+            <p>400m track, strength labs, and sport science support.</p>
+          </article>
+          <article class="sports-card sports-card--cricket">
+            <h3>Cricket</h3>
+            <p>International-grade nets, analytics, and competitive leagues.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Club achievements">
+      <div class="container stats__inner">
+        <div class="stat">
+          <span class="stat__value">15k+</span>
+          <span class="stat__label">Active Members</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">25+</span>
+          <span class="stat__label">Sports Disciplines</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">120</span>
+          <span class="stat__label">Elite Coaches</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">180</span>
+          <span class="stat__label">Annual Events</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="scoreboard" aria-label="Club scoreboard">
+      <div class="container scoreboard__inner">
+        <div class="section-heading">
+          <p class="section-eyebrow">Latest Results</p>
+          <h2>Scoreboard &amp; fixtures</h2>
+        </div>
+        <div class="scoreboard__grid">
+          <article class="score-card">
+            <span class="score-card__label">Basketball Finals</span>
+            <div class="score-card__teams">
+              <span>Velocity Tigers</span>
+              <strong>92</strong>
+            </div>
+            <div class="score-card__teams score-card__teams--opponent">
+              <span>Metro Warriors</span>
+              <strong>85</strong>
+            </div>
+            <p>Championship victory at the city indoor arena.</p>
+          </article>
+          <article class="score-card">
+            <span class="score-card__label">Football League</span>
+            <div class="score-card__teams">
+              <span>Velocity United</span>
+              <strong>3</strong>
+            </div>
+            <div class="score-card__teams score-card__teams--opponent">
+              <span>Northside FC</span>
+              <strong>1</strong>
+            </div>
+            <p>Quarter-final triumph under the Friday night lights.</p>
+          </article>
+          <article class="score-card">
+            <span class="score-card__label">Upcoming Fixture</span>
+            <div class="score-card__teams">
+              <span>Swim Elite Meet</span>
+              <strong>July 21</strong>
+            </div>
+            <div class="score-card__teams score-card__teams--opponent">
+              <span>Olympic Pool</span>
+              <strong>08:00</strong>
+            </div>
+            <p>Sign up to compete in sprint, relay, and endurance races.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="events" aria-labelledby="events-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Upcoming Events</p>
+          <h2 id="events-title">Stay ahead with tournaments &amp; camps</h2>
+        </div>
+        <div class="events__list">
+          <article class="event-card">
+            <time datetime="2024-07-21">21 Jul 2024</time>
+            <h3>Summer Football Championship</h3>
+            <p>32-team knock-out tournament for U18 &amp; open categories.</p>
+            <a href="#" class="event-card__link">Register now</a>
+          </article>
+          <article class="event-card">
+            <time datetime="2024-08-05">05 Aug 2024</time>
+            <h3>Elite Swim Clinic</h3>
+            <p>5-day advanced camp with Olympic medalists and sports scientists.</p>
+            <a href="#" class="event-card__link">Book a lane</a>
+          </article>
+          <article class="event-card">
+            <time datetime="2024-09-12">12 Sep 2024</time>
+            <h3>All-Star Basketball Combine</h3>
+            <p>Skill assessments, scrimmages, and analytics breakdowns.</p>
+            <a href="#" class="event-card__link">Save your spot</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="schedule" aria-labelledby="schedule-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Training Schedule</p>
+          <h2 id="schedule-title">Weekly spotlight sessions</h2>
+        </div>
+        <div class="schedule__table" role="table">
+          <div class="schedule__row schedule__row--head" role="row">
+            <span role="columnheader">Time</span>
+            <span role="columnheader">Program</span>
+            <span role="columnheader">Coach</span>
+            <span role="columnheader">Facility</span>
+          </div>
+          <div class="schedule__row" role="row">
+            <span role="cell">Mon 06:30</span>
+            <span role="cell">Basketball Pro Drills</span>
+            <span role="cell">Sarah Mitchell</span>
+            <span role="cell">Indoor Arena 1</span>
+          </div>
+          <div class="schedule__row" role="row">
+            <span role="cell">Tue 07:00</span>
+            <span role="cell">High-Performance Swim</span>
+            <span role="cell">Harper Lee</span>
+            <span role="cell">Olympic Pool</span>
+          </div>
+          <div class="schedule__row" role="row">
+            <span role="cell">Wed 18:00</span>
+            <span role="cell">Football Tactical Clinic</span>
+            <span role="cell">Diego Sanchez</span>
+            <span role="cell">Velocity Turf</span>
+          </div>
+          <div class="schedule__row" role="row">
+            <span role="cell">Thu 19:30</span>
+            <span role="cell">Strength &amp; Conditioning</span>
+            <span role="cell">Marcus Green</span>
+            <span role="cell">Performance Lab</span>
+          </div>
+          <div class="schedule__row" role="row">
+            <span role="cell">Sat 09:00</span>
+            <span role="cell">Junior Multi-Sport Camp</span>
+            <span role="cell">Coaching Collective</span>
+            <span role="cell">Sports Complex</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Club Gallery</p>
+          <h2 id="gallery-title">Energy from every angle</h2>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--tall">
+            <img src="https://images.unsplash.com/photo-1518609458246-03114f06ac3d?auto=format&fit=crop&w=900&q=80" alt="Basketball player dunking" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=900&q=80" alt="Team celebration" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=900&q=80" alt="Gym training" />
+          </figure>
+          <figure class="gallery__item gallery__item--wide">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80" alt="Football stadium" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=900&q=80" alt="Athletes on podium" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=900&q=80" alt="Football tackle" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="memberships" class="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Membership Plans</p>
+          <h2 id="pricing-title">Flexible passes for every athlete</h2>
+          <p>Choose a plan that fits your commitment level. All memberships include facility access, locker rooms, and wellness support.</p>
+        </div>
+        <div class="pricing__grid">
+          <article class="price-card">
+            <p class="price-card__label">Starter</p>
+            <p class="price-card__price"><span>$</span>49<small>/mo</small></p>
+            <ul>
+              <li>Access to 2 sports programs</li>
+              <li>Group fitness sessions</li>
+              <li>Community league participation</li>
+            </ul>
+            <a class="btn btn--primary" href="#">Choose plan</a>
+          </article>
+          <article class="price-card price-card--featured">
+            <p class="price-card__label">Champion</p>
+            <p class="price-card__price"><span>$</span>89<small>/mo</small></p>
+            <ul>
+              <li>Unlimited sports programs</li>
+              <li>Dedicated coach consultations</li>
+              <li>Performance analytics access</li>
+              <li>Event priority registration</li>
+            </ul>
+            <a class="btn btn--accent" href="#">Join champion</a>
+          </article>
+          <article class="price-card">
+            <p class="price-card__label">Pro Team</p>
+            <p class="price-card__price"><span>$</span>129<small>/mo</small></p>
+            <ul>
+              <li>Team training slots</li>
+              <li>Exclusive indoor arena booking</li>
+              <li>Club-branded kits</li>
+              <li>Sports science support</li>
+            </ul>
+            <a class="btn btn--primary" href="#">Team signup</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="coaches" class="coaches" aria-labelledby="coaches-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Coaching Staff</p>
+          <h2 id="coaches-title">World-class mentors leading every program</h2>
+        </div>
+        <div class="coaches__grid">
+          <article class="coach-card">
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=640&q=80" alt="Coach" />
+            <div class="coach-card__body">
+              <h3>Sarah Mitchell</h3>
+              <p>Head of Basketball Operations</p>
+            </div>
+          </article>
+          <article class="coach-card">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=640&q=80" alt="Coach" />
+            <div class="coach-card__body">
+              <h3>Diego Sanchez</h3>
+              <p>Lead Football Strategist</p>
+            </div>
+          </article>
+          <article class="coach-card">
+            <img src="https://images.unsplash.com/photo-1571019613576-2b193eebc261?auto=format&fit=crop&w=640&q=80" alt="Coach" />
+            <div class="coach-card__body">
+              <h3>Harper Lee</h3>
+              <p>High Performance Swim Coach</p>
+            </div>
+          </article>
+          <article class="coach-card">
+            <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=640&q=80" alt="Coach" />
+            <div class="coach-card__body">
+              <h3>Marcus Green</h3>
+              <p>Strength &amp; Conditioning Director</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-heading section-heading--light">
+          <p class="section-eyebrow">Testimonials</p>
+          <h2 id="testimonials-title">Athletes love training at Velocity</h2>
+        </div>
+        <div class="testimonial-slider" role="group" aria-roledescription="carousel">
+          <article class="testimonial is-active">
+            <p>“The coaching staff transformed our team. We won our first championship within six months of joining Velocity.”</p>
+            <div class="testimonial__meta">
+              <span class="testimonial__name">Alex Johnson</span>
+              <span class="testimonial__role">Football Captain</span>
+            </div>
+          </article>
+          <article class="testimonial" aria-hidden="true">
+            <p>“State-of-the-art facilities and detailed analytics helped me qualify for the national trials.”</p>
+            <div class="testimonial__meta">
+              <span class="testimonial__name">Priya Desai</span>
+              <span class="testimonial__role">Swim Athlete</span>
+            </div>
+          </article>
+          <article class="testimonial" aria-hidden="true">
+            <p>“Velocity’s community leagues and events keep me motivated to stay active throughout the year.”</p>
+            <div class="testimonial__meta">
+              <span class="testimonial__name">Liam Carter</span>
+              <span class="testimonial__role">Member since 2018</span>
+            </div>
+          </article>
+        </div>
+        <div class="testimonial__dots" role="tablist" aria-label="Testimonials">
+          <button class="is-active" aria-label="Testimonial 1"></button>
+          <button aria-label="Testimonial 2"></button>
+          <button aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="news" aria-labelledby="news-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Latest News</p>
+          <h2 id="news-title">Stories &amp; insights from the club</h2>
+        </div>
+        <div class="news__grid">
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?auto=format&fit=crop&w=900&q=80" alt="Performance lab" />
+            <div class="news-card__body">
+              <time datetime="2024-05-16">May 16, 2024</time>
+              <h3>Velocity unveils cutting-edge performance lab</h3>
+              <a href="#" class="news-card__link">Read more</a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=900&q=80" alt="Junior basketball team" />
+            <div class="news-card__body">
+              <time datetime="2024-05-02">May 2, 2024</time>
+              <h3>Junior basketball academy secures regional title</h3>
+              <a href="#" class="news-card__link">Read more</a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=80" alt="Athletes preparing" />
+            <div class="news-card__body">
+              <time datetime="2024-04-20">Apr 20, 2024</time>
+              <h3>Corporate cricket league returns with 24 teams</h3>
+              <a href="#" class="news-card__link">Read more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta" aria-labelledby="cta-title">
+      <div class="container cta__inner">
+        <div>
+          <p class="section-eyebrow">Join the club</p>
+          <h2 id="cta-title">Ready to step into the arena?</h2>
+          <p>Contact our membership team to schedule a tour, request pricing, or learn about team partnerships.</p>
+        </div>
+        <a class="btn btn--accent" href="mailto:hello@velocityclub.com">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__col">
+        <a class="site-logo" href="#home">
+          <span class="site-logo__mark">V</span>
+          <span class="site-logo__text">Velocity Sports Club</span>
+        </a>
+        <p>Velocity Sports Club is the city’s premier destination for multi-sport excellence and community-driven athletic experiences.</p>
+        <ul class="social-list">
+          <li><a href="#" aria-label="Facebook">Fb</a></li>
+          <li><a href="#" aria-label="Twitter">Tw</a></li>
+          <li><a href="#" aria-label="Instagram">Ig</a></li>
+          <li><a href="#" aria-label="YouTube">Yt</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#sports">Sports</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h3>Gallery</h3>
+        <div class="footer-gallery">
+          <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=200&q=80" alt="Gallery item" />
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=200&q=80" alt="Gallery item" />
+          <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=200&q=80" alt="Gallery item" />
+          <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=200&q=80" alt="Gallery item" />
+          <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?auto=format&fit=crop&w=200&q=80" alt="Gallery item" />
+          <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=200&q=80" alt="Gallery item" />
+        </div>
+      </div>
+      <div class="site-footer__col">
+        <h3>Newsletter</h3>
+        <p>Subscribe to get the latest on schedules, events, and club updates.</p>
+        <form class="newsletter-form">
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input id="newsletter-email" type="email" placeholder="Email Address" required />
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>© 2024 Velocity Sports Club. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
