@@ -110,9 +110,9 @@ img {
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition);
   cursor: pointer;
   border: none;
-  text-transform: uppercase;
+  text-transform: none;
   font-family: var(--font-display);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
 
 .btn--primary {
@@ -414,9 +414,9 @@ img {
 
 .hero__eyebrow {
   font-family: var(--font-display);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.08em;
   font-size: 0.95rem;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-primary);
 }
 
@@ -478,8 +478,8 @@ img {
 
 .partners__title {
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
+  text-transform: none;
+  letter-spacing: 0.08em;
   color: var(--color-muted);
 }
 
@@ -510,8 +510,8 @@ section {
 
 .section-eyebrow {
   font-family: var(--font-display);
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
+  text-transform: none;
+  letter-spacing: 0.08em;
   color: var(--color-accent);
   font-size: 0.9rem;
   margin-bottom: 1rem;
@@ -543,7 +543,7 @@ section {
   border-radius: 999px;
   font-family: var(--font-display);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   font-size: 0.85rem;
 }
 
@@ -747,7 +747,7 @@ section {
 .score-card__label {
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   color: var(--color-muted);
   font-size: 0.85rem;
 }
@@ -788,7 +788,7 @@ section {
 .event-card time {
   font-family: var(--font-display);
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.08em;
   font-size: 0.85rem;
   color: var(--color-muted);
 }
@@ -807,7 +807,7 @@ section {
 .event-card__link {
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   color: var(--color-accent);
   font-size: 0.85rem;
 }
@@ -836,7 +836,7 @@ section {
   color: var(--color-white);
   font-family: var(--font-display);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 .gallery__grid {
@@ -891,7 +891,7 @@ section {
   font-family: var(--font-display);
   font-size: 1.35rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   color: var(--color-muted);
 }
 
@@ -964,7 +964,7 @@ section {
 .coach-card__link {
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   font-size: 0.8rem;
   color: var(--color-accent);
 }
@@ -1067,7 +1067,7 @@ section {
 .news-card__link {
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   font-size: 0.85rem;
   color: var(--color-accent);
 }
@@ -1373,15 +1373,18 @@ section {
   margin-bottom: 1rem;
 }
 
-main > .page-hero {
-  padding: clamp(5rem, 10vw, 7rem) 0;
-}
-
 .page-hero {
   position: relative;
   color: var(--color-white);
   background: var(--color-dark);
   overflow: hidden;
+  display: grid;
+  align-items: center;
+  min-height: clamp(420px, 65vh, 620px);
+}
+
+main > .page-hero {
+  padding: 0;
 }
 
 .page-hero__media {
@@ -1395,6 +1398,7 @@ main > .page-hero {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .page-hero__overlay {
@@ -1409,7 +1413,7 @@ main > .page-hero {
   max-width: 640px;
   display: grid;
   gap: 1.25rem;
-  padding: 0 0.5rem;
+  padding: clamp(4rem, 6vw, 5rem) 0.5rem;
 }
 
 .breadcrumbs {
@@ -1476,7 +1480,7 @@ main > .about-cta {
   padding: 0.65rem 1.35rem;
   border-radius: 999px;
   font-family: var(--font-display);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
