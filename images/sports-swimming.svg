@@ -1,0 +1,18 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='1067' viewBox='0 0 1600 1067'>
+  <defs>
+    <linearGradient id='sports-swimming-svg' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#0b274d' />
+      <stop offset='100%' stop-color='#24b4ff' />
+    </linearGradient>
+  </defs>
+  <rect width='1600' height='1067' fill='url(#sports-swimming-svg)' rx='80' />
+  <g fill='rgba(255,255,255,0.15)'>
+    <circle cx='200' cy='160' r='120'/>
+    <circle cx='1420' cy='260' r='180'/>
+    <circle cx='780' cy='900' r='220'/>
+    <path d='M200 520c180-120 420-120 600 0s420 120 600 0v160c-180 120-420 120-600 0s-420-120-600 0z' />
+  </g>
+  <text x='80' y='260' fill='rgba(255,255,255,0.75)' font-family="Rajdhani, 'Barlow', sans-serif" font-size='84' font-weight='600'>SPORTS CLUB</text>
+  <text x='80' y='360' fill='#ffffff' font-family="Barlow, 'Noto Sans TC', sans-serif" font-size='72' font-weight='700'>游泳 Swimming</text>
+  <text x='80' y='440' fill='rgba(255,255,255,0.65)' font-family="Barlow, 'Noto Sans TC', sans-serif" font-size='36'>Velocity Sports Club Visual Placeholder</text>
+</svg>

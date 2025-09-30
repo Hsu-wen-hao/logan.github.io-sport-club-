@@ -1,0 +1,17 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='1067' viewBox='0 0 1600 1067'>
+  <defs>
+    <linearGradient id='shop-product-02-svg' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#1b214f' />
+      <stop offset='100%' stop-color='#ff6f61' />
+    </linearGradient>
+  </defs>
+  <rect width='1600' height='1067' fill='url(#shop-product-02-svg)' rx='80' />
+  <g fill='rgba(255,255,255,0.12)'>
+    <circle cx='260' cy='260' r='180'/>
+    <circle cx='1320' cy='320' r='220'/>
+    <path d='M120 740c220-160 500-160 720 0s500 160 720 0v140c-220 160-500 160-720 0s-500-160-720 0z' />
+  </g>
+  <text x='120' y='320' fill='#ffffff' font-family="Rajdhani, 'Barlow', sans-serif" font-size='92' font-weight='600'>SPORTS SHOP</text>
+  <text x='120' y='420' fill='rgba(255,255,255,0.8)' font-family="Barlow, 'Noto Sans TC', sans-serif" font-size='72' font-weight='700'>ALL COURT SHOES</text>
+  <text x='120' y='500' fill='rgba(255,255,255,0.65)' font-family="Barlow, 'Noto Sans TC', sans-serif" font-size='40'>Velocity Sports Club Store Template</text>
+</svg>

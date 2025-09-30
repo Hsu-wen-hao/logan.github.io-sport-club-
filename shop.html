@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>運動商城｜疾速運動俱樂部</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+
+  <div class="topbar" aria-label="俱樂部聯絡資訊列">
+    <div class="container topbar__inner">
+      <div class="topbar__info">
+        <a href="tel:+1234567890"><span class="topbar__icon" aria-hidden="true"></span>+1 234 567 890</a>
+        <a href="mailto:hello@velocityclub.com"><span class="topbar__icon" aria-hidden="true"></span>hello@velocityclub.com</a>
+        <span><span class="topbar__icon" aria-hidden="true"></span>週一至週六 06:00 – 22:00</span>
+      </div>
+      <div class="topbar__actions">
+        <ul class="social-list">
+          <li><a href="#" aria-label="Facebook">Fb</a></li>
+          <li><a href="#" aria-label="Twitter">Tw</a></li>
+          <li><a href="#" aria-label="Instagram">Ig</a></li>
+        </ul>
+        <form class="topbar__search" role="search">
+          <label class="visually-hidden" for="top-search-shop">站內搜尋</label>
+          <input id="top-search-shop" type="search" placeholder="搜尋產品" />
+          <button type="submit" aria-label="搜尋"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" aria-label="Primary header">
+    <div class="container site-header__inner">
+      <a class="site-logo" href="index.html#home">
+        <span class="site-logo__mark">V</span>
+        <span class="site-logo__text">疾速運動俱樂部</span>
+      </a>
+      <nav class="site-nav" aria-label="主選單">
+        <button class="site-nav__toggle" aria-expanded="false" aria-controls="primary-menu">選單</button>
+        <ul id="primary-menu" class="site-nav__list">
+          <li><a href="index.html#home">首頁</a></li>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="shop.html" aria-current="page">商店</a></li>
+          <li><a href="index.html#programs">特色課程</a></li>
+          <li><a href="index.html#sports">運動項目</a></li>
+          <li><a href="index.html#schedule">訓練時程</a></li>
+          <li><a href="index.html#memberships">會員方案</a></li>
+          <li><a href="index.html#coaches">教練陣容</a></li>
+          <li><a href="index.html#news">最新動態</a></li>
+          <li><a href="index.html#contact">聯絡我們</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--accent" href="#shop-membership">會員登入</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="shop-hero" aria-label="商城主視覺">
+      <div class="shop-hero__media">
+        <img src="images/shop-hero.svg" alt="運動裝備陳列" />
+      </div>
+      <div class="shop-hero__overlay"></div>
+      <div class="container shop-hero__content">
+        <p class="section-eyebrow">Velocity Store</p>
+        <h1>一站入手多項運動賽事裝備</h1>
+        <p>精選球拍、球鞋、機能服飾與訓練配件，為每位運動員打造場上與場下的最佳狀態。</p>
+        <div class="shop-hero__actions">
+          <a class="btn btn--primary" href="#featured-products">瀏覽熱銷品</a>
+          <a class="btn btn--ghost" href="#shop-categories">探索分類</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-brands" aria-label="合作品牌">
+      <div class="container shop-brands__inner">
+        <p>合作品牌</p>
+        <ul class="shop-brands__list">
+          <li>Velocity Pro</li>
+          <li>SpinMaster</li>
+          <li>Baseline Lab</li>
+          <li>MatchPoint</li>
+          <li>Urban Pace</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="shop-categories" class="shop-categories" aria-labelledby="shop-categories-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">選品主題</p>
+          <h2 id="shop-categories-title">依需求挑選你的專屬裝備</h2>
+        </div>
+        <div class="shop-categories__grid">
+          <article class="shop-category">
+            <img src="images/shop-category-01.svg" alt="球拍專區" />
+            <div class="shop-category__body">
+              <h3>球拍專區</h3>
+              <p>網球、羽球與壁球拍全系列，提供握把客製與線床穿線服務。</p>
+              <a href="#featured-products" class="shop-category__link">立即選購</a>
+            </div>
+          </article>
+          <article class="shop-category">
+            <img src="images/shop-category-02.svg" alt="球鞋精選" />
+            <div class="shop-category__body">
+              <h3>球鞋精選</h3>
+              <p>針對不同場地打造的抓地科技與避震結構，穩定每個轉身與加速。</p>
+              <a href="#featured-products" class="shop-category__link">探索鞋款</a>
+            </div>
+          </article>
+          <article class="shop-category">
+            <img src="images/shop-category-03.svg" alt="訓練裝備" />
+            <div class="shop-category__body">
+              <h3>訓練裝備</h3>
+              <p>從壺鈴、阻力帶到恢復滾筒，打造專屬居家與團隊訓練空間。</p>
+              <a href="#featured-products" class="shop-category__link">補齊器材</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-products" class="shop-products" aria-labelledby="shop-products-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">人氣推薦</p>
+          <h2 id="shop-products-title">熱銷裝備與賽事必備</h2>
+        </div>
+        <div class="shop-products__grid">
+          <article class="product-card">
+            <img src="images/shop-product-01.svg" alt="PRO RACKET 98 球拍" />
+            <div class="product-card__body">
+              <h3>Pro Racket 98 控球拍</h3>
+              <p class="product-card__price">NT$ 6,980</p>
+              <p class="product-card__desc">輕量高張力拍框搭配旋轉導槽，提供職業級操控手感。</p>
+              <button type="button" class="btn btn--primary">加入購物車</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/shop-product-02.svg" alt="ALL COURT SHOES 球鞋" />
+            <div class="product-card__body">
+              <h3>All Court 氮氣球鞋</h3>
+              <p class="product-card__price">NT$ 4,280</p>
+              <p class="product-card__desc">全掌氮氣避震與 X-Frame 支撐片，強化起動與落地穩定。</p>
+              <button type="button" class="btn btn--primary">加入購物車</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/shop-product-03.svg" alt="MATCH DAY BAG 球袋" />
+            <div class="product-card__body">
+              <h3>Match Day 防護球袋</h3>
+              <p class="product-card__price">NT$ 3,450</p>
+              <p class="product-card__desc">三層保溫隔層與獨立鞋袋設計，輕鬆攜帶全套裝備。</p>
+              <button type="button" class="btn btn--primary">加入購物車</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/shop-product-04.svg" alt="PERFORMANCE WEAR 機能服飾" />
+            <div class="product-card__body">
+              <h3>Performance 機能套裝</h3>
+              <p class="product-card__price">NT$ 2,980</p>
+              <p class="product-card__desc">四向彈力與速乾面料，維持整場比賽的舒適通風。</p>
+              <button type="button" class="btn btn--primary">加入購物車</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-promos" aria-label="促銷活動">
+      <div class="container shop-promos__grid">
+        <article class="promo-card">
+          <img src="images/shop-banner-01.svg" alt="夏季賽事補給活動" />
+          <div class="promo-card__content">
+            <p class="section-eyebrow">限時優惠</p>
+            <h3>夏季賽事補給包 8 折</h3>
+            <p>指定能量補給、握把布與防滑配件組合一次帶走。</p>
+            <a href="#featured-products" class="promo-card__link">立即搶購</a>
+          </div>
+        </article>
+        <article class="promo-card">
+          <img src="images/shop-banner-02.svg" alt="會員專屬優惠" />
+          <div class="promo-card__content">
+            <p class="section-eyebrow">會員尊享</p>
+            <h3>加入俱樂部再享 95 折</h3>
+            <p>疾速運動俱樂部會員購物可累積積分並兌換限定好禮。</p>
+            <a href="#shop-membership" class="promo-card__link">瞭解詳情</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="shop-membership" class="shop-membership" aria-labelledby="shop-membership-title">
+      <div class="container shop-membership__inner">
+        <div class="shop-membership__content">
+          <p class="section-eyebrow">Club Member</p>
+          <h2 id="shop-membership-title">會員專屬購物禮遇</h2>
+          <ul>
+            <li>每月新品搶先預購資格</li>
+            <li>線上線下同步累積購物點數</li>
+            <li>專屬裝備顧問與穿線提醒</li>
+          </ul>
+          <a class="btn btn--accent" href="mailto:hello@velocityclub.com">成為會員</a>
+        </div>
+        <form class="shop-membership__form" aria-labelledby="shop-membership-form">
+          <h3 id="shop-membership-form">訂閱新品與折扣通知</h3>
+          <label class="visually-hidden" for="shop-email">電子郵件</label>
+          <input id="shop-email" type="email" placeholder="輸入電子郵件" required />
+          <button type="submit" class="btn btn--primary">訂閱電子報</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="網站頁尾">
+    <div class="container site-footer__inner">
+      <div class="site-footer__col">
+        <a class="site-logo" href="index.html#home">
+          <span class="site-logo__mark">V</span>
+          <span class="site-logo__text">疾速運動俱樂部</span>
+        </a>
+        <p>疾速運動俱樂部運動商城提供官方授權與專業售後服務，協助你挑選最合適的裝備。</p>
+        <ul class="social-list">
+          <li><a href="#" aria-label="Facebook">Fb</a></li>
+          <li><a href="#" aria-label="Twitter">Tw</a></li>
+          <li><a href="#" aria-label="Instagram">Ig</a></li>
+          <li><a href="#" aria-label="YouTube">Yt</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h3>快速導覽</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="shop.html">商店</a></li>
+          <li><a href="index.html#programs">特色課程</a></li>
+          <li><a href="index.html#sports">運動項目</a></li>
+          <li><a href="index.html#contact">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h3>館內剪影</h3>
+        <div class="footer-gallery">
+          <img src="images/facility-01.svg" alt="剪影照片" />
+          <img src="images/facility-02.svg" alt="剪影照片" />
+          <img src="images/facility-03.svg" alt="剪影照片" />
+          <img src="images/facility-04.svg" alt="剪影照片" />
+          <img src="images/facility-05.svg" alt="剪影照片" />
+          <img src="images/facility-06.svg" alt="剪影照片" />
+        </div>
+      </div>
+      <div class="site-footer__col">
+        <h3>客服資訊</h3>
+        <p>門市取貨、換貨服務與團購方案歡迎透過客服信箱或來電洽詢。</p>
+        <a class="btn btn--primary" href="mailto:store@velocityclub.com">聯絡客服</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>© 2024 疾速運動俱樂部商城。保留所有權利。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

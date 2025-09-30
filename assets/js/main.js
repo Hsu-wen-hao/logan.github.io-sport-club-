@@ -14,16 +14,37 @@ const heroDots = Array.from(document.querySelectorAll('.hero__dots button'));
 let heroIndex = 0;
 let heroTimer;
 
+function computeHeroOffset() {
+  const topbarHeight = document.querySelector('.topbar')?.offsetHeight || 0;
+  const headerHeight = document.querySelector('.site-header')?.offsetHeight || 0;
+  const total = topbarHeight + headerHeight;
+  document.documentElement.style.setProperty('--hero-offset', `${total}px`);
+  return total;
+}
+
 function updateHeroHeight(index) {
   if (!heroSlider || !heroSlides.length) return;
+
+  const offset = computeHeroOffset();
   const activeSlide = heroSlides[index];
-  const slideContent = activeSlide?.querySelector('.hero__container');
+  const slideContent = activeSlide?.querySelector('.hero__inner');
   if (!slideContent) return;
 
   const contentHeight = slideContent.scrollHeight;
-  const viewportBaseline = Math.max(window.innerHeight * 0.75, 480);
+  const viewportBaseline = Math.max(window.innerHeight - offset, 540);
   const targetHeight = Math.max(contentHeight, viewportBaseline);
-  heroSlider.style.height = `${targetHeight}px`;
+
+  heroSlider.style.minHeight = `${targetHeight}px`;
+  heroSlides.forEach((slide) => {
+    const container = slide.querySelector('.hero__container');
+    const inner = slide.querySelector('.hero__inner');
+    if (container) {
+      container.style.minHeight = `${targetHeight}px`;
+    }
+    if (inner) {
+      inner.style.minHeight = `${targetHeight}px`;
+    }
+  });
 }
 
 function showHeroSlide(index) {
