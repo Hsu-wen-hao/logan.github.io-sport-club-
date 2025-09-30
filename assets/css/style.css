@@ -340,7 +340,7 @@ img {
 .hero__slider {
   position: relative;
   overflow: hidden;
-  min-height: calc(100vh - var(--hero-offset));
+  min-height: clamp(420px, 70vh, 680px);
   display: flex;
 }
 
@@ -378,7 +378,7 @@ img {
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: calc(100vh - var(--hero-offset));
+  min-height: clamp(420px, 70vh, 680px);
   padding: clamp(3rem, 5vw, 5.5rem) 0;
   z-index: 1;
 }
@@ -400,7 +400,7 @@ img {
   align-items: center;
   justify-content: flex-start;
   width: var(--container-width);
-  min-height: calc(100vh - var(--hero-offset));
+  min-height: clamp(420px, 70vh, 640px);
   margin: 0 auto;
   padding-inline: clamp(1.5rem, 5vw, 3rem);
 }

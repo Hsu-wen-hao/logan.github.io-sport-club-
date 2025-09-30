@@ -31,8 +31,9 @@ function updateHeroHeight(index) {
   if (!slideContent) return;
 
   const contentHeight = slideContent.scrollHeight;
-  const viewportBaseline = Math.max(window.innerHeight - offset, 540);
-  const targetHeight = Math.max(contentHeight, viewportBaseline);
+  const viewportLimit = Math.max(window.innerHeight - offset, 0);
+  const baseline = Math.min(Math.max(viewportLimit, 420), 680);
+  const targetHeight = Math.max(contentHeight, baseline);
 
   heroSlider.style.minHeight = `${targetHeight}px`;
   heroSlides.forEach((slide) => {
