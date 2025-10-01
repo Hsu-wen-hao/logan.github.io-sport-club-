@@ -6,17 +6,17 @@
 
 .hero__slides {
   position: relative;
+  display: grid;
   overflow: hidden;
-  min-height: clamp(480px, 68vh, 660px);
-  height: clamp(480px, 68vh, 660px);
+  min-height: clamp(560px, 88vh, 900px);
 }
 
 .hero-slide {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  grid-area: 1 / 1;
   display: grid;
   align-items: center;
-  min-height: 100%;
+  min-height: inherit;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.6s ease;
@@ -64,7 +64,7 @@
 .hero-slide__inner {
   position: relative;
   z-index: 1;
-  padding: clamp(88px, 12vh, 140px) 0 112px;
+  padding: clamp(88px, 12vh, 160px) clamp(24px, 6vw, 72px) clamp(72px, 10vh, 128px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -662,12 +662,16 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .hero__slides {
+    min-height: clamp(480px, 92vh, 640px);
+  }
+
   .hero-slide {
     min-height: 520px;
   }
 
-  .hero-slide__content {
-    padding: 96px 0 120px;
+  .hero-slide__inner {
+    padding: 96px 32px 120px;
   }
 
   .hero-slide__content {

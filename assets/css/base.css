@@ -16,8 +16,8 @@
   --gradient-card: linear-gradient(160deg, rgba(255, 95, 60, 0.18), rgba(6, 11, 26, 0.8));
   --font-base: 'Barlow', 'Noto Sans TC', sans-serif;
   --font-display: 'Rajdhani', 'Noto Sans TC', sans-serif;
-  --container-width: min(1180px, 100% - 48px);
-  --container-narrow: min(960px, 100% - 48px);
+  --container-width: min(1156px, 100% - 48px);
+  --container-narrow: min(940px, 100% - 48px);
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 12px;
