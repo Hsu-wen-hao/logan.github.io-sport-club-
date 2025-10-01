@@ -119,11 +119,16 @@
   gap: 8px;
   border-radius: 999px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  text-transform: none;
+  letter-spacing: 0.04em;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn span,
+.btn strong {
+  letter-spacing: inherit;
 }
 
 .btn--accent {
