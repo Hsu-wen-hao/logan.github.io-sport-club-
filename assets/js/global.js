@@ -43,4 +43,5 @@ function createCarousel(slideSelector, dotSelector, interval = 6000) {
 }
 
 createCarousel('.hero-slide', '.hero__dots button');
+createCarousel('.shop-hero-slide', '.shop-hero__dots button', 7000);
 createCarousel('.testimonial', '.testimonial__dots button', 8000);

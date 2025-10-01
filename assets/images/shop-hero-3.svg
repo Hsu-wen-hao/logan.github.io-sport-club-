@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">網球比賽動態示意</title>
+  <desc id="desc">橘藍對比漸層與球網線條，建議替換為 1600×900 網球賽事照片</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <path d="M200 620h1200" stroke="#fde68a" stroke-width="16" stroke-linecap="round" opacity="0.6" />
+  <path d="M260 420h1080" stroke="#fef3c7" stroke-width="10" stroke-dasharray="40 24" opacity="0.6" />
+  <g fill="#facc15" opacity="0.65">
+    <circle cx="360" cy="320" r="100" />
+    <circle cx="1280" cy="500" r="80" />
+    <circle cx="940" cy="280" r="60" />
+  </g>
+  <text x="120" y="840" fill="rgba(255,255,255,0.78)" font-size="56" font-family="'Barlow', sans-serif">
+    建議以 1600 × 900px 網球賽事或訓練照片替換
+  </text>
+</svg>

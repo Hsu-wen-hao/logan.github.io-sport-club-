@@ -19,11 +19,20 @@
 .hero-slide__image {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
-  filter: saturate(1.1);
+  overflow: hidden;
+  background: #050a1a;
+  z-index: 0;
   opacity: 0;
   transition: opacity 0.6s ease;
+}
+
+/* Hero carousel placeholder建議使用 1920x1080px 的運動照片，可直接替換 img src */
+.hero-slide__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: saturate(1.1);
 }
 
 .hero-slide__image::after {
@@ -40,6 +49,7 @@
 
 .hero-slide__content {
   position: relative;
+  z-index: 1;
   padding: clamp(96px, 12vh, 140px) 0 120px;
 }
 
@@ -166,6 +176,7 @@
 }
 
 .program-card__media {
+  /* 可用 640x420px 運動課程照片直接覆蓋 background-image */
   background: linear-gradient(135deg, rgba(255, 95, 60, 0.65), rgba(15, 23, 42, 0.9));
 }
 
@@ -583,18 +594,6 @@ textarea {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-}
-
-.hero-slide__image--training {
-  background-image: linear-gradient(135deg, #f97316, #0f172a);
-}
-
-.hero-slide__image--team {
-  background-image: linear-gradient(135deg, #38bdf8, #0f172a);
-}
-
-.hero-slide__image--arena {
-  background-image: linear-gradient(135deg, #a855f7, #111827);
 }
 
 .program-card__media--tennis {

@@ -39,20 +39,67 @@
     </header>
 
     <main id="main">
-      <section class="shop-hero" aria-label="商店主視覺">
-        <div class="wrapper shop-hero__inner">
-          <div class="shop-hero__content">
-            <span class="eyebrow">Tennis Flagship</span>
-            <h1>動能網球專門店</h1>
-            <p>
-              精選國際網球品牌最新拍款、服飾與配件，提供球友專業選物、穿線服務與會員限定優惠。
-            </p>
-            <div class="shop-hero__actions">
-              <a class="btn btn--primary" href="#categories">探索分類</a>
-              <a class="btn btn--ghost" href="#offers">查看優惠</a>
+      <section class="shop-hero" aria-label="商店主視覺輪播">
+        <div class="shop-hero__slides" role="region" aria-roledescription="carousel">
+          <article class="shop-hero-slide is-active">
+            <figure class="shop-hero-slide__image">
+              <img src="assets/images/shop-hero-1.svg" alt="網球拍與球場建議替換為 1600x900 網球產品照片" />
+            </figure>
+            <div class="wrapper shop-hero-slide__inner">
+              <div class="shop-hero-slide__content">
+                <span class="eyebrow">Tennis Flagship</span>
+                <h1>動能網球專門店</h1>
+                <p>
+                  精選國際網球品牌最新拍款、服飾與配件，提供球友專業選物、穿線服務與會員限定優惠。
+                </p>
+                <div class="shop-hero-slide__actions">
+                  <a class="btn btn--primary" href="#categories">探索分類</a>
+                  <a class="btn btn--ghost" href="#offers">查看優惠</a>
+                </div>
+              </div>
             </div>
+          </article>
+          <article class="shop-hero-slide">
+            <figure class="shop-hero-slide__image">
+              <img src="assets/images/shop-hero-2.svg" alt="網球品牌牆建議替換為 1600x900 品牌展示照片" />
+            </figure>
+            <div class="wrapper shop-hero-slide__inner">
+              <div class="shop-hero-slide__content">
+                <span class="eyebrow">Premium Brands</span>
+                <h2>全球人氣網球品牌一次到位</h2>
+                <p>
+                  HEAD、Wilson、Babolat、Yonex 等旗艦系列同步引進，維持與國際巡迴相同的裝備體驗。
+                </p>
+                <div class="shop-hero-slide__actions">
+                  <a class="btn btn--primary" href="#offers">人氣推薦</a>
+                  <a class="btn btn--ghost" href="#service">門市服務</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="shop-hero-slide">
+            <figure class="shop-hero-slide__image">
+              <img src="assets/images/shop-hero-3.svg" alt="網球賽事氛圍建議替換為 1600x900 比賽照片" />
+            </figure>
+            <div class="wrapper shop-hero-slide__inner">
+              <div class="shop-hero-slide__content">
+                <span class="eyebrow">Match Ready</span>
+                <h2>從訓練到比賽的全方位配備</h2>
+                <p>
+                  專業穿線、球拍調校與行動穿梭車到府服務，協助球友以最佳狀態踏上球場。
+                </p>
+                <div class="shop-hero-slide__actions">
+                  <a class="btn btn--primary" href="#promos">限時活動</a>
+                  <a class="btn btn--ghost" href="index.html#contact">聯絡顧問</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <div class="shop-hero__dots" role="tablist" aria-label="商店主視覺切換">
+            <button class="is-active" aria-label="第 1 張"></button>
+            <button aria-label="第 2 張"></button>
+            <button aria-label="第 3 張"></button>
           </div>
-          <div class="shop-hero__media" role="img" aria-label="網球選手揮拍的色塊視覺"></div>
         </div>
       </section>
 
@@ -159,7 +206,7 @@
         </div>
       </section>
 
-      <section class="promos" aria-label="促銷活動">
+      <section id="promos" class="promos" aria-label="促銷活動">
         <div class="wrapper promos__grid">
           <article class="promo-card promo-card--orange">
             <span class="eyebrow">季中折扣</span>
@@ -191,7 +238,7 @@
         </div>
       </section>
 
-      <section class="service" aria-label="門市服務">
+      <section id="service" class="service" aria-label="門市服務">
         <div class="wrapper service__inner">
           <div class="service__media" role="img" aria-label="門市服務示意"></div>
           <div class="service__content">
