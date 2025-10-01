@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">網球服飾示意</title>
+  <desc id="desc">紫色漸層背景上的球衣與裙裝插畫，建議替換為商品照片</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)" />
+  <path d="M160 360c0-60 20-150 60-210 30-40 120-40 150 0 40 60 60 150 60 210z" fill="#ede9fe" opacity="0.88" />
+  <path d="M200 220c40-24 120-24 160 0l-20-110c-40-30-80-30-120 0z" fill="#f9fafb" opacity="0.65" />
+  <rect x="320" y="260" width="160" height="150" rx="24" fill="#fcd34d" opacity="0.7" />
+  <circle cx="460" cy="200" r="70" fill="#f97316" opacity="0.6" />
+  <text x="36" y="440" fill="rgba(226,232,240,0.85)" font-size="28" font-family="'Barlow', sans-serif">建議以 640×480 服飾照片取代</text>
+</svg>

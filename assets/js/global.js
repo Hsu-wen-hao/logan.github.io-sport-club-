@@ -19,10 +19,14 @@ function createCarousel(slideSelector, dotSelector, interval = 6000) {
 
   const setActive = (next) => {
     slides[index].classList.remove('is-active');
+    slides[index].setAttribute('aria-hidden', 'true');
     dots[index].classList.remove('is-active');
+    dots[index].setAttribute('aria-pressed', 'false');
     index = next;
     slides[index].classList.add('is-active');
+    slides[index].removeAttribute('aria-hidden');
     dots[index].classList.add('is-active');
+    dots[index].setAttribute('aria-pressed', 'true');
   };
 
   const tick = () => {
@@ -30,7 +34,14 @@ function createCarousel(slideSelector, dotSelector, interval = 6000) {
     setActive(next);
   };
 
+  slides.forEach((slide) => {
+    if (!slide.classList.contains('is-active')) {
+      slide.setAttribute('aria-hidden', 'true');
+    }
+  });
+
   dots.forEach((dot, dotIndex) => {
+    dot.setAttribute('aria-pressed', dot.classList.contains('is-active') ? 'true' : 'false');
     dot.addEventListener('click', () => {
       if (dotIndex === index) return;
       clearInterval(timer);

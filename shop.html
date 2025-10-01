@@ -59,7 +59,7 @@
               </div>
             </div>
           </article>
-          <article class="shop-hero-slide">
+          <article class="shop-hero-slide" aria-hidden="true">
             <figure class="shop-hero-slide__image">
               <img src="assets/images/shop-hero-2.svg" alt="網球品牌牆建議替換為 1600x900 品牌展示照片" />
             </figure>
@@ -77,7 +77,7 @@
               </div>
             </div>
           </article>
-          <article class="shop-hero-slide">
+          <article class="shop-hero-slide" aria-hidden="true">
             <figure class="shop-hero-slide__image">
               <img src="assets/images/shop-hero-3.svg" alt="網球賽事氛圍建議替換為 1600x900 比賽照片" />
             </figure>
@@ -165,43 +165,69 @@
             <span class="eyebrow">限時精選</span>
             <h2 class="section-title">熱銷裝備一次入手</h2>
           </div>
-          <div class="featured__grid">
-            <article class="product-card">
-              <div class="product-card__media product-card__media--racket" aria-hidden="true"></div>
-              <div class="product-card__body">
-                <h3>HEAD Speed Pro 2024</h3>
-                <p class="product-card__price">$8,980</p>
-                <p>極致控球手感搭配加速拍框科技，為進攻型球友而生。</p>
-                <a class="product-card__link" href="#">加入購物車</a>
+          <div class="featured__layout">
+            <article class="featured-highlight">
+              <figure class="featured-highlight__media">
+                <img src="assets/images/products/feature-combo.svg" alt="建議替換為 960×600 網球裝備橫幅照片" />
+              </figure>
+              <div class="featured-highlight__body">
+                <span class="eyebrow">套裝首選</span>
+                <h3>HEAD Speed Pro 競賽套組</h3>
+                <p>
+                  完整搭配球拍、鞋款與球袋，針對高強度巡迴賽程打造，購買即享免費穿線與教練諮詢。
+                </p>
+                <div class="featured-highlight__meta">
+                  <span class="featured-highlight__price">$15,800</span>
+                  <a class="btn btn--ghost" href="#">查看套組詳情</a>
+                </div>
               </div>
             </article>
-            <article class="product-card">
-              <div class="product-card__media product-card__media--shoe" aria-hidden="true"></div>
-              <div class="product-card__body">
-                <h3>NIKE Zoom Vapor Pro 2</h3>
-                <p class="product-card__price">$4,680</p>
-                <p>輕量敏捷結合外側支撐結構，確保場上橫移穩定。</p>
-                <a class="product-card__link" href="#">加入購物車</a>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__media product-card__media--apparel" aria-hidden="true"></div>
-              <div class="product-card__body">
-                <h3>ADIDAS Club Primegreen 系列</h3>
-                <p class="product-card__price">$2,480</p>
-                <p>使用回收材質並搭配 HEAT.RDY 科技，夏季也能保持清爽。</p>
-                <a class="product-card__link" href="#">加入購物車</a>
-              </div>
-            </article>
-            <article class="product-card">
-              <div class="product-card__media product-card__media--bag" aria-hidden="true"></div>
-              <div class="product-card__body">
-                <h3>BABOLAT Pure Drive 12 支球袋</h3>
-                <p class="product-card__price">$3,980</p>
-                <p>三主隔熱層搭配配件收納袋，出賽旅行一次搞定。</p>
-                <a class="product-card__link" href="#">加入購物車</a>
-              </div>
-            </article>
+            <div class="featured-list">
+              <article class="product-card product-card--vertical">
+                <figure class="product-card__media">
+                  <img src="assets/images/products/racket-pro.svg" alt="建議替換為 640×480 網球拍商品照片" />
+                </figure>
+                <div class="product-card__body">
+                  <h3>Wilson Blade 98 v9</h3>
+                  <p class="product-card__price">$7,880</p>
+                  <p>第九代 FORTYFIVE° 拍框提供穩定與手感，新款石墨層讓回擊更具穿透力。</p>
+                  <a class="product-card__link" href="#">加入購物車</a>
+                </div>
+              </article>
+              <article class="product-card product-card--horizontal">
+                <figure class="product-card__media">
+                  <img src="assets/images/products/shoe-speed.svg" alt="建議替換為 640×480 網球鞋商品照片" />
+                </figure>
+                <div class="product-card__body">
+                  <h3>ASICS Court FF 3</h3>
+                  <p class="product-card__price">$4,980</p>
+                  <p>MONO-SOCK 與 TWISTRUSS 穩定系統支援快速起動，為強力底線型球友設計。</p>
+                  <a class="product-card__link" href="#">加入購物車</a>
+                </div>
+              </article>
+              <article class="product-card product-card--horizontal">
+                <figure class="product-card__media">
+                  <img src="assets/images/products/apparel-set.svg" alt="建議替換為 640×480 網球服飾商品照片" />
+                </figure>
+                <div class="product-card__body">
+                  <h3>NIKE Court Dri-FIT 套裝</h3>
+                  <p class="product-card__price">$2,280</p>
+                  <p>輕盈透氣布料與網眼面料組合，搭配經典網球剪裁展現專業形象。</p>
+                  <a class="product-card__link" href="#">加入購物車</a>
+                </div>
+              </article>
+              <article class="product-card product-card--vertical">
+                <figure class="product-card__media">
+                  <img src="assets/images/products/bag-team.svg" alt="建議替換為 640×480 球袋商品照片" />
+                </figure>
+                <div class="product-card__body">
+                  <h3>Babolat Pure Aero 12 支球袋</h3>
+                  <p class="product-card__price">$3,680</p>
+                  <p>三層隔熱主袋搭配防水鞋袋與小物收納艙，外出備賽一次搞定。</p>
+                  <a class="product-card__link" href="#">加入購物車</a>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
