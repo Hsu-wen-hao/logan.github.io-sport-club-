@@ -1,284 +1,193 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>關於我們｜疾速運動俱樂部</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">跳至主要內容</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>關於動能運動俱樂部｜運動願景與團隊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要內容</a>
 
-  <div class="topbar" aria-label="俱樂部聯絡資訊列">
-    <div class="container topbar__inner">
-      <div class="topbar__info">
-        <a href="tel:+1234567890"><span class="topbar__icon" aria-hidden="true"></span>+1 234 567 890</a>
-        <a href="mailto:hello@velocityclub.com"><span class="topbar__icon" aria-hidden="true"></span>hello@velocityclub.com</a>
-        <span><span class="topbar__icon" aria-hidden="true"></span>週一至週六 06:00 – 22:00</span>
-      </div>
-      <div class="topbar__actions">
-        <ul class="social-list">
-          <li><a href="#" aria-label="Facebook">Fb</a></li>
-          <li><a href="#" aria-label="Twitter">Tw</a></li>
-          <li><a href="#" aria-label="Instagram">Ig</a></li>
-        </ul>
-        <form class="topbar__search" role="search">
-          <label class="visually-hidden" for="top-search">站內搜尋</label>
-          <input id="top-search" type="search" placeholder="輸入關鍵字" />
-          <button type="submit" aria-label="搜尋"></button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <header class="site-header" aria-label="Primary header">
-    <div class="container site-header__inner">
-      <a class="site-logo" href="index.html#home">
-        <span class="site-logo__mark">V</span>
-        <span class="site-logo__text">疾速運動俱樂部</span>
-      </a>
-      <nav class="site-nav" aria-label="主選單">
-        <button class="site-nav__toggle" aria-expanded="false" aria-controls="primary-menu">選單</button>
-        <ul id="primary-menu" class="site-nav__list">
-          <li><a href="index.html#home">首頁</a></li>
-          <li><a href="about.html" aria-current="page">關於我們</a></li>
-          <li><a href="shop.html">商店</a></li>
-          <li><a href="index.html#programs">特色課程</a></li>
-          <li><a href="index.html#sports">運動項目</a></li>
-          <li><a href="index.html#schedule">訓練時程</a></li>
-          <li><a href="index.html#memberships">會員方案</a></li>
-          <li><a href="index.html#coaches">教練陣容</a></li>
-          <li><a href="index.html#news">最新動態</a></li>
-          <li><a href="index.html#contact">聯絡我們</a></li>
-        </ul>
-      </nav>
-      <a class="btn btn--accent" href="index.html#memberships">立即加入</a>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="page-hero" aria-label="關於我們導覽">
-      <figure class="page-hero__media">
-        <img src="images/about-hero.svg" alt="教練在球場上指導選手的插畫" />
-      </figure>
-      <div class="page-hero__overlay" aria-hidden="true"></div>
-      <div class="container">
-        <div class="page-hero__content">
-          <ul class="breadcrumbs" aria-label="Breadcrumb">
-            <li><a href="index.html#home">首頁</a></li>
-            <li>關於我們</li>
-          </ul>
-          <p class="section-eyebrow">Our Story</p>
-          <h1>以世界級標準打造多元運動基地</h1>
-          <p>疾速運動俱樂部誕生於對競技的熱情。我們結合職業教練團隊、國際級場館與完善恢復資源，讓每位會員都能在專屬舞台上突破自我、締造紀錄。</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="index.html#programs">探索訓練課程</a>
-            <a class="btn btn--ghost" href="index.html#contact">預約參觀</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-overview" aria-labelledby="about-overview-title">
-      <div class="container about-overview__inner">
-        <div class="about-overview__content">
-          <p class="section-eyebrow">Club Vision</p>
-          <h2 id="about-overview-title">凝聚團隊、科技與熱情的運動核心</h2>
-          <p>從體能檢測、專項訓練到賽事支援，我們以系統化流程協助選手循序成長。透過跨項目教練協作與資料分析，量身打造最適合的訓練節奏。</p>
-          <p>俱樂部設有球類、田徑、水上與健身等空間，並導入運動醫學與營養顧問，讓你在同個據點完成訓練、恢復與策略規劃。</p>
-          <div class="about-overview__stats">
-            <div class="about-overview__stat">
-              <strong>18+</strong>
-              <span>國際認證教練</span>
-            </div>
-            <div class="about-overview__stat">
-              <strong>12</strong>
-              <span>專屬訓練場域</span>
-            </div>
-            <div class="about-overview__stat">
-              <strong>96%</strong>
-              <span>學員留存率</span>
-            </div>
-            <div class="about-overview__stat">
-              <strong>40+</strong>
-              <span>年度大型賽事</span>
-            </div>
-          </div>
-        </div>
-        <div class="about-overview__media">
-          <img src="images/facility-02.svg" alt="俱樂部會員在室內球場訓練的插畫" loading="lazy" />
-          <span class="about-overview__badge">Since 2008</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-values" aria-labelledby="about-values-title">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-eyebrow">Core Strengths</p>
-          <h2 id="about-values-title">我們堅持的三大信念</h2>
-        </div>
-        <div class="about-values__grid">
-          <article class="value-card">
-            <h3>專業化訓練路徑</h3>
-            <p>依不同年齡與目標設計階段式課程，透過測評與反饋追蹤進度，確保每一步都精準有效。</p>
-          </article>
-          <article class="value-card">
-            <h3>跨領域支援團隊</h3>
-            <p>結合體能、技術、心理與營養顧問，讓選手獲得全方位照護，在每個賽季保持最佳狀態。</p>
-          </article>
-          <article class="value-card">
-            <h3>活力社群文化</h3>
-            <p>定期舉辦內部聯賽、交流賽與講座，讓會員在切磋中建立情誼，享受運動帶來的熱情與自信。</p>
-          </article>
-          <article class="value-card">
-            <h3>智慧化場館管理</h3>
-            <p>透過智慧排課與場地調度系統，提供彈性預約與即時資訊，打造高效率、零等待的訓練體驗。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-history" aria-labelledby="about-history-title">
-      <div class="container">
-        <div class="section-heading section-heading--light">
-          <p class="section-eyebrow">Milestones</p>
-          <h2 id="about-history-title">一路走來的關鍵時刻</h2>
-        </div>
-        <div class="about-history__timeline">
-          <article class="history-item">
-            <time datetime="2008">2008</time>
-            <p>疾速運動俱樂部正式成立，於市中心打造首座多功能訓練基地，提供籃球與網球課程。</p>
-          </article>
-          <article class="history-item">
-            <time datetime="2012">2012</time>
-            <p>引進國際級游泳與田徑教練團隊，擴建體能實驗室與復健中心，服務觸及職業選手。</p>
-          </article>
-          <article class="history-item">
-            <time datetime="2016">2016</time>
-            <p>成立青少年菁英學院，串聯在地校隊與企業贊助，推動全年度競賽與海外移地訓練。</p>
-          </article>
-          <article class="history-item">
-            <time datetime="2021">2021</time>
-            <p>完成場館智慧化升級，導入運動數據平台與虛擬教練系統，打造個人化訓練體驗。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-team" aria-labelledby="about-team-title">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-eyebrow">Leadership</p>
-          <h2 id="about-team-title">專業團隊領航你的成長</h2>
-        </div>
-        <div class="about-team__grid">
-          <article class="coach-card">
-            <img src="images/about-coach-01.svg" alt="總教練林教練肖像插畫" loading="lazy" />
-            <div class="coach-card__body">
-              <h3>林家勛</h3>
-              <p>總教練｜前國家代表隊成員，專長團隊戰術與臨場指揮。</p>
-              <a href="#" class="coach-card__link">查看履歷</a>
-            </div>
-          </article>
-          <article class="coach-card">
-            <img src="images/about-coach-02.svg" alt="體能教練許教練肖像插畫" loading="lazy" />
-            <div class="coach-card__body">
-              <h3>許庭語</h3>
-              <p>體能科學總監｜專精運動數據分析與恢復策略。</p>
-              <a href="#" class="coach-card__link">查看履歷</a>
-            </div>
-          </article>
-          <article class="coach-card">
-            <img src="images/about-coach-03.svg" alt="營養師陳老師肖像插畫" loading="lazy" />
-            <div class="coach-card__body">
-              <h3>陳品竹</h3>
-              <p>營養顧問｜為各項目選手設計賽前賽後營養策略。</p>
-              <a href="#" class="coach-card__link">查看履歷</a>
-            </div>
-          </article>
-          <article class="coach-card">
-            <img src="images/about-coach-04.svg" alt="青訓主管劉教練肖像插畫" loading="lazy" />
-            <div class="coach-card__body">
-              <h3>劉奕辰</h3>
-              <p>青訓主管｜建立青少年選手升級制度與國際賽事管道。</p>
-              <a href="#" class="coach-card__link">查看履歷</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-cta" aria-labelledby="about-cta-title">
-      <div class="container about-cta__inner">
-        <div>
-          <p class="section-eyebrow">Join Velocity</p>
-          <h2 id="about-cta-title">帶著你的目標，一起進化</h2>
-          <p>無論你是追求突破的選手，或是熱愛運動的生活家，我們都準備好與你攜手前進。</p>
-        </div>
-        <a class="btn btn--primary" href="mailto:hello@velocityclub.com">預約體驗課</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" aria-label="網站頁尾">
-    <div class="container site-footer__inner">
-      <div class="site-footer__col">
-        <a class="site-logo" href="index.html#home">
-          <span class="site-logo__mark">V</span>
-          <span class="site-logo__text">疾速運動俱樂部</span>
+    <header class="site-header site-header--plain" aria-label="主要導覽">
+      <div class="wrapper site-header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__mark">MC</span>
+          <span class="brand__text">動能運動俱樂部</span>
         </a>
-        <p>疾速運動俱樂部是城市中最完整的多元運動基地，結合專業訓練與熱血社群體驗。</p>
-        <ul class="social-list">
-          <li><a href="#" aria-label="Facebook">Fb</a></li>
-          <li><a href="#" aria-label="Twitter">Tw</a></li>
-          <li><a href="#" aria-label="Instagram">Ig</a></li>
-          <li><a href="#" aria-label="YouTube">Yt</a></li>
-        </ul>
+        <nav class="site-nav" aria-label="主選單">
+          <button class="site-nav__toggle" aria-expanded="false" aria-controls="primary-nav">選單</button>
+          <ul id="primary-nav" class="site-nav__list">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html" aria-current="page">關於我們</a></li>
+            <li><a href="shop.html">商店</a></li>
+            <li><a href="index.html#programs">訓練課程</a></li>
+            <li><a href="index.html#memberships">會員方案</a></li>
+            <li><a href="index.html#contact">聯絡我們</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn--accent" href="index.html#memberships">立即加入</a>
       </div>
-      <div class="site-footer__col">
-        <h3>快速導覽</h3>
-        <ul class="footer-links">
-          <li><a href="about.html">關於我們</a></li>
-          <li><a href="shop.html">商店</a></li>
-          <li><a href="index.html#programs">特色課程</a></li>
-          <li><a href="index.html#sports">運動項目</a></li>
-          <li><a href="index.html#schedule">訓練時程</a></li>
-          <li><a href="index.html#memberships">會員方案</a></li>
-          <li><a href="index.html#contact">聯絡我們</a></li>
-        </ul>
-      </div>
-      <div class="site-footer__col">
-        <h3>館內剪影</h3>
-        <div class="footer-gallery">
-          <img src="images/sports-tennis.svg" alt="網球主題插畫" loading="lazy" />
-          <img src="images/sports-basketball.svg" alt="籃球主題插畫" loading="lazy" />
-          <img src="images/sports-swimming.svg" alt="游泳主題插畫" loading="lazy" />
-          <img src="images/sports-athletics.svg" alt="田徑主題插畫" loading="lazy" />
-          <img src="images/sports-football.svg" alt="足球主題插畫" loading="lazy" />
-          <img src="images/sports-cricket.svg" alt="板球主題插畫" loading="lazy" />
-        </div>
-      </div>
-      <div class="site-footer__col">
-        <h3>訂閱電子報</h3>
-        <p>掌握最新課程時程、賽事訊息與俱樂部公告。</p>
-        <form class="newsletter-form">
-          <label class="visually-hidden" for="newsletter-email">電子郵件</label>
-          <input id="newsletter-email" type="email" placeholder="請輸入電子郵件" required />
-          <button type="submit" class="btn btn--primary">送出訂閱</button>
-        </form>
-      </div>
-    </div>
-    <div class="site-footer__bottom">
-      <div class="container">
-        <p>© 2024 疾速運動俱樂部。保留所有權利。</p>
-      </div>
-    </div>
-  </footer>
+    </header>
 
-  <script src="assets/js/main.js" defer></script>
-</body>
+    <main id="main">
+      <section class="page-hero" aria-label="關於我們主視覺">
+        <div class="page-hero__media" role="img" aria-label="運動團隊合作的色塊視覺"></div>
+        <div class="wrapper page-hero__content">
+          <span class="eyebrow">關於動能</span>
+          <h1>打造多運動項目的策略基地</h1>
+          <p>
+            我們相信運動不只是競技，更是讓城市充滿活力的生活方式。動能運動俱樂部結合頂尖教練、國際級設施與科技化分析，陪伴每位會員在多元項目中找到專屬舞台。
+          </p>
+        </div>
+      </section>
+
+      <section class="mission" aria-label="使命與願景">
+        <div class="wrapper mission__inner">
+          <article class="mission__card">
+            <span class="eyebrow">品牌使命</span>
+            <h2>以運動連結城市，啟動全民動能</h2>
+            <p>
+              從青少年培訓到成人進階課程，我們透過跨項訓練與社群活動串起熱愛運動的靈魂，打造彼此支持的運動社群。
+            </p>
+          </article>
+          <article class="mission__card">
+            <span class="eyebrow">願景藍圖</span>
+            <h2>成為亞洲指標級多運動俱樂部</h2>
+            <p>
+              我們持續引進國際賽事規格、智慧化訓練科技與專業醫療資源，期望打造兼具競技、娛樂與教育功能的運動生態圈。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="values" aria-label="核心價值">
+        <div class="wrapper">
+          <div class="section-head section-head--center">
+            <span class="eyebrow">核心價值</span>
+            <h2 class="section-title">支持每位運動者的四大承諾</h2>
+          </div>
+          <div class="values__grid">
+            <article class="value-card">
+              <h3>專業</h3>
+              <p>教練與團隊成員皆具國際證照與競賽經驗，以科學化訓練陪你前進。</p>
+            </article>
+            <article class="value-card">
+              <h3>安全</h3>
+              <p>完善的防護、恢復與醫療合作網絡，確保每次訓練都在最佳狀態下進行。</p>
+            </article>
+            <article class="value-card">
+              <h3>創新</h3>
+              <p>導入智慧穿戴、動作捕捉與資料分析，讓進步數據化、成果看得見。</p>
+            </article>
+            <article class="value-card">
+              <h3>社群</h3>
+              <p>透過聯賽、講座與公益活動，串起不同項目的運動者，共同成長。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline" aria-label="發展里程碑">
+        <div class="wrapper timeline__inner">
+          <div class="section-head">
+            <span class="eyebrow">發展里程碑</span>
+            <h2 class="section-title">一步步擴張多元運動版圖</h2>
+          </div>
+          <ol class="timeline__list">
+            <li>
+              <span class="timeline__year">2015</span>
+              <div>
+                <h3>創立第一座綜合運動中心</h3>
+                <p>以網球與籃球為核心項目，建立雙主場的訓練與競賽空間。</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline__year">2018</span>
+              <div>
+                <h3>擴增水上與體能基地</h3>
+                <p>開幕 50 公尺室內泳池與體能實驗室，導入恢復與醫療團隊。</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline__year">2021</span>
+              <div>
+                <h3>啟動智能訓練系統</h3>
+                <p>引入數據分析平台與智慧穿戴，實現跨項目共用訓練模組。</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline__year">2024</span>
+              <div>
+                <h3>跨國聯盟與公益計畫</h3>
+                <p>與亞洲各大城市合作推動青少年體育與全民運動推廣。</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="team" aria-label="管理與教練團隊">
+        <div class="wrapper">
+          <div class="section-head section-head--center">
+            <span class="eyebrow">團隊陣容</span>
+            <h2 class="section-title">結合管理與教練的黃金陣容</h2>
+          </div>
+          <div class="team__grid">
+            <article class="team-card">
+              <div class="team-card__avatar team-card__avatar--lead" aria-hidden="true"></div>
+              <h3>葉家豪｜執行長</h3>
+              <p>曾任多家運動品牌策略長，擅長整合賽事與商業資源。</p>
+            </article>
+            <article class="team-card">
+              <div class="team-card__avatar team-card__avatar--coach" aria-hidden="true"></div>
+              <h3>林芷涵｜技術總監</h3>
+              <p>前網球國手，負責跨項訓練與教練培訓制度建立。</p>
+            </article>
+            <article class="team-card">
+              <div class="team-card__avatar team-card__avatar--performance" aria-hidden="true"></div>
+              <h3>王柏翰｜體能總監</h3>
+              <p>專精運動科學與恢復策略，打造全方位體能計畫。</p>
+            </article>
+            <article class="team-card">
+              <div class="team-card__avatar team-card__avatar--community" aria-hidden="true"></div>
+              <h3>陳韻如｜社群總監</h3>
+              <p>負責會員體驗與公益專案，讓運動熱情延伸至城市每個角落。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" aria-label="加入我們">
+        <div class="wrapper cta__inner">
+          <div class="cta__copy">
+            <h2>與我們一起開拓運動新篇章</h2>
+            <p>立即預約場館導覽或與顧問聯繫，了解如何為你的運動旅程注入全新動能。</p>
+          </div>
+          <a class="btn btn--accent" href="index.html#contact">預約導覽</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="頁尾">
+      <div class="wrapper site-footer__bottom-inner">
+        <span>© 2024 動能運動俱樂部 Motion Club. All rights reserved.</span>
+        <ul class="social-list">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="assets/js/global.js" defer></script>
+  </body>
 </html>
