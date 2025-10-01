@@ -3,6 +3,15 @@ body {
   color: #f8fafc;
 }
 
+.page-shop section {
+  padding: 56px 0;
+}
+
+.page-shop .section-head {
+  margin-bottom: 24px;
+  gap: 8px;
+}
+
 .site-header--plain {
   background: rgba(6, 11, 26, 0.92);
   border-bottom: 1px solid rgba(148, 163, 184, 0.18);
@@ -134,15 +143,15 @@ body {
 .usp__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  gap: 20px;
 }
 
 .usp-card {
   background: var(--color-card);
   border-radius: var(--radius-md);
-  padding: 28px;
+  padding: 24px;
   display: grid;
-  gap: 12px;
+  gap: 10px;
   text-align: center;
   box-shadow: var(--shadow-card);
 }
@@ -168,6 +177,7 @@ body {
 
 .category-card__media {
   /* 建議以 520x360px 網球商品照片取代下列漸層 */
+  position: relative;
   background-size: cover;
   background-position: center;
 }
@@ -200,7 +210,7 @@ body {
 
 .featured__layout {
   display: grid;
-  gap: 24px;
+  gap: 20px;
   grid-template-columns: minmax(0, 1.25fr) minmax(0, 1.75fr);
   align-items: stretch;
 }
@@ -228,9 +238,9 @@ body {
 }
 
 .featured-highlight__body {
-  padding: 32px 36px;
+  padding: 28px 32px;
   display: grid;
-  gap: 18px;
+  gap: 14px;
 }
 
 .featured-highlight__body h3 {
@@ -241,7 +251,7 @@ body {
 .featured-highlight__meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
 }
 
@@ -253,7 +263,7 @@ body {
 
 .featured-list {
   display: grid;
-  gap: 20px;
+  gap: 16px;
 }
 
 .product-card {
@@ -271,7 +281,14 @@ body {
 }
 
 .product-card__media {
+  position: relative;
   overflow: hidden;
+}
+
+.product-card__media .image-note--subtle {
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 0;
 }
 
 .product-card__media img {
@@ -295,9 +312,9 @@ body {
 }
 
 .product-card__body {
-  padding: 24px;
+  padding: 22px;
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .product-card__body h3 {
@@ -326,14 +343,14 @@ body {
 .promos__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 18px;
 }
 
 .promo-card {
   border-radius: var(--radius-lg);
-  padding: 40px;
+  padding: 32px;
   display: grid;
-  gap: 16px;
+  gap: 14px;
   box-shadow: var(--shadow-card);
 }
 
@@ -371,21 +388,23 @@ body {
 .service__inner {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 40px;
+  gap: 32px;
   align-items: center;
 }
 
 .service__media {
   /* 以 720x480px 門市或服務照片取代可維持版面比例 */
+  position: relative;
   min-height: 320px;
   border-radius: var(--radius-lg);
   background-image: linear-gradient(135deg, #a855f7, #0f172a);
   box-shadow: var(--shadow-card);
+  overflow: hidden;
 }
 
 .service__content {
   display: grid;
-  gap: 16px;
+  gap: 12px;
 }
 
 .service__content p {
