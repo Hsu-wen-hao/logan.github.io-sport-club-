@@ -61,30 +61,42 @@
 
   <main id="main">
     <section class="shop-hero" aria-label="商城主視覺">
-      <div class="shop-hero__media">
-        <img src="https://images.unsplash.com/photo-1542089363-1ec2965b1f45?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="網球球拍與球鞋陳列在球場背景" />
-      </div>
-      <div class="shop-hero__overlay"></div>
-      <div class="container shop-hero__content">
-        <p class="section-eyebrow">Velocity Tennis Store</p>
-        <h1>歐洲網球零售選品一次到位</h1>
-        <p>參考 Tennis-Point 熱銷趨勢，引進球拍、球鞋、服飾與配件，讓俱樂部會員享受專屬折扣。</p>
-        <div class="shop-hero__actions">
-          <a class="btn btn--primary" href="#featured-products">瀏覽熱銷品</a>
-          <a class="btn btn--ghost" href="#shop-categories">探索分類</a>
+      <figure class="shop-hero__media">
+        <img src="images/shop-hero.svg" alt="網球拍、球鞋與網球交織的主視覺插畫" />
+      </figure>
+      <div class="shop-hero__overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="shop-hero__content">
+          <p class="section-eyebrow">Velocity Tennis Store</p>
+          <h1>參考 Tennis-Point 的歐洲選品</h1>
+          <p>以網球為核心的專業商城，囊括拍款、鞋服與配件，讓俱樂部會員即刻入手國際賽事同款裝備。</p>
+          <div class="shop-hero__actions">
+            <a class="btn btn--primary" href="#featured-products">瀏覽熱銷品</a>
+            <a class="btn btn--ghost" href="#shop-categories">探索分類</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="shop-brands" aria-label="合作品牌">
-      <div class="container shop-brands__inner">
-        <p>合作品牌</p>
-        <ul class="shop-brands__list">
-          <li>Velocity Pro</li>
-          <li>SpinMaster</li>
-          <li>Baseline Lab</li>
-          <li>MatchPoint</li>
-          <li>Urban Pace</li>
+    <section class="shop-usp" aria-label="購物優勢">
+      <div class="container">
+        <ul class="shop-usp__list">
+          <li class="shop-usp__item">
+            <span class="shop-usp__title">全館滿額免運</span>
+            <span class="shop-usp__desc">單筆滿 NT$2,000 即享 DHL 直送</span>
+          </li>
+          <li class="shop-usp__item">
+            <span class="shop-usp__title">30 天安心鑑賞</span>
+            <span class="shop-usp__desc">不合適立即換尺寸或退貨</span>
+          </li>
+          <li class="shop-usp__item">
+            <span class="shop-usp__title">原廠穿線服務</span>
+            <span class="shop-usp__desc">購買球拍享專業線床設定</span>
+          </li>
+          <li class="shop-usp__item">
+            <span class="shop-usp__title">會員獨享折扣</span>
+            <span class="shop-usp__desc">加入俱樂部再享 95 折</span>
+          </li>
         </ul>
       </div>
     </section>
@@ -97,26 +109,26 @@
         </div>
         <div class="shop-categories__grid">
           <article class="shop-category">
-            <img src="https://source.unsplash.com/520x360/?tennis,racket&amp;sig=41" alt="網球拍專區視覺" loading="lazy" />
+            <img src="images/shop-category-01.svg" alt="男士競賽球拍系列插畫" loading="lazy" />
             <div class="shop-category__body">
               <h3>男士賽事裝備</h3>
-              <p>選購重視控球與旋轉的球拍、球線與護具，打造穩健的競賽節奏。</p>
+              <p>從控球拍款到高張力球線，提供菁英賽事的進攻火力。</p>
               <a href="#featured-products" class="shop-category__link">查看推薦</a>
             </div>
           </article>
           <article class="shop-category">
-            <img src="https://source.unsplash.com/520x360/?tennis,shoes&amp;sig=42" alt="網球鞋款精選視覺" loading="lazy" />
+            <img src="images/shop-category-02.svg" alt="女子網球鞋服系列插畫" loading="lazy" />
             <div class="shop-category__body">
               <h3>女子靈活鞋服</h3>
-              <p>輕量支撐與排汗面料結合，讓每次衝刺與滑步都自在俐落。</p>
+              <p>結合輕量支撐與排汗材質，讓每次衝刺與滑步更自在。</p>
               <a href="#featured-products" class="shop-category__link">探索鞋服</a>
             </div>
           </article>
           <article class="shop-category">
-            <img src="https://source.unsplash.com/520x360/?tennis,training&amp;sig=43" alt="訓練裝備與配件視覺" loading="lazy" />
+            <img src="images/shop-category-03.svg" alt="青少年訓練裝備插畫" loading="lazy" />
             <div class="shop-category__body">
               <h3>青少年訓練營</h3>
-              <p>提供符合身型的輕量球拍、握把與訓練教具，陪孩子穩健進步。</p>
+              <p>體驗輕量球拍、握把與教具，陪伴孩子循序進階。</p>
               <a href="#featured-products" class="shop-category__link">補齊配件</a>
             </div>
           </article>
@@ -132,38 +144,38 @@
         </div>
         <div class="shop-products__grid">
           <article class="product-card">
-            <img src="https://source.unsplash.com/420x420/?tennis,racket&amp;sig=51" alt="PRO RACKET 98 網球拍視覺" loading="lazy" />
+            <img src="images/shop-product-01.svg" alt="Pure Strike 98 控球拍視覺插畫" loading="lazy" />
             <div class="product-card__body">
               <h3>Pure Strike 98 控球拍</h3>
               <p class="product-card__price">NT$ 6,980</p>
-              <p class="product-card__desc">搭載 FSI Power 線床與高剛性框型，帶來扎實擊球與精準落點。</p>
+              <p class="product-card__desc">FSI Power 線床搭配高剛性拍框，提供俐落攻擊火力。</p>
               <button type="button" class="btn btn--primary">加入購物車</button>
             </div>
           </article>
           <article class="product-card">
-            <img src="https://source.unsplash.com/420x420/?tennis,footwear&amp;sig=52" alt="ALL COURT SHOES 網球鞋視覺" loading="lazy" />
+            <img src="images/shop-product-02.svg" alt="Vapor Pro 2 網球鞋插畫" loading="lazy" />
             <div class="product-card__body">
               <h3>Vapor Pro 2 全場地鞋</h3>
               <p class="product-card__price">NT$ 4,280</p>
-              <p class="product-card__desc">Zoom Air 緩震搭配耐磨外底，支撐每次跨步與急停。</p>
+              <p class="product-card__desc">Zoom Air 緩震與耐磨外底支撐每次啟動與急停。</p>
               <button type="button" class="btn btn--primary">加入購物車</button>
             </div>
           </article>
           <article class="product-card">
-            <img src="https://source.unsplash.com/420x420/?tennis,bag&amp;sig=53" alt="MATCH DAY BAG 球袋視覺" loading="lazy" />
+            <img src="images/shop-product-03.svg" alt="Tour Team 12R 球袋插畫" loading="lazy" />
             <div class="product-card__body">
               <h3>Tour Team 12R 球袋</h3>
               <p class="product-card__price">NT$ 3,450</p>
-              <p class="product-card__desc">溫控隔層與雙肩背帶設計，方便攜帶球拍、鞋履與保養用品。</p>
+              <p class="product-card__desc">雙層溫控隔間設計，輕鬆收納球拍、鞋款與保養用品。</p>
               <button type="button" class="btn btn--primary">加入購物車</button>
             </div>
           </article>
           <article class="product-card">
-            <img src="https://source.unsplash.com/420x420/?tennis,apparel&amp;sig=54" alt="Performance 機能網球服飾視覺" loading="lazy" />
+            <img src="images/shop-product-04.svg" alt="Club Team 機能套裝插畫" loading="lazy" />
             <div class="product-card__body">
               <h3>Club Team 機能套裝</h3>
               <p class="product-card__price">NT$ 2,980</p>
-              <p class="product-card__desc">快乾抗 UV 面料與網布透氣設計，維持賽場清爽體感。</p>
+              <p class="product-card__desc">快乾抗 UV 面料與透氣網布，維持賽場清爽體感。</p>
               <button type="button" class="btn btn--primary">加入購物車</button>
             </div>
           </article>
@@ -171,26 +183,39 @@
       </div>
     </section>
 
-    <section class="shop-promos" aria-label="促銷活動">
-      <div class="container shop-promos__grid">
-        <article class="promo-card">
-          <img src="https://source.unsplash.com/620x360/?tennis,stringing&amp;sig=61" alt="網球拍實驗室限時優惠視覺" loading="lazy" />
-          <div class="promo-card__content">
+    <section class="shop-banners" aria-label="促銷活動">
+      <div class="container shop-banners__grid">
+        <article class="banner-card">
+          <img src="images/shop-banner-01.svg" alt="球拍穿線優惠插畫" loading="lazy" />
+          <div class="banner-card__body">
             <p class="section-eyebrow">限時優惠</p>
             <h3>球拍健檢升級 8 折</h3>
-            <p>指定拍款享免費張力檢測與穿線，並贈握把布補給組。</p>
-            <a href="#featured-products" class="promo-card__link">立即搶購</a>
+            <p>指定拍款提供張力檢測與專業穿線服務，再贈握把布補給組。</p>
+            <a href="#featured-products" class="banner-card__link">立即搶購</a>
           </div>
         </article>
-        <article class="promo-card">
-          <img src="https://source.unsplash.com/620x360/?tennis,store&amp;sig=62" alt="網球鞋款會員專屬優惠視覺" loading="lazy" />
-          <div class="promo-card__content">
+        <article class="banner-card">
+          <img src="images/shop-banner-02.svg" alt="會員折扣插畫" loading="lazy" />
+          <div class="banner-card__body">
             <p class="section-eyebrow">會員尊享</p>
-            <h3>加入俱樂部再享 95 折</h3>
-            <p>Velocity 會員於網球鞋款與服飾可享折扣累點，兌換限定球場體驗。</p>
-            <a href="#shop-membership" class="promo-card__link">瞭解詳情</a>
+            <h3>加入俱樂部享專屬折扣</h3>
+            <p>Velocity 會員消費可累積點數並解鎖網球學院一對一諮詢。</p>
+            <a href="#shop-membership" class="banner-card__link">瞭解詳情</a>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="shop-brands" aria-label="推薦品牌">
+      <div class="container shop-brands__inner">
+        <p>合作品牌</p>
+        <ul class="shop-brands__list">
+          <li>Babolat</li>
+          <li>Wilson</li>
+          <li>Head</li>
+          <li>Yonex</li>
+          <li>Adidas</li>
+        </ul>
       </div>
     </section>
 
@@ -246,12 +271,12 @@
       <div class="site-footer__col">
         <h3>館內剪影</h3>
         <div class="footer-gallery">
-          <img src="https://source.unsplash.com/160x160/?tennis,club&amp;sig=31" alt="中央球場局部視角" loading="lazy" />
-          <img src="https://source.unsplash.com/160x160/?basketball,court&amp;sig=32" alt="紅土球場俯視視角" loading="lazy" />
-          <img src="https://source.unsplash.com/160x160/?swimming,training&amp;sig=33" alt="室內泳池訓練畫面" loading="lazy" />
-          <img src="https://source.unsplash.com/160x160/?fitness,studio&amp;sig=34" alt="恢復中心與訓練設備" loading="lazy" />
-          <img src="https://source.unsplash.com/160x160/?sports,medicine&amp;sig=35" alt="運動醫學儀器特寫" loading="lazy" />
-          <img src="https://source.unsplash.com/160x160/?gym,training&amp;sig=36" alt="訓練健身房器材" loading="lazy" />
+          <img src="images/sports-tennis.svg" alt="網球主題插畫" loading="lazy" />
+          <img src="images/sports-basketball.svg" alt="籃球主題插畫" loading="lazy" />
+          <img src="images/sports-swimming.svg" alt="游泳主題插畫" loading="lazy" />
+          <img src="images/sports-athletics.svg" alt="田徑主題插畫" loading="lazy" />
+          <img src="images/sports-football.svg" alt="足球主題插畫" loading="lazy" />
+          <img src="images/sports-cricket.svg" alt="板球主題插畫" loading="lazy" />
         </div>
       </div>
       <div class="site-footer__col">
