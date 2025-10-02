@@ -39,66 +39,66 @@
     </header>
 
     <main id="main">
-      <section class="shop-hero" aria-label="商店主視覺輪播">
-        <div class="shop-hero__slides" role="region" aria-roledescription="carousel">
-          <article class="shop-hero-slide is-active">
-            <figure class="shop-hero-slide__image">
+      <section class="hero hero--shop" aria-label="商店主視覺輪播">
+        <div class="hero__slides" role="region" aria-roledescription="carousel">
+          <article class="hero-slide is-active">
+            <div class="hero-slide__media">
               <img src="assets/images/shop-hero-1.svg" alt="網球拍與球場建議替換為 1600x900 網球產品照片" />
               <span class="image-note image-note--overlay">1600×900 主視覺圖片位</span>
-            </figure>
-            <div class="wrapper shop-hero-slide__inner">
-              <div class="shop-hero-slide__content">
+            </div>
+            <div class="wrapper hero-slide__inner">
+              <div class="hero-slide__content">
                 <span class="eyebrow">Tennis Flagship</span>
                 <h1>動能網球專門店</h1>
                 <p>
                   精選國際網球品牌最新拍款、服飾與配件，提供球友專業選物、穿線服務與會員限定優惠。
                 </p>
-                <div class="shop-hero-slide__actions">
+                <div class="hero-slide__actions">
                   <a class="btn btn--primary" href="#categories">探索分類</a>
                   <a class="btn btn--ghost" href="#offers">查看優惠</a>
                 </div>
               </div>
             </div>
           </article>
-          <article class="shop-hero-slide" aria-hidden="true">
-            <figure class="shop-hero-slide__image">
+          <article class="hero-slide" aria-hidden="true">
+            <div class="hero-slide__media">
               <img src="assets/images/shop-hero-2.svg" alt="網球品牌牆建議替換為 1600x900 品牌展示照片" />
               <span class="image-note image-note--overlay">1600×900 主視覺圖片位</span>
-            </figure>
-            <div class="wrapper shop-hero-slide__inner">
-              <div class="shop-hero-slide__content">
+            </div>
+            <div class="wrapper hero-slide__inner">
+              <div class="hero-slide__content">
                 <span class="eyebrow">Premium Brands</span>
                 <h2>全球人氣網球品牌一次到位</h2>
                 <p>
                   HEAD、Wilson、Babolat、Yonex 等旗艦系列同步引進，維持與國際巡迴相同的裝備體驗。
                 </p>
-                <div class="shop-hero-slide__actions">
+                <div class="hero-slide__actions">
                   <a class="btn btn--primary" href="#offers">人氣推薦</a>
                   <a class="btn btn--ghost" href="#service">門市服務</a>
                 </div>
               </div>
             </div>
           </article>
-          <article class="shop-hero-slide" aria-hidden="true">
-            <figure class="shop-hero-slide__image">
+          <article class="hero-slide" aria-hidden="true">
+            <div class="hero-slide__media">
               <img src="assets/images/shop-hero-3.svg" alt="網球賽事氛圍建議替換為 1600x900 比賽照片" />
               <span class="image-note image-note--overlay">1600×900 主視覺圖片位</span>
-            </figure>
-            <div class="wrapper shop-hero-slide__inner">
-              <div class="shop-hero-slide__content">
+            </div>
+            <div class="wrapper hero-slide__inner">
+              <div class="hero-slide__content">
                 <span class="eyebrow">Match Ready</span>
                 <h2>從訓練到比賽的全方位配備</h2>
                 <p>
                   專業穿線、球拍調校與行動穿梭車到府服務，協助球友以最佳狀態踏上球場。
                 </p>
-                <div class="shop-hero-slide__actions">
+                <div class="hero-slide__actions">
                   <a class="btn btn--primary" href="#promos">限時活動</a>
                   <a class="btn btn--ghost" href="index.html#contact">聯絡顧問</a>
                 </div>
               </div>
             </div>
           </article>
-          <div class="shop-hero__dots" role="tablist" aria-label="商店主視覺切換">
+          <div class="hero__dots" role="tablist" aria-label="商店主視覺切換">
             <button class="is-active" aria-label="第 1 張"></button>
             <button aria-label="第 2 張"></button>
             <button aria-label="第 3 張"></button>
@@ -177,19 +177,24 @@
             <h2 class="section-title">熱銷裝備一次入手</h2>
           </div>
           <div class="featured__layout">
-            <article class="featured-highlight">
-              <figure class="featured-highlight__media">
+            <article class="bundle-card">
+              <div class="bundle-card__media">
                 <img src="assets/images/products/feature-combo.svg" alt="建議替換為 960×600 網球裝備橫幅照片" />
-                <span class="image-note image-note--overlay">960×600 精選橫幅圖片位</span>
-              </figure>
-              <div class="featured-highlight__body">
+                <span class="image-note image-note--overlay">960×600 套裝橫幅圖片位</span>
+              </div>
+              <div class="bundle-card__body">
                 <span class="eyebrow">套裝首選</span>
                 <h3>HEAD Speed Pro 競賽套組</h3>
                 <p>
                   完整搭配球拍、鞋款與球袋，針對高強度巡迴賽程打造，購買即享免費穿線與教練諮詢。
                 </p>
-                <div class="featured-highlight__meta">
-                  <span class="featured-highlight__price">$15,800</span>
+                <ul class="bundle-card__list">
+                  <li>Speed Pro 競賽拍 ×2（含穿線）</li>
+                  <li>Jet Mach 3 球鞋 ×1（男女款尺寸齊全）</li>
+                  <li>Tour Team 12R Monstercombi 專業球袋</li>
+                </ul>
+                <div class="bundle-card__meta">
+                  <span class="bundle-card__price">NT$15,800</span>
                   <a class="btn btn--ghost" href="#">查看套組詳情</a>
                 </div>
               </div>

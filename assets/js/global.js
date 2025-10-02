@@ -53,6 +53,6 @@ function createCarousel(slideSelector, dotSelector, interval = 6000) {
   timer = setInterval(tick, interval);
 }
 
-createCarousel('.hero-slide', '.hero__dots button');
-createCarousel('.shop-hero-slide', '.shop-hero__dots button', 7000);
+createCarousel('.hero:not(.hero--shop) .hero-slide', '.hero:not(.hero--shop) .hero__dots button');
+createCarousel('.hero--shop .hero-slide', '.hero--shop .hero__dots button', 7000);
 createCarousel('.testimonial', '.testimonial__dots button', 8000);
