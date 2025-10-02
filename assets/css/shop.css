@@ -135,6 +135,8 @@ body {
   bottom: 36px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3;
+  pointer-events: auto;
 }
 
 .hero--shop .hero__dots button {
