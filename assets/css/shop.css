@@ -266,7 +266,10 @@ body {
 }
 
 .featured__highlight {
-  height: 100%;
+  height: auto;
+  width: 100%;
+  max-width: 960px;
+  justify-self: start;
 }
 
 .featured-grid {
@@ -535,13 +538,15 @@ body {
 
 @media (min-width: 960px) {
   .featured__header {
-    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-    align-items: stretch;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .featured__intro {
-    max-width: none;
-    padding-right: clamp(16px, 2vw, 32px);
+    max-width: 640px;
+  }
+
+  .featured__highlight {
+    margin-top: clamp(12px, 1.5vw, 24px);
   }
 }
 
