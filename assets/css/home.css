@@ -70,12 +70,13 @@
 }
 
 
+
 .hero-slide__inner {
   position: relative;
   z-index: 1;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: clamp(96px, 16vh, 160px) 0;
 }
@@ -85,9 +86,9 @@
   width: min(100%, 640px);
   display: grid;
   gap: 20px;
-  text-align: left;
-  justify-items: flex-start;
-  align-items: flex-start;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .hero-slide__title {
@@ -105,7 +106,7 @@
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .hero__dots,
