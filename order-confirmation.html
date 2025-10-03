@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>確認訂單內容 | Hikari Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/checkout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="brand">
+          <span class="brand__symbol">光</span>
+          <div class="brand__title">Hikari Atelier</div>
+        </div>
+        <ol class="progress">
+          <li class="progress__step">
+            <span class="progress__index">1</span>
+            購物車
+          </li>
+          <li class="progress__step progress__step--current">
+            <span class="progress__index">2</span>
+            確認訂單內容
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">3</span>
+            結帳
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">4</span>
+            完成
+          </li>
+        </ol>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="wrapper">
+          <h1>請確認訂單內容</h1>
+          <p class="lead">
+            請檢視收件資訊、配送方式與禮品需求，從容再確認一次是否無誤。
+          </p>
+          <div class="card">
+            <h2>收件資訊</h2>
+            <div class="summary-list">
+              <div class="summary-row">
+                <span>姓名</span>
+                <span>山本 美咲 小姐</span>
+              </div>
+              <div class="summary-row">
+                <span>地址</span>
+                <span>150-0001 東京都澀谷區神宮前1-1-1 光之露台501室</span>
+              </div>
+              <div class="summary-row">
+                <span>配送時間</span>
+                <span>5月12日（週日）上午</span>
+              </div>
+              <div class="summary-row">
+                <span>禮品包裝</span>
+                <span>需要（和紙包裝）</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h2>訂購商品</h2>
+            <table class="table" aria-label="訂購商品明細">
+              <thead>
+                <tr>
+                  <th scope="col">商品</th>
+                  <th scope="col">數量</th>
+                  <th scope="col">小計</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>櫻香護手霜（櫻花 / 50g）</td>
+                  <td>2</td>
+                  <td>¥3,960</td>
+                </tr>
+                <tr>
+                  <td>透花馬克杯（霧青）</td>
+                  <td>1</td>
+                  <td>¥2,860</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="summary-list">
+              <div class="summary-row">
+                <span>小計</span>
+                <span>¥6,820</span>
+              </div>
+              <div class="summary-row">
+                <span>運費</span>
+                <span>¥550</span>
+              </div>
+              <div class="summary-row">
+                <span>禮品包裝</span>
+                <span>¥330</span>
+              </div>
+              <div class="summary-row summary-row--total">
+                <span>合計</span>
+                <span>¥7,700</span>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="btn btn--ghost" href="cart.html">返回修改</a>
+              <a class="btn btn--primary" href="checkout.html">前往結帳</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">&copy; 2024 Hikari Atelier. 為您送上溫柔的生活風景。</div>
+    </footer>
+  </body>
+</html>

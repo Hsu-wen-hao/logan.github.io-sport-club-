@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>結帳 | Hikari Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/checkout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="brand">
+          <span class="brand__symbol">光</span>
+          <div class="brand__title">Hikari Atelier</div>
+        </div>
+        <ol class="progress">
+          <li class="progress__step">
+            <span class="progress__index">1</span>
+            購物車
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">2</span>
+            確認訂單內容
+          </li>
+          <li class="progress__step progress__step--current">
+            <span class="progress__index">3</span>
+            結帳
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">4</span>
+            完成
+          </li>
+        </ol>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="wrapper">
+          <h1>選擇付款方式</h1>
+          <p class="lead">
+            為守護您的安心，卡片資訊將以加密方式傳送，請放心慢慢填寫。
+          </p>
+          <div class="card">
+            <h2>信用卡</h2>
+            <form class="form-grid" aria-label="信用卡資訊">
+              <label class="label" for="card-name">持卡人姓名</label>
+              <input class="input" id="card-name" name="card-name" type="text" placeholder="YAMAMOTO MISAKI" />
+              <div class="form-grid form-grid--two">
+                <div>
+                  <label class="label" for="card-number">卡號</label>
+                  <input class="input" id="card-number" name="card-number" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" />
+                </div>
+                <div>
+                  <label class="label" for="card-exp">有效期限</label>
+                  <input class="input" id="card-exp" name="card-exp" type="text" placeholder="05 / 26" />
+                </div>
+              </div>
+              <div class="form-grid form-grid--two">
+                <div>
+                  <label class="label" for="card-cvc">安全碼</label>
+                  <input class="input" id="card-cvc" name="card-cvc" type="password" inputmode="numeric" placeholder="***" />
+                </div>
+                <div>
+                  <label class="label" for="card-zip">郵遞區號</label>
+                  <input class="input" id="card-zip" name="card-zip" type="text" inputmode="numeric" placeholder="1500001" />
+                </div>
+              </div>
+              <p class="note">※ 您填寫的內容將於金流合作夥伴的安全伺服器中處理。</p>
+            </form>
+          </div>
+          <div class="card">
+            <h2>帳單資訊</h2>
+            <form class="form-grid form-grid--two" aria-label="帳單資訊">
+              <div>
+                <label class="label" for="billing-name">姓名</label>
+                <input class="input" id="billing-name" name="billing-name" type="text" placeholder="山本 美咲" />
+              </div>
+              <div>
+                <label class="label" for="billing-phone">聯絡電話</label>
+                <input class="input" id="billing-phone" name="billing-phone" type="tel" placeholder="090-1234-5678" />
+              </div>
+              <div>
+                <label class="label" for="billing-address">地址</label>
+                <input class="input" id="billing-address" name="billing-address" type="text" placeholder="東京都澀谷區神宮前1-1-1 光之露台501" />
+              </div>
+              <div>
+                <label class="label" for="billing-notes">備註</label>
+                <input class="input" id="billing-notes" name="billing-notes" type="text" placeholder="若需客製賀卡或熨斗，請在此填寫" />
+              </div>
+            </form>
+            <div class="actions">
+              <a class="btn btn--ghost" href="order-confirmation.html">返回</a>
+              <a class="btn btn--primary" href="order-complete.html">確認送出訂單</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">&copy; 2024 Hikari Atelier. 為您送上溫柔的生活風景。</div>
+    </footer>
+  </body>
+</html>

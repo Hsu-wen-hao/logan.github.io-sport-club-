@@ -1,0 +1,335 @@
+:root {
+  --bg: #f7f5f1;
+  --bg-alt: rgba(255, 255, 255, 0.9);
+  --text: #2f2a26;
+  --muted: #8b8177;
+  --accent: #d6a77a;
+  --accent-strong: #c48a55;
+  --line: rgba(150, 140, 130, 0.28);
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  --shadow-soft: 0 20px 45px rgba(73, 63, 53, 0.12);
+  --transition: 0.25s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.01em;
+}
+
+main {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent-strong);
+}
+
+header {
+  padding: 2.5rem 0 1.5rem;
+}
+
+.wrapper {
+  width: min(960px, 92vw);
+  margin: 0 auto;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.brand__symbol {
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(214, 167, 122, 0.35), rgba(214, 167, 122, 0.6));
+  display: grid;
+  place-items: center;
+  font-family: "Noto Serif JP", "Yu Mincho", serif;
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
+.brand__title {
+  font-family: "Noto Serif JP", "Yu Mincho", serif;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+  letter-spacing: 0.12em;
+}
+
+.progress {
+  display: flex;
+  gap: 0.75rem;
+  margin: 2rem 0 0;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.progress__step {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--muted);
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.progress__step--current {
+  color: var(--text);
+  background: rgba(214, 167, 122, 0.14);
+  border-color: rgba(214, 167, 122, 0.45);
+  font-weight: 600;
+}
+
+.progress__index {
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  font-family: "Noto Serif JP", "Yu Mincho", serif;
+  background: rgba(214, 167, 122, 0.25);
+  color: var(--accent-strong);
+}
+
+h1 {
+  font-family: "Noto Serif JP", "Yu Mincho", serif;
+  font-weight: 500;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin: 0 0 0.75rem;
+}
+
+.lead {
+  color: var(--muted);
+  max-width: 580px;
+  font-size: 1rem;
+}
+
+.section {
+  padding: 0 0 3.5rem;
+}
+
+.card {
+  background: var(--bg-alt);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.card + .card {
+  margin-top: 1.8rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.9rem 0.4rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.table th {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.table td strong {
+  font-weight: 600;
+}
+
+.summary-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.2rem 0 0;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--muted);
+}
+
+.summary-row--total {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.9rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn--primary:hover,
+.btn--primary:focus-visible {
+  background: var(--accent-strong);
+}
+
+.btn--ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.btn--ghost:hover,
+.btn--ghost:focus-visible {
+  color: var(--text);
+  border-color: rgba(214, 167, 122, 0.5);
+}
+
+.form-grid {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.form-grid--two {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(214, 167, 122, 0.25);
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.input:focus {
+  outline: none;
+  border-color: rgba(214, 167, 122, 0.55);
+  box-shadow: 0 0 0 3px rgba(214, 167, 122, 0.18);
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 1.2rem;
+}
+
+.order-status {
+  display: grid;
+  gap: 1.4rem;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.order-status__symbol {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, rgba(214, 167, 122, 0.5), rgba(214, 167, 122, 0.8));
+  color: #fff;
+  font-size: 2rem;
+}
+
+.order-status h2 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.order-status p {
+  color: var(--muted);
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+footer {
+  padding: 3rem 0 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+}
+
+@media (max-width: 640px) {
+  header {
+    padding: 2rem 0 1rem;
+  }
+
+  .progress {
+    gap: 0.5rem;
+  }
+
+  .progress__step {
+    padding: 0.55rem 0.8rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
