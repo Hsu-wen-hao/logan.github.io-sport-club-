@@ -44,31 +44,87 @@
             為守護您的安心，卡片資訊將以加密方式傳送，請放心慢慢填寫。
           </p>
           <div class="card">
-            <h2>信用卡</h2>
-            <form class="form-grid" aria-label="信用卡資訊">
-              <label class="label" for="card-name">持卡人姓名</label>
-              <input class="input" id="card-name" name="card-name" type="text" placeholder="YAMAMOTO MISAKI" />
-              <div class="form-grid form-grid--two">
-                <div>
-                  <label class="label" for="card-number">卡號</label>
-                  <input class="input" id="card-number" name="card-number" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" />
-                </div>
-                <div>
-                  <label class="label" for="card-exp">有效期限</label>
-                  <input class="input" id="card-exp" name="card-exp" type="text" placeholder="05 / 26" />
+            <h2>付款方式</h2>
+            <form class="payment-methods" aria-label="付款方式">
+              <div class="payment-method">
+                <input class="payment-method__radio" type="radio" name="payment-method" id="method-card" checked />
+                <label class="payment-method__header" for="method-card">
+                  <span class="payment-method__title">
+                    <span class="payment-method__icon" aria-hidden="true">💳</span>
+                    信用卡
+                  </span>
+                  <span class="payment-method__summary">支援 Visa / Mastercard / JCB</span>
+                </label>
+                <div class="payment-method__panel" aria-live="polite">
+                  <div class="form-grid" aria-label="信用卡資訊">
+                    <label class="label" for="card-name">持卡人姓名</label>
+                    <input class="input" id="card-name" name="card-name" type="text" placeholder="YAMAMOTO MISAKI" />
+                    <div class="form-grid form-grid--two">
+                      <div>
+                        <label class="label" for="card-number">卡號</label>
+                        <input class="input" id="card-number" name="card-number" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" />
+                      </div>
+                      <div>
+                        <label class="label" for="card-exp">有效期限</label>
+                        <input class="input" id="card-exp" name="card-exp" type="text" placeholder="05 / 26" />
+                      </div>
+                    </div>
+                    <div class="form-grid form-grid--two">
+                      <div>
+                        <label class="label" for="card-cvc">安全碼</label>
+                        <input class="input" id="card-cvc" name="card-cvc" type="password" inputmode="numeric" placeholder="***" />
+                      </div>
+                      <div>
+                        <label class="label" for="card-zip">郵遞區號</label>
+                        <input class="input" id="card-zip" name="card-zip" type="text" inputmode="numeric" placeholder="1500001" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="note">※ 您填寫的內容將於金流合作夥伴的安全伺服器中處理。</p>
                 </div>
               </div>
-              <div class="form-grid form-grid--two">
-                <div>
-                  <label class="label" for="card-cvc">安全碼</label>
-                  <input class="input" id="card-cvc" name="card-cvc" type="password" inputmode="numeric" placeholder="***" />
-                </div>
-                <div>
-                  <label class="label" for="card-zip">郵遞區號</label>
-                  <input class="input" id="card-zip" name="card-zip" type="text" inputmode="numeric" placeholder="1500001" />
+              <div class="payment-method">
+                <input class="payment-method__radio" type="radio" name="payment-method" id="method-bank" />
+                <label class="payment-method__header" for="method-bank">
+                  <span class="payment-method__title">
+                    <span class="payment-method__icon" aria-hidden="true">🏦</span>
+                    銀行轉帳
+                  </span>
+                  <span class="payment-method__summary">下單後3日內完成匯款即可</span>
+                </label>
+                <div class="payment-method__panel">
+                  <p class="note">請於 3 個工作天內轉帳至下列帳戶，並於備註留下訂單編號以利對帳：</p>
+                  <div class="summary-list">
+                    <div class="summary-row">
+                      <span>銀行</span>
+                      <span>瑞穗銀行 澀谷支店（店號132）</span>
+                    </div>
+                    <div class="summary-row">
+                      <span>帳號</span>
+                      <span>普通 1234567</span>
+                    </div>
+                    <div class="summary-row">
+                      <span>戶名</span>
+                      <span>ヒカリアトリエ合同会社</span>
+                    </div>
+                  </div>
+                  <p class="note">※ 匯款完成後，我們將寄送信件通知安排出貨。</p>
                 </div>
               </div>
-              <p class="note">※ 您填寫的內容將於金流合作夥伴的安全伺服器中處理。</p>
+              <div class="payment-method">
+                <input class="payment-method__radio" type="radio" name="payment-method" id="method-mobile" />
+                <label class="payment-method__header" for="method-mobile">
+                  <span class="payment-method__title">
+                    <span class="payment-method__icon" aria-hidden="true">📱</span>
+                    行動支付
+                  </span>
+                  <span class="payment-method__summary">支援 Apple Pay、LINE Pay、PayPay</span>
+                </label>
+                <div class="payment-method__panel">
+                  <p class="note">選擇行動支付後，確認送出訂單即會引導至合作支付頁面完成交易。</p>
+                  <p class="note">※ 為確保交易順利，請事先確認您的裝置已綁定對應卡片或帳戶。</p>
+                </div>
+              </div>
             </form>
           </div>
           <div class="card">
