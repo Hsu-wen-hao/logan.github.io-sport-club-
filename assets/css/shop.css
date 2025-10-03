@@ -241,7 +241,7 @@ body {
   display: grid;
   gap: 18px;
   align-content: start;
-  max-width: 520px;
+  width: 100%;
 }
 
 .featured__title-bar {
@@ -539,10 +539,6 @@ body {
 @media (min-width: 960px) {
   .featured__header {
     grid-template-columns: minmax(0, 1fr);
-  }
-
-  .featured__intro {
-    max-width: 640px;
   }
 
   .featured__highlight {
