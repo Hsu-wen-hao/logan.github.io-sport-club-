@@ -235,6 +235,7 @@ body {
   align-items: start;
   grid-template-columns: minmax(0, 1fr);
   margin-bottom: clamp(28px, 3vw, 40px);
+  width: 100%;
 }
 
 .featured__intro {
@@ -268,7 +269,6 @@ body {
 .featured__highlight {
   height: auto;
   width: 100%;
-  max-width: 960px;
   justify-self: start;
 }
 
