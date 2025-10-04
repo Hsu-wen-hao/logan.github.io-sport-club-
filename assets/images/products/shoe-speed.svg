@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">網球鞋商品示意</title>
+  <desc id="desc">藍橘色漸層背景上的球鞋圖樣，建議替換為商品照片</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)" />
+  <path d="M140 290c30-70 120-120 230-120 80 0 150 40 190 120-40 80-120 120-220 120-130 0-200-70-200-120z" fill="#f8fafc" opacity="0.88" />
+  <path d="M210 240h260l-46 130h-240z" fill="#0f172a" opacity="0.35" />
+  <circle cx="240" cy="350" r="32" fill="#94a3b8" opacity="0.6" />
+  <circle cx="430" cy="350" r="36" fill="#cbd5f5" opacity="0.5" />
+  <text x="36" y="440" fill="rgba(226,232,240,0.8)" font-size="28" font-family="'Barlow', sans-serif">建議使用 640×480 網球鞋商品照片</text>
+</svg>

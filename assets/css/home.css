@@ -1,0 +1,742 @@
+.hero {
+  position: relative;
+  display: grid;
+  align-items: stretch;
+  min-height: clamp(560px, 78vh, 760px);
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+.hero__slides {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+  height: 100%;
+  min-height: inherit;
+  z-index: 1;
+}
+
+.hero-slide {
+  position: relative;
+  grid-area: 1 / 1;
+  display: grid;
+  align-items: center;
+  min-height: inherit;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero-slide__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.hero-slide__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(6, 11, 26, 0.2), rgba(6, 11, 26, 0.78));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Hero carousel placeholder建議使用 1920x1080px 的運動照片，可直接替換 img src */
+.hero-slide__media img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: saturate(1.1);
+}
+
+.hero-slide.is-active .hero-slide__media {
+  opacity: 1;
+}
+
+
+
+.hero-slide__inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(96px, 16vh, 160px) 0;
+}
+
+.hero-slide__content {
+  max-width: 640px;
+  width: min(100%, 640px);
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.hero-slide__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 2rem + 1.5vw, 3.4rem);
+}
+
+.hero-slide__text {
+  color: var(--color-muted-light);
+  margin: 0;
+}
+
+.hero-slide__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero__dots,
+.testimonial__dots {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.hero__dots button,
+.testimonial__dots button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero__dots button.is-active,
+.testimonial__dots button.is-active {
+  background: var(--color-accent);
+  transform: scale(1.1);
+}
+
+.partners {
+  background: var(--color-section);
+  padding: 28px 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.partner-list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-muted-light);
+}
+
+.feature-grid {
+  background: var(--color-section);
+}
+
+.feature-grid__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  display: grid;
+  gap: 16px;
+  min-height: 220px;
+  box-shadow: var(--shadow-card);
+}
+
+.feature-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--gradient-card);
+}
+
+.programs {
+  background: var(--color-background);
+}
+
+.programs__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.program-card {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-card);
+  box-shadow: var(--shadow-card);
+}
+
+.program-card__media {
+  /* 可用 640x420px 運動課程照片直接覆蓋 background-image */
+  background: linear-gradient(135deg, rgba(255, 95, 60, 0.65), rgba(15, 23, 42, 0.9));
+}
+
+.program-card__body {
+  padding: 28px;
+  display: grid;
+  gap: 12px;
+}
+
+.program-card__link {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+}
+
+.sports {
+  background: var(--color-section);
+}
+
+.sports__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.sports-card {
+  padding: 28px;
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  display: grid;
+  gap: 12px;
+}
+
+.stats {
+  background: var(--color-background);
+}
+
+.stats__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat {
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  display: grid;
+  gap: 8px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+
+.stat__value {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 1.4rem + 2vw, 3.4rem);
+  font-weight: 700;
+}
+
+.stat__label {
+  color: var(--color-muted-light);
+}
+
+.schedule {
+  background: var(--color-section);
+}
+
+.schedule__inner {
+  display: grid;
+  gap: 24px;
+}
+
+.schedule__table {
+  display: grid;
+  gap: 12px;
+}
+
+.schedule__row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  padding: 18px 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.schedule__row--head {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: var(--color-card-alt);
+}
+
+.gallery {
+  background: var(--color-background);
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.gallery__item {
+  border-radius: var(--radius-md);
+  min-height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery__item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(6, 11, 26, 0.05), rgba(6, 11, 26, 0.6));
+}
+
+.gallery__item--court {
+  background-image: linear-gradient(120deg, #ff7e5f, #1f2937);
+}
+
+.gallery__item--pool {
+  background-image: linear-gradient(135deg, #38bdf8, #0f172a);
+}
+
+.gallery__item--gym {
+  background-image: linear-gradient(135deg, #f97316, #111827);
+}
+
+.gallery__item--arena {
+  background-image: linear-gradient(135deg, #f43f5e, #1f2937);
+}
+
+.gallery__item--soccer {
+  background-image: linear-gradient(135deg, #34d399, #0f172a);
+}
+
+.gallery__item--lounge {
+  background-image: linear-gradient(135deg, #a855f7, #111827);
+}
+
+.plans {
+  background: var(--color-section);
+}
+
+.plans__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.plan-card {
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  display: grid;
+  gap: 16px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+
+.plan-card__price {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  margin: 0;
+}
+
+.plan-card__price span {
+  font-size: 1rem;
+  color: var(--color-muted-light);
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  color: var(--color-muted-light);
+}
+
+.plan-card--featured {
+  background: linear-gradient(135deg, rgba(255, 95, 60, 0.2), rgba(17, 24, 39, 0.98));
+  border: 1px solid rgba(255, 209, 102, 0.45);
+  transform: translateY(-6px);
+}
+
+.plan-card__badge {
+  font-size: 0.875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.coaches {
+  background: var(--color-background);
+}
+
+.coaches__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.coach-card {
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  display: grid;
+  gap: 16px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+
+.coach-card__avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+  border-radius: 32px;
+  background: var(--gradient-card);
+}
+
+.testimonials {
+  background: var(--color-section);
+}
+
+.testimonial-slider {
+  position: relative;
+  display: grid;
+  gap: 24px;
+  padding-bottom: 56px;
+}
+
+.testimonial-slider__viewport {
+  position: relative;
+  display: grid;
+  min-height: clamp(260px, 32vw, 340px);
+  isolation: isolate;
+}
+
+.testimonial {
+  grid-area: 1 / 1;
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  padding: clamp(28px, 4vw, 44px);
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.testimonial.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.testimonial__author {
+  color: var(--color-muted-light);
+}
+
+.news {
+  background: var(--color-background);
+}
+
+.news__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.news-card__media {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.news-card__body {
+  padding: 28px;
+  display: grid;
+  gap: 12px;
+}
+
+.news-card__date {
+  color: var(--color-muted-light);
+  font-size: 0.875rem;
+}
+
+.news-card__link {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+}
+
+.news-card__media--league {
+  background-image: linear-gradient(135deg, #f97316, #111827);
+}
+
+.news-card__media--clinic {
+  background-image: linear-gradient(135deg, #0ea5e9, #1e293b);
+}
+
+.news-card__media--community {
+  background-image: linear-gradient(135deg, #22d3ee, #0f172a);
+}
+
+.cta {
+  background: linear-gradient(120deg, rgba(255, 95, 60, 0.65), rgba(6, 11, 26, 0.95));
+}
+
+.cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.cta__copy {
+  max-width: 520px;
+  display: grid;
+  gap: 12px;
+}
+
+.contact {
+  background: var(--color-section);
+}
+
+.contact__inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.contact__form {
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  display: grid;
+  gap: 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.form-group {
+  display: grid;
+  gap: 8px;
+}
+
+input,
+select,
+textarea {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  color: #fff;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.site-footer {
+  background: #050a1a;
+  color: var(--color-muted-light);
+}
+
+.site-footer__top {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(2, 0.8fr) 1.1fr;
+  gap: 32px;
+  padding: 72px 0 48px;
+}
+
+.site-footer__top ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.site-footer__top h3 {
+  margin: 0 0 16px;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #fff;
+}
+
+.site-footer__newsletter form {
+  display: flex;
+  gap: 12px;
+}
+
+.site-footer__newsletter input {
+  flex: 1;
+}
+
+.site-footer__bottom {
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+  padding: 20px 0;
+}
+
+.site-footer__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.program-card__media--tennis {
+  background-image: linear-gradient(135deg, #38bdf8, #1f2937);
+}
+
+.program-card__media--basketball {
+  background-image: linear-gradient(135deg, #f97316, #111827);
+}
+
+.program-card__media--swim {
+  background-image: linear-gradient(135deg, #22d3ee, #0f172a);
+}
+
+.program-card__media--fitness {
+  background-image: linear-gradient(135deg, #a855f7, #111827);
+}
+
+.coach-card__avatar--tennis {
+  background-image: linear-gradient(135deg, #38bdf8, #1f2937);
+}
+
+.coach-card__avatar--basketball {
+  background-image: linear-gradient(135deg, #f97316, #111827);
+}
+
+.coach-card__avatar--swim {
+  background-image: linear-gradient(135deg, #0ea5e9, #1e293b);
+}
+
+.coach-card__avatar--soccer {
+  background-image: linear-gradient(135deg, #34d399, #0f172a);
+}
+
+@media (max-width: 1024px) {
+  .hero-slide__content {
+    max-width: 480px;
+  }
+
+  .cta__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__slides {
+    min-height: clamp(500px, 95vh, 680px);
+  }
+
+  .hero-slide {
+    min-height: auto;
+  }
+
+  .hero-slide__inner {
+    padding: clamp(120px, 28vh, 208px) 0 96px;
+    justify-content: center;
+  }
+
+  .hero-slide__content {
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .hero-slide__actions {
+    justify-content: center;
+  }
+
+  .partner-list {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    text-align: center;
+  }
+
+  .schedule__row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__top {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-slide__content {
+    gap: 16px;
+  }
+
+  .hero__dots,
+  .testimonial__dots {
+    bottom: 24px;
+  }
+
+  .program-card {
+    grid-template-rows: 180px 1fr;
+  }
+
+  .news-card__media {
+    height: 160px;
+  }
+}
