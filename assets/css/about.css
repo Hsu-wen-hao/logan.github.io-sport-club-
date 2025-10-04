@@ -4,12 +4,12 @@ body {
 }
 
 .site-header--plain {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
   z-index: 50;
-  box-shadow: 0 1px 0 rgba(133, 104, 89, 0.12);
+  box-shadow: 0 1px 0 rgba(20, 31, 49, 0.1);
 }
 
 .page-hero {
@@ -32,7 +32,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(245, 242, 232, 0.88), rgba(203, 27, 69, 0.26));
+  background: linear-gradient(120deg, rgba(24, 34, 50, 0.8), rgba(196, 160, 82, 0.28));
 }
 
 .page-hero__media img {
@@ -158,28 +158,28 @@ body {
   height: 96px;
   margin: 0 auto;
   border-radius: 32px;
-  background: linear-gradient(135deg, rgba(203, 27, 69, 0.22), rgba(221, 183, 160, 0.42));
+  background: linear-gradient(135deg, rgba(31, 43, 61, 0.26), rgba(196, 160, 82, 0.4));
 }
 
 .team-card__avatar--lead {
-  background-image: linear-gradient(135deg, #e16b8c, #fdede5);
+  background-image: linear-gradient(135deg, #2f3e52, #172233);
 }
 
 .team-card__avatar--coach {
-  background-image: linear-gradient(135deg, #7db9de, #fcfaf2);
+  background-image: linear-gradient(135deg, #1f3b4a, #11232d);
 }
 
 .team-card__avatar--performance {
-  background-image: linear-gradient(135deg, #a8d8b9, #fcfaf2);
+  background-image: linear-gradient(135deg, #23362d, #101b16);
 }
 
 .team-card__avatar--community {
-  background-image: linear-gradient(135deg, #bb8bce, #fcfaf2);
+  background-image: linear-gradient(135deg, #2e2f3f, #161a24);
 }
 
 .cta {
-  background: linear-gradient(120deg, rgba(203, 27, 69, 0.24), rgba(248, 181, 0, 0.42));
-  color: var(--color-ink);
+  background: linear-gradient(120deg, rgba(20, 31, 49, 0.9), rgba(196, 160, 82, 0.42));
+  color: #f7f6f2;
 }
 
 .cta__inner {

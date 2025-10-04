@@ -13,12 +13,12 @@ body {
 }
 
 .site-header--plain {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
   z-index: 50;
-  box-shadow: 0 1px 0 rgba(133, 104, 89, 0.12);
+  box-shadow: 0 1px 0 rgba(20, 31, 49, 0.1);
 }
 
 .hero.hero--shop {
@@ -72,7 +72,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(245, 242, 232, 0.88), rgba(203, 27, 69, 0.3));
+  background: linear-gradient(120deg, rgba(24, 34, 50, 0.82), rgba(196, 160, 82, 0.32));
   pointer-events: none;
   z-index: 1;
 }
@@ -148,7 +148,7 @@ body {
   height: 14px;
   border-radius: 50%;
   border: 0;
-  background: rgba(67, 61, 60, 0.22);
+  background: rgba(28, 36, 48, 0.28);
   cursor: pointer;
   transition: transform 0.2s ease, background 0.2s ease;
 }
@@ -205,19 +205,19 @@ body {
 }
 
 .category-card__media--racket {
-  background-image: linear-gradient(135deg, #7db9de, #fcfaf2);
+  background-image: linear-gradient(135deg, #28374c, #172233);
 }
 
 .category-card__media--shoe {
-  background-image: linear-gradient(135deg, #e16b8c, #fedfe1);
+  background-image: linear-gradient(135deg, #312936, #1a1521);
 }
 
 .category-card__media--apparel {
-  background-image: linear-gradient(135deg, #a69abd, #fcfaf2);
+  background-image: linear-gradient(135deg, #2d333f, #161b25);
 }
 
 .category-card__media--gear {
-  background-image: linear-gradient(135deg, #a8d8b9, #fcfaf2);
+  background-image: linear-gradient(135deg, #23362d, #101b16);
 }
 
 .category-card__body {
@@ -301,7 +301,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: clamp(18px, 2vw, 24px);
-  background: rgba(203, 27, 69, 0.12);
+  background: rgba(31, 43, 61, 0.12);
   min-height: 220px;
 }
 
@@ -348,7 +348,7 @@ body {
 .bundle-card__media {
   position: relative;
   margin: 0;
-  background: rgba(203, 27, 69, 0.12);
+  background: rgba(31, 43, 61, 0.12);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -440,11 +440,11 @@ body {
 }
 
 .promo-card--orange {
-  background: linear-gradient(135deg, rgba(203, 27, 69, 0.24), rgba(248, 181, 0, 0.4));
+  background: linear-gradient(135deg, rgba(31, 43, 61, 0.22), rgba(196, 160, 82, 0.4));
 }
 
 .promo-card--blue {
-  background: linear-gradient(135deg, rgba(125, 185, 222, 0.45), rgba(203, 27, 69, 0.2));
+  background: linear-gradient(135deg, rgba(46, 74, 94, 0.4), rgba(143, 153, 168, 0.28));
 }
 
 .brands {
@@ -482,7 +482,7 @@ body {
   position: relative;
   min-height: 320px;
   border-radius: var(--radius-lg);
-  background-image: linear-gradient(135deg, #a69abd, #fcfaf2);
+  background-image: linear-gradient(135deg, #2d3c4f, #161f2b);
   box-shadow: var(--shadow-card);
   overflow: hidden;
 }
@@ -505,8 +505,8 @@ body {
 }
 
 .newsletter {
-  background: linear-gradient(120deg, rgba(203, 27, 69, 0.22), rgba(248, 181, 0, 0.4));
-  color: var(--color-ink);
+  background: linear-gradient(120deg, rgba(20, 31, 49, 0.9), rgba(196, 160, 82, 0.4));
+  color: #f7f6f2;
 }
 
 .newsletter__inner {

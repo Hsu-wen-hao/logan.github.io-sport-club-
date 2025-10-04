@@ -1,20 +1,20 @@
 :root {
-  --color-primary: #cb1b45;
-  --color-primary-dark: #ba2636;
-  --color-accent: #f8b500;
-  --color-surface: #fcfaf2;
-  --color-surface-alt: #f5f2e8;
-  --color-muted: #856859;
-  --color-muted-light: #ddb7a0;
-  --color-border: rgba(133, 104, 89, 0.22);
-  --color-background: #fcfaf2;
-  --color-section: #dcd3b2;
-  --color-card: #fcfaf2;
-  --color-card-alt: #d9d6c3;
-  --color-highlight: rgba(203, 27, 69, 0.14);
-  --gradient-hero: linear-gradient(135deg, rgba(203, 27, 69, 0.22), rgba(252, 250, 242, 0.94));
-  --gradient-card: linear-gradient(160deg, rgba(221, 183, 160, 0.3), rgba(252, 250, 242, 0.96));
-  --color-ink: #434343;
+  --color-primary: #1f2b3d;
+  --color-primary-dark: #141d2b;
+  --color-accent: #c4a052;
+  --color-surface: #f5f6f4;
+  --color-surface-alt: #edeff1;
+  --color-muted: #5c6473;
+  --color-muted-light: #8f99a8;
+  --color-border: rgba(31, 43, 61, 0.16);
+  --color-background: #f5f6f4;
+  --color-section: #eaecf0;
+  --color-card: #ffffff;
+  --color-card-alt: #e3e6eb;
+  --color-highlight: rgba(196, 160, 82, 0.16);
+  --gradient-hero: linear-gradient(135deg, rgba(20, 31, 49, 0.78), rgba(245, 246, 244, 0.92));
+  --gradient-card: linear-gradient(150deg, rgba(31, 43, 61, 0.12), rgba(196, 160, 82, 0.22));
+  --color-ink: #1c2432;
   --font-base: 'Barlow', 'Noto Sans TC', sans-serif;
   --font-display: 'Rajdhani', 'Noto Sans TC', sans-serif;
   --container-width: min(1156px, 100% - 48px);
@@ -22,9 +22,9 @@
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 12px;
-  --shadow-soft: 0 24px 48px rgba(67, 61, 60, 0.16);
-  --shadow-card: 0 18px 36px rgba(67, 61, 60, 0.14);
-  --shadow-elevated: 0 28px 52px rgba(67, 61, 60, 0.18);
+  --shadow-soft: 0 24px 48px rgba(20, 31, 49, 0.18);
+  --shadow-card: 0 18px 36px rgba(20, 31, 49, 0.14);
+  --shadow-elevated: 0 28px 52px rgba(20, 31, 49, 0.2);
   color-scheme: light;
 }
 
