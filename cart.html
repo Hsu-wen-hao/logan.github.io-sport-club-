@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>購物車 | Hikari Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/checkout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="brand">
+          <span class="brand__symbol">光</span>
+          <div class="brand__title">Hikari Atelier</div>
+        </div>
+        <ol class="progress">
+          <li class="progress__step progress__step--current">
+            <span class="progress__index">1</span>
+            購物車
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">2</span>
+            確認訂單內容
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">3</span>
+            結帳
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">4</span>
+            完成
+          </li>
+        </ol>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="wrapper">
+          <h1>購物車</h1>
+          <p class="lead">
+            請從容挑選那些映著柔光的日常器物，您可隨時調整數量與款式。
+          </p>
+          <div class="card">
+            <table class="table" aria-label="購物車內容">
+              <thead>
+                <tr>
+                  <th scope="col">商品</th>
+                  <th scope="col">選項</th>
+                  <th scope="col">數量</th>
+                  <th scope="col">小計</th>
+                  <th scope="col" class="visually-hidden">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>櫻香護手霜</strong>
+                    <div class="note">柔和的花香與清爽的質地</div>
+                  </td>
+                  <td>櫻花 / 50g</td>
+                  <td>
+                    <div class="quantity-control" role="group" aria-label="櫻香護手霜 數量">
+                      <button type="button" aria-label="減少數量">−</button>
+                      <input type="number" value="2" min="1" inputmode="numeric" aria-live="polite" />
+                      <button type="button" aria-label="增加數量">＋</button>
+                    </div>
+                  </td>
+                  <td>¥3,960</td>
+                  <td class="product-actions">
+                    <a class="remove-link" href="#" aria-label="移除櫻香護手霜">
+                      <span aria-hidden="true">✕</span>
+                      移除
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>透花馬克杯</strong>
+                    <div class="note">手作釉藥映襯出輕巧杯身</div>
+                  </td>
+                  <td>霧青</td>
+                  <td>
+                    <div class="quantity-control" role="group" aria-label="透花馬克杯 數量">
+                      <button type="button" aria-label="減少數量">−</button>
+                      <input type="number" value="1" min="1" inputmode="numeric" aria-live="polite" />
+                      <button type="button" aria-label="增加數量">＋</button>
+                    </div>
+                  </td>
+                  <td>¥2,860</td>
+                  <td class="product-actions">
+                    <a class="remove-link" href="#" aria-label="移除透花馬克杯">
+                      <span aria-hidden="true">✕</span>
+                      移除
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="summary-list">
+              <div class="summary-row">
+                <span>小計</span>
+                <span>¥6,820</span>
+              </div>
+              <div class="summary-row">
+                <span>運費</span>
+                <span>¥550</span>
+              </div>
+              <div class="summary-row">
+                <span>折價卷</span>
+                <span>−¥0</span>
+              </div>
+              <div class="summary-row summary-row--total">
+                <span>合計</span>
+                <span>¥7,370</span>
+              </div>
+            </div>
+            <form class="coupon-form" aria-label="折價卷">
+              <label for="coupon-code">擁有折價卷嗎？</label>
+              <div class="coupon-inputs">
+                <input
+                  class="input"
+                  id="coupon-code"
+                  name="coupon-code"
+                  type="text"
+                  placeholder="輸入折扣代碼"
+                  autocomplete="off"
+                />
+                <button class="btn btn--ghost" type="submit">套用折扣</button>
+              </div>
+              <p class="note">※ 善用折扣代碼，讓美好生活更貼近日常。</p>
+            </form>
+            <div class="actions">
+              <a class="btn btn--ghost" href="index.html">繼續購物</a>
+              <a class="btn btn--primary" href="order-confirmation.html">前往確認訂單</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">&copy; 2024 Hikari Atelier. 為您送上溫柔的生活風景。</div>
+    </footer>
+  </body>
+</html>
