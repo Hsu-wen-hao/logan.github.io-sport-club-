@@ -1,19 +1,19 @@
 :root {
-  --color-primary: #ff5f3c;
-  --color-primary-dark: #e14c2b;
-  --color-accent: #ffd166;
+  --color-primary: #d1495b;
+  --color-primary-dark: #b13b48;
+  --color-accent: #e8a75d;
   --color-surface: #ffffff;
-  --color-surface-alt: #0c1324;
-  --color-muted: #64748b;
-  --color-muted-light: #94a3b8;
-  --color-border: rgba(255, 255, 255, 0.16);
-  --color-background: #060b1a;
-  --color-section: #0f172a;
-  --color-card: #101a32;
-  --color-card-alt: #13203a;
-  --color-highlight: rgba(255, 209, 102, 0.08);
-  --gradient-hero: linear-gradient(135deg, rgba(255, 95, 60, 0.9), rgba(6, 11, 26, 0.92));
-  --gradient-card: linear-gradient(160deg, rgba(255, 95, 60, 0.18), rgba(6, 11, 26, 0.8));
+  --color-surface-alt: #f5ede1;
+  --color-muted: #6f7783;
+  --color-muted-light: #99a4b1;
+  --color-border: rgba(53, 68, 83, 0.16);
+  --color-background: #f7f2eb;
+  --color-section: #f2ece4;
+  --color-card: #ffffff;
+  --color-card-alt: #f9f5ef;
+  --color-highlight: rgba(209, 73, 91, 0.12);
+  --gradient-hero: linear-gradient(135deg, rgba(209, 73, 91, 0.25), rgba(255, 255, 255, 0.92));
+  --gradient-card: linear-gradient(160deg, rgba(232, 167, 93, 0.16), rgba(255, 255, 255, 0.96));
   --font-base: 'Barlow', 'Noto Sans TC', sans-serif;
   --font-display: 'Rajdhani', 'Noto Sans TC', sans-serif;
   --container-width: min(1156px, 100% - 48px);
@@ -21,9 +21,9 @@
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 12px;
-  --shadow-soft: 0 20px 60px rgba(4, 9, 20, 0.35);
-  --shadow-card: 0 12px 40px rgba(4, 9, 20, 0.25);
-  color-scheme: dark light;
+  --shadow-soft: 0 24px 48px rgba(62, 70, 85, 0.16);
+  --shadow-card: 0 18px 36px rgba(62, 70, 85, 0.14);
+  color-scheme: light;
 }
 
 * {
@@ -40,7 +40,7 @@ body {
   margin: 0;
   font-family: var(--font-base);
   background-color: var(--color-background);
-  color: #f8fafc;
+  color: #2f2a26;
   line-height: 1.6;
 }
 
@@ -51,7 +51,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 img,
@@ -85,7 +85,7 @@ section {
   left: -999px;
   top: 16px;
   background: var(--color-accent);
-  color: #0f172a;
+  color: #2f2a26;
   padding: 12px 18px;
   border-radius: 999px;
   font-weight: 600;
