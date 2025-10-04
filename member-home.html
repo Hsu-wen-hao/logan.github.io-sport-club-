@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>會員中心｜動能運動俱樂部</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/member.css" />
+  </head>
+  <body class="page-member" data-page="member">
+    <a class="skip-link" href="#main">跳至主要內容</a>
+
+    <header class="site-header site-header--plain" aria-label="主要導覽">
+      <div class="wrapper site-header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__mark">MC</span>
+          <span class="brand__text">動能運動俱樂部</span>
+        </a>
+        <nav class="site-nav" aria-label="主選單">
+          <button class="site-nav__toggle" aria-expanded="false" aria-controls="primary-nav">選單</button>
+          <ul id="primary-nav" class="site-nav__list">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="shop.html">商店</a></li>
+            <li><a href="index.html#programs">訓練課程</a></li>
+            <li><a href="index.html#memberships">會員方案</a></li>
+            <li><a href="index.html#contact">聯絡我們</a></li>
+            <li class="nav-auth nav-auth--guest" data-auth="guest"><a href="login.html">會員登入</a></li>
+            <li class="nav-auth nav-auth--guest" data-auth="guest"><a href="register.html">加入會員</a></li>
+            <li class="nav-auth nav-auth--member" data-auth="member" hidden><a href="member-home.html" aria-current="page">會員中心</a></li>
+            <li class="nav-auth nav-auth--member" data-auth="member" hidden>
+              <a class="nav-logout" href="#" data-action="logout">登出</a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="btn btn--accent"
+          href="index.html#programs"
+          data-auth-cta
+          data-guest-text="預約體驗"
+          data-guest-href="index.html#memberships"
+          data-member-text="預約課程"
+          data-member-href="index.html#schedule"
+        >
+          預約課程
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="dashboard-hero" aria-label="會員歡迎">
+        <div class="wrapper dashboard-hero__inner">
+          <span class="eyebrow">會員中心</span>
+          <h1>歡迎回來，<span data-member-name>動能會員</span>！</h1>
+          <p>
+            這裡彙整你的課程安排、教練建議與商城優惠，讓你專注在下一次的極限突破。保持熱血，我們與你並肩前進。
+          </p>
+          <div class="dashboard-hero__meta">
+            <span>主要項目：<strong data-member-sport>尚未設定</strong></span>
+            <span>會員方案：<strong data-member-plan>一般會員</strong></span>
+            <span>加入日期：<strong data-member-join-date>--</strong></span>
+          </div>
+          <p class="dashboard-hero__goal" data-member-goal>註冊時尚未填寫訓練目標，歡迎與教練討論設定。</p>
+          <div class="dashboard-hero__actions">
+            <a class="btn btn--primary" href="index.html#schedule">查看課程表</a>
+            <a class="btn btn--ghost" href="shop.html#offers">前往網球專門店</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-section" aria-label="會員狀態">
+        <div class="wrapper">
+          <div class="dashboard-head">
+            <div>
+              <span class="eyebrow">會員總覽</span>
+              <h2 class="section-title">個人狀態摘要</h2>
+            </div>
+            <p>依據你的註冊資料產生，若需調整請聯繫教練或客服協助更新。</p>
+          </div>
+          <div class="stat-grid">
+            <article class="stat-card">
+              <h3>目前方案</h3>
+              <strong data-member-plan>一般會員</strong>
+              <p>對應於會員方案區的權益與課程折扣。</p>
+            </article>
+            <article class="stat-card">
+              <h3>主要項目</h3>
+              <strong data-member-sport>尚未設定</strong>
+              <p>教練團隊會依據此項目安排專屬訓練內容。</p>
+            </article>
+            <article class="stat-card">
+              <h3>加入天數</h3>
+              <strong><span data-member-days>0</span> 天</strong>
+              <p>從註冊日起算，定期回顧進步軌跡。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-section dashboard-section--alt" aria-label="快速操作">
+        <div class="wrapper">
+          <div class="dashboard-head">
+            <div>
+              <span class="eyebrow">行動捷徑</span>
+              <h2 class="section-title">立即開啟下一步訓練</h2>
+            </div>
+            <p>以下連結協助你快速預約課程、檢視教練建議與補足訓練裝備。</p>
+          </div>
+          <div class="dashboard-actions__grid">
+            <article class="action-card">
+              <h3>預約專屬教練</h3>
+              <p>與教練討論訓練目標與週期安排，制定下一階段課表。</p>
+              <a href="index.html#contact">聯絡顧問</a>
+            </article>
+            <article class="action-card">
+              <h3>檢視訓練課程</h3>
+              <p>查看跨項課程時間，選擇最符合你行程的團體或個別訓練。</p>
+              <a href="index.html#programs">探索課程</a>
+            </article>
+            <article class="action-card">
+              <h3>補齊運動裝備</h3>
+              <p>前往網球專門店挑選器材與配件，會員享有專屬折扣。</p>
+              <a href="shop.html#offers">前往商店</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-section" aria-label="近期行程">
+        <div class="wrapper">
+          <div class="dashboard-head">
+            <div>
+              <span class="eyebrow">近期安排</span>
+              <h2 class="section-title">本週訓練與活動</h2>
+            </div>
+            <p>依照你的主要項目建議，以下是近期推薦參與的課程與活動。</p>
+          </div>
+          <div class="schedule-grid">
+            <article class="schedule-card">
+              <header>
+                <time datetime="2024-07-18">7/18（四）</time>
+                <h3>專項技術強化課程</h3>
+              </header>
+              <p>針對你的主要項目 <strong data-member-sport>尚未設定</strong> 進行動作拆解與實戰模擬。</p>
+              <ul>
+                <li>60 分鐘技術訓練</li>
+                <li>15 分鐘動態伸展</li>
+                <li>課後教練回饋</li>
+              </ul>
+            </article>
+            <article class="schedule-card">
+              <header>
+                <time datetime="2024-07-20">7/20（六）</time>
+                <h3>體能與恢復循環</h3>
+              </header>
+              <p>搭配恢復設備與營養建議，維持最佳比賽狀態。</p>
+              <ul>
+                <li>體能訓練 45 分鐘</li>
+                <li>冰熱交替池 20 分鐘</li>
+                <li>營養師行前諮詢</li>
+              </ul>
+            </article>
+            <article class="schedule-card">
+              <header>
+                <time datetime="2024-07-23">7/23（二）</time>
+                <h3>會員交流賽與講座</h3>
+              </header>
+              <p>與俱樂部夥伴進行友誼賽並聆聽教練分享最新戰術趨勢。</p>
+              <ul>
+                <li>社群混合賽 90 分鐘</li>
+                <li>教練戰術講座</li>
+                <li>專屬會員茶敘</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-section dashboard-section--alt" aria-label="最新公告">
+        <div class="wrapper">
+          <div class="dashboard-head">
+            <div>
+              <span class="eyebrow">最新公告</span>
+              <h2 class="section-title">掌握俱樂部動態</h2>
+            </div>
+            <p>不錯過任何賽事資訊與會員專屬福利，持續放大你的運動效能。</p>
+          </div>
+          <div class="dashboard-updates">
+            <article class="update-card">
+              <h3>夏季會員挑戰賽報名開跑</h3>
+              <p>報名期間至 8/5 止，依主要項目分組競賽，冠軍可獲得專屬訓練套票。</p>
+            </article>
+            <article class="update-card">
+              <h3>專屬裝備升級方案</h3>
+              <p>持會員身份至網球專門店選購球拍與鞋款，可享 9 折優惠並提供免費穿線一次。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="頁尾">
+      <div class="wrapper site-footer__bottom-inner">
+        <span>© 2024 動能運動俱樂部 Motion Club. All rights reserved.</span>
+        <ul class="social-list">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="assets/js/global.js" defer></script>
+  </body>
+</html>

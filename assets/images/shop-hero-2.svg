@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">網球運動品牌牆示意</title>
+  <desc id="desc">深藍漸層背景搭配品牌徽章與網球線條，建議替換為 1600×900 網球品牌照片</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <g fill="none" stroke="#bae6fd" stroke-width="10" opacity="0.5">
+    <circle cx="420" cy="320" r="120" />
+    <circle cx="780" cy="520" r="220" />
+    <circle cx="1180" cy="300" r="140" />
+  </g>
+  <g fill="#facc15" opacity="0.6">
+    <circle cx="580" cy="360" r="44" />
+    <circle cx="960" cy="500" r="56" />
+    <circle cx="1320" cy="340" r="40" />
+  </g>
+  <path d="M260 720h1080" stroke="#38bdf8" stroke-width="18" stroke-linecap="round" opacity="0.65" />
+  <text x="120" y="840" fill="rgba(226,232,240,0.8)" font-size="56" font-family="'Barlow', sans-serif">
+    建議以 1600 × 900px 品牌或門市照片替換
+  </text>
+</svg>

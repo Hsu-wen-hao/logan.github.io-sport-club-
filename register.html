@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>加入會員｜動能運動俱樂部註冊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/auth.css" />
+  </head>
+  <body class="auth-page" data-page="register">
+    <a class="skip-link" href="#main">跳至主要內容</a>
+
+    <header class="site-header site-header--plain" aria-label="主要導覽">
+      <div class="wrapper site-header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__mark">MC</span>
+          <span class="brand__text">動能運動俱樂部</span>
+        </a>
+        <nav class="site-nav" aria-label="主選單">
+          <button class="site-nav__toggle" aria-expanded="false" aria-controls="primary-nav">選單</button>
+          <ul id="primary-nav" class="site-nav__list">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="shop.html">商店</a></li>
+            <li><a href="index.html#programs">訓練課程</a></li>
+            <li><a href="index.html#memberships">會員方案</a></li>
+            <li><a href="index.html#contact">聯絡我們</a></li>
+            <li class="nav-auth nav-auth--guest" data-auth="guest"><a href="login.html">會員登入</a></li>
+            <li class="nav-auth nav-auth--guest" data-auth="guest"><a href="register.html" aria-current="page">加入會員</a></li>
+            <li class="nav-auth nav-auth--member" data-auth="member" hidden><a href="member-home.html">會員中心</a></li>
+            <li class="nav-auth nav-auth--member" data-auth="member" hidden>
+              <a class="nav-logout" href="#" data-action="logout">登出</a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="btn btn--accent"
+          href="login.html"
+          data-auth-cta
+          data-guest-text="立即登入"
+          data-guest-href="login.html"
+          data-member-text="會員中心"
+          data-member-href="member-home.html"
+        >
+          立即登入
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="auth-hero" aria-label="註冊會員">
+        <div class="wrapper auth-hero__inner">
+          <div class="auth-hero__content">
+            <span class="eyebrow">加入動能</span>
+            <h1>成為俱樂部會員，開啟專屬運動旅程</h1>
+            <p>
+              註冊會員後即可預約多元課程、追蹤訓練進度並享有專屬賽事與商店優惠。只需幾個步驟，立刻加入動能運動社群。
+            </p>
+            <div class="auth-hero__meta">
+              <span>・專屬教練線上諮詢</span>
+              <span>・跨項課程彈性預約</span>
+              <span>・商城消費回饋 5%</span>
+            </div>
+            <div class="auth-summary">
+              <strong>圖片建議尺寸：</strong>
+              <span>若要更換為運動照片，建議使用 1200×800 px，JPG 或 PNG 格式。</span>
+            </div>
+          </div>
+          <div class="auth-card">
+            <div>
+              <h2>建立會員帳號</h2>
+              <p>完成註冊後即可登入會員中心管理課程與個人資料。</p>
+            </div>
+            <form data-auth-form="register" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="field-label" for="register-name">姓名</label>
+                  <input id="register-name" name="fullName" type="text" placeholder="請輸入中文或英文姓名" required />
+                </div>
+                <div class="form-group">
+                  <label class="field-label" for="register-email">Email</label>
+                  <input id="register-email" name="email" type="email" placeholder="name@example.com" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="field-label" for="register-password">設定密碼</label>
+                  <input
+                    id="register-password"
+                    name="password"
+                    type="password"
+                    placeholder="至少 6 碼，包含英文與數字"
+                    minlength="6"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="field-label" for="register-confirm">確認密碼</label>
+                  <input
+                    id="register-confirm"
+                    name="confirmPassword"
+                    type="password"
+                    placeholder="請再次輸入密碼"
+                    minlength="6"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="field-label" for="register-sport">主要訓練項目</label>
+                  <select id="register-sport" name="sport" required>
+                    <option value="">請選擇</option>
+                    <option value="網球">網球</option>
+                    <option value="籃球">籃球</option>
+                    <option value="羽球">羽球</option>
+                    <option value="游泳">游泳</option>
+                    <option value="體能訓練">體能訓練</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="field-label" for="register-plan">偏好方案</label>
+                  <select id="register-plan" name="plan" required>
+                    <option value="">請選擇</option>
+                    <option value="月繳制">月繳制</option>
+                    <option value="季度制">季度制</option>
+                    <option value="年繳制">年繳制</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="field-label" for="register-goal">訓練目標（選填）</label>
+                <textarea id="register-goal" name="goal" rows="3" placeholder="如：提升發球速度、備戰鐵人三項等"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="field-checkbox" for="register-terms">
+                  <input id="register-terms" name="terms" type="checkbox" value="agree" required />
+                  <span>我已閱讀並同意俱樂部會員條款與個資保護政策。</span>
+                </label>
+              </div>
+              <p class="form-note">註冊資料可於會員中心再次編輯與更新。</p>
+              <p class="form-message" data-form-message aria-live="polite" hidden></p>
+              <button class="btn btn--primary" type="submit">完成註冊</button>
+            </form>
+            <div class="auth-links">
+              <span>已經有帳號？</span>
+              <a href="login.html">立即登入</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="auth-benefits" aria-label="會員專屬服務">
+        <div class="wrapper auth-benefits__inner">
+          <div class="section-head">
+            <span class="eyebrow">會員服務</span>
+            <h2 class="section-title">註冊後即可解鎖的三大特權</h2>
+          </div>
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <h3>個人化訓練計畫</h3>
+              <p>依據你的運動目標與週期，教練團隊將為你建立週週更新的訓練藍圖。</p>
+            </article>
+            <article class="benefit-card">
+              <h3>場館與課程快速預約</h3>
+              <p>透過會員中心即可預約跨項課程、場地與恢復設備，並查看即時候補狀態。</p>
+            </article>
+            <article class="benefit-card">
+              <h3>商城與賽事優先權</h3>
+              <p>會員享有專屬折扣、贈品兌換與俱樂部聯賽優先報名資格，精彩活動不錯過。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="頁尾">
+      <div class="wrapper site-footer__bottom-inner">
+        <span>© 2024 動能運動俱樂部 Motion Club. All rights reserved.</span>
+        <ul class="social-list">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="assets/js/global.js" defer></script>
+  </body>
+</html>
