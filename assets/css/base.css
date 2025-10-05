@@ -1,19 +1,20 @@
 :root {
-  --color-primary: #ff5f3c;
-  --color-primary-dark: #e14c2b;
-  --color-accent: #ffd166;
-  --color-surface: #ffffff;
-  --color-surface-alt: #0c1324;
-  --color-muted: #64748b;
-  --color-muted-light: #94a3b8;
-  --color-border: rgba(255, 255, 255, 0.16);
-  --color-background: #060b1a;
-  --color-section: #0f172a;
-  --color-card: #101a32;
-  --color-card-alt: #13203a;
-  --color-highlight: rgba(255, 209, 102, 0.08);
-  --gradient-hero: linear-gradient(135deg, rgba(255, 95, 60, 0.9), rgba(6, 11, 26, 0.92));
-  --gradient-card: linear-gradient(160deg, rgba(255, 95, 60, 0.18), rgba(6, 11, 26, 0.8));
+  --color-primary: #1f2b3d;
+  --color-primary-dark: #141d2b;
+  --color-accent: #c4a052;
+  --color-surface: #f5f6f4;
+  --color-surface-alt: #edeff1;
+  --color-muted: #5c6473;
+  --color-muted-light: #8f99a8;
+  --color-border: rgba(31, 43, 61, 0.16);
+  --color-background: #f5f6f4;
+  --color-section: #eaecf0;
+  --color-card: #ffffff;
+  --color-card-alt: #e3e6eb;
+  --color-highlight: rgba(196, 160, 82, 0.16);
+  --gradient-hero: linear-gradient(135deg, rgba(20, 31, 49, 0.78), rgba(245, 246, 244, 0.92));
+  --gradient-card: linear-gradient(150deg, rgba(31, 43, 61, 0.12), rgba(196, 160, 82, 0.22));
+  --color-ink: #1c2432;
   --font-base: 'Barlow', 'Noto Sans TC', sans-serif;
   --font-display: 'Rajdhani', 'Noto Sans TC', sans-serif;
   --container-width: min(1156px, 100% - 48px);
@@ -21,9 +22,10 @@
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 12px;
-  --shadow-soft: 0 20px 60px rgba(4, 9, 20, 0.35);
-  --shadow-card: 0 12px 40px rgba(4, 9, 20, 0.25);
-  color-scheme: dark light;
+  --shadow-soft: 0 24px 48px rgba(20, 31, 49, 0.18);
+  --shadow-card: 0 18px 36px rgba(20, 31, 49, 0.14);
+  --shadow-elevated: 0 28px 52px rgba(20, 31, 49, 0.2);
+  color-scheme: light;
 }
 
 * {
@@ -40,7 +42,7 @@ body {
   margin: 0;
   font-family: var(--font-base);
   background-color: var(--color-background);
-  color: #f8fafc;
+  color: var(--color-ink);
   line-height: 1.6;
 }
 
@@ -51,7 +53,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 img,
@@ -85,7 +87,7 @@ section {
   left: -999px;
   top: 16px;
   background: var(--color-accent);
-  color: #0f172a;
+  color: var(--color-ink);
   padding: 12px 18px;
   border-radius: 999px;
   font-weight: 600;
