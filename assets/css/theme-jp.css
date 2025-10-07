@@ -1,0 +1,201 @@
+html.theme-jp {
+  --color-primary: #d76b6b;
+  --color-primary-dark: #c65959;
+  --color-accent: #f2b880;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f6efe6;
+  --color-muted: #81766c;
+  --color-muted-light: #b3a89f;
+  --color-border: rgba(121, 108, 96, 0.22);
+  --color-background: #f7f4ef;
+  --color-section: #f0ede6;
+  --color-card: #fffaf4;
+  --color-card-alt: #f5ece1;
+  --color-highlight: rgba(242, 184, 128, 0.18);
+  --gradient-hero: linear-gradient(135deg, rgba(215, 107, 107, 0.55), rgba(255, 255, 255, 0.9));
+  --gradient-card: linear-gradient(160deg, rgba(215, 107, 107, 0.18), rgba(255, 255, 255, 0.85));
+  color-scheme: only light;
+  background-color: var(--color-background);
+}
+
+html.theme-jp body {
+  background-color: var(--color-background);
+  color: #2b2622;
+}
+
+html.theme-jp .topbar {
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(209, 196, 182, 0.7);
+  color: #695d53;
+}
+
+html.theme-jp .topbar a:hover,
+html.theme-jp .topbar a:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .site-header {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid rgba(209, 196, 182, 0.7);
+  color: #43372d;
+}
+
+html.theme-jp .site-header--plain {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+html.theme-jp .brand__mark {
+  background: linear-gradient(135deg, rgba(215, 107, 107, 0.65), rgba(239, 212, 179, 0.95));
+  color: #55392c;
+}
+
+html.theme-jp .site-nav__list a:hover,
+html.theme-jp .site-nav__list a:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .site-header__actions {
+  color: inherit;
+}
+
+html.theme-jp .theme-switch {
+  border-color: rgba(209, 196, 182, 0.9);
+  background: rgba(255, 255, 255, 0.8);
+  color: #6c5a4c;
+}
+
+html.theme-jp .theme-switch:hover,
+html.theme-jp .theme-switch:focus {
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+
+html.theme-jp .header-cart {
+  border-color: rgba(209, 196, 182, 0.9);
+  background: rgba(255, 255, 255, 0.92);
+  color: #6c5a4c;
+}
+
+html.theme-jp .header-cart:hover,
+html.theme-jp .header-cart:focus {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+html.theme-jp .btn--primary {
+  background: linear-gradient(135deg, #d76b6b, #f2b880);
+  color: #fffaf4;
+}
+
+html.theme-jp .btn--primary:hover,
+html.theme-jp .btn--primary:focus {
+  background: linear-gradient(135deg, #c65959, #ec9d62);
+}
+
+html.theme-jp .btn--accent {
+  background: rgba(242, 184, 128, 0.95);
+  color: #3a3129;
+}
+
+html.theme-jp .btn--accent:hover,
+html.theme-jp .btn--accent:focus {
+  background: rgba(236, 157, 98, 0.95);
+  color: #fff;
+}
+
+html.theme-jp .btn--ghost {
+  border-color: rgba(215, 107, 107, 0.45);
+  color: #a46363;
+}
+
+html.theme-jp .btn--ghost:hover,
+html.theme-jp .btn--ghost:focus {
+  border-color: rgba(198, 89, 89, 0.7);
+  color: #c65959;
+}
+
+html.theme-jp .section-head .section-title,
+html.theme-jp h1,
+html.theme-jp h2,
+html.theme-jp h3,
+html.theme-jp h4,
+html.theme-jp h5,
+html.theme-jp h6 {
+  color: #3b312b;
+}
+
+html.theme-jp .footer {
+  background: rgba(255, 255, 255, 0.92);
+  border-top: 1px solid rgba(209, 196, 182, 0.7);
+  color: #6c5a4c;
+}
+
+html.theme-jp .footer a:hover,
+html.theme-jp .footer a:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .image-note {
+  background: rgba(239, 212, 179, 0.82);
+  color: #5b4c42;
+}
+
+html.theme-jp .breadcrumb__link {
+  color: #6c5a4c;
+}
+
+html.theme-jp .breadcrumb__link:hover,
+html.theme-jp .breadcrumb__link:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .card,
+html.theme-jp .category-card,
+html.theme-jp .promo-card,
+html.theme-jp .plan-card,
+html.theme-jp .faq-item,
+html.theme-jp .cart-item {
+  background: var(--color-card);
+  box-shadow: 0 12px 32px rgba(115, 101, 89, 0.12);
+  color: inherit;
+}
+
+html.theme-jp .cart-summary,
+html.theme-jp .checkout-panel,
+html.theme-jp .order-panel,
+html.theme-jp .form-card {
+  background: var(--color-card);
+  box-shadow: 0 18px 48px rgba(115, 101, 89, 0.12);
+}
+
+html.theme-jp table {
+  background: var(--color-card);
+}
+
+html.theme-jp .form-field input,
+html.theme-jp .form-field select,
+html.theme-jp .form-field textarea {
+  border-color: rgba(209, 196, 182, 0.7);
+  background: rgba(255, 255, 255, 0.95);
+  color: inherit;
+}
+
+html.theme-jp .form-field input:focus,
+html.theme-jp .form-field select:focus,
+html.theme-jp .form-field textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(215, 107, 107, 0.15);
+}
+
+html.theme-jp .timeline__item::before {
+  background: #e0d6cb;
+}
+
+html.theme-jp .timeline__item::after {
+  border-color: #e0d6cb;
+}
+
+html.theme-jp .badge {
+  background: rgba(215, 107, 107, 0.18);
+  color: #a46363;
+}

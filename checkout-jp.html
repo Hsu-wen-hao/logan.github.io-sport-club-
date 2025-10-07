@@ -3,23 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>結帳 | Motion Club Store</title>
+    <title>結帳 | Hikari Atelier（日系版）</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/checkout.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/checkout-jp.css" />
   </head>
   <body>
     <header>
       <div class="wrapper">
         <div class="brand">
-          <span class="brand__symbol">MC</span>
-          <div class="brand__title">Motion Club Store</div>
+          <span class="brand__symbol">光</span>
+          <div class="brand__title">Hikari Atelier</div>
         </div>
-        <a class="theme-switch" href="checkout-jp.html" aria-label="切換至日系配色版本">日系版</a>
+        <a class="theme-switch" href="checkout.html" aria-label="回到標準視覺版本">標準版</a>
         <ol class="progress">
           <li class="progress__step">
             <span class="progress__index">1</span>
@@ -45,7 +42,7 @@
         <div class="wrapper">
           <h1>選擇付款方式</h1>
           <p class="lead">
-            Motion Club 使用符合 PCI-DSS 的金流服務，卡片與帳戶資訊皆以加密傳輸，請安心填寫。
+            為守護您的安心，卡片資訊將以加密方式傳送，請放心慢慢填寫。
           </p>
           <div class="card">
             <h2>付款方式</h2>
@@ -62,15 +59,15 @@
                 <div class="payment-method__panel" aria-live="polite">
                   <div class="form-grid" aria-label="信用卡資訊">
                     <label class="label" for="card-name">持卡人姓名</label>
-                    <input class="input" id="card-name" name="card-name" type="text" placeholder="CHEN KUAN YU" />
+                    <input class="input" id="card-name" name="card-name" type="text" placeholder="YAMAMOTO MISAKI" />
                     <div class="form-grid form-grid--two">
                       <div>
                         <label class="label" for="card-number">卡號</label>
-                        <input class="input" id="card-number" name="card-number" type="text" inputmode="numeric" placeholder="4312 5678 9012 3456" />
+                        <input class="input" id="card-number" name="card-number" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" />
                       </div>
                       <div>
                         <label class="label" for="card-exp">有效期限</label>
-                        <input class="input" id="card-exp" name="card-exp" type="text" placeholder="07 / 27" />
+                        <input class="input" id="card-exp" name="card-exp" type="text" placeholder="05 / 26" />
                       </div>
                     </div>
                     <div class="form-grid form-grid--two">
@@ -80,11 +77,11 @@
                       </div>
                       <div>
                         <label class="label" for="card-zip">郵遞區號</label>
-                        <input class="input" id="card-zip" name="card-zip" type="text" inputmode="numeric" placeholder="110" />
+                        <input class="input" id="card-zip" name="card-zip" type="text" inputmode="numeric" placeholder="1500001" />
                       </div>
                     </div>
                   </div>
-                  <p class="note">※ 卡片驗證將於合作銀行的安全伺服器進行，Motion Club 不會儲存完整卡號。</p>
+                  <p class="note">※ 您填寫的內容將於金流合作夥伴的安全伺服器中處理。</p>
                 </div>
               </div>
               <div class="payment-method">
@@ -94,25 +91,25 @@
                     <span class="payment-method__icon" aria-hidden="true">🏦</span>
                     銀行轉帳
                   </span>
-                  <span class="payment-method__summary">下單後 3 日內完成匯款即可</span>
+                  <span class="payment-method__summary">下單後3日內完成匯款即可</span>
                 </label>
                 <div class="payment-method__panel">
                   <p class="note">請於 3 個工作天內轉帳至下列帳戶，並於備註留下訂單編號以利對帳：</p>
                   <div class="summary-list">
                     <div class="summary-row">
                       <span>銀行</span>
-                      <span>臺灣銀行 信義分行（代碼 004）</span>
+                      <span>瑞穗銀行 澀谷支店（店號132）</span>
                     </div>
                     <div class="summary-row">
                       <span>帳號</span>
-                      <span>123456789012</span>
+                      <span>普通 1234567</span>
                     </div>
                     <div class="summary-row">
                       <span>戶名</span>
-                      <span>動能運動股份有限公司</span>
+                      <span>ヒカリアトリエ合同会社</span>
                     </div>
                   </div>
-                  <p class="note">※ 匯款完成後將以電子郵件與簡訊同步通知出貨時程。</p>
+                  <p class="note">※ 匯款完成後，我們將寄送信件通知安排出貨。</p>
                 </div>
               </div>
               <div class="payment-method">
@@ -126,7 +123,7 @@
                 </label>
                 <div class="payment-method__panel">
                   <p class="note">選擇行動支付後，確認送出訂單即會引導至合作支付頁面完成交易。</p>
-                  <p class="note">※ 建議於付款前確認裝置網路穩定並已綁定指定帳戶。</p>
+                  <p class="note">※ 為確保交易順利，請事先確認您的裝置已綁定對應卡片或帳戶。</p>
                 </div>
               </div>
             </form>
@@ -136,31 +133,31 @@
             <form class="form-grid form-grid--two" aria-label="帳單資訊">
               <div>
                 <label class="label" for="billing-name">姓名</label>
-                <input class="input" id="billing-name" name="billing-name" type="text" placeholder="陳 冠宇" />
+                <input class="input" id="billing-name" name="billing-name" type="text" placeholder="山本 美咲" />
               </div>
               <div>
                 <label class="label" for="billing-phone">聯絡電話</label>
-                <input class="input" id="billing-phone" name="billing-phone" type="tel" placeholder="09xx-xxx-xxx" />
+                <input class="input" id="billing-phone" name="billing-phone" type="tel" placeholder="090-1234-5678" />
               </div>
               <div>
                 <label class="label" for="billing-address">地址</label>
-                <input class="input" id="billing-address" name="billing-address" type="text" placeholder="台北市信義區松智路1號 28F" />
+                <input class="input" id="billing-address" name="billing-address" type="text" placeholder="東京都澀谷區神宮前1-1-1 光之露台501" />
               </div>
               <div>
                 <label class="label" for="billing-notes">備註</label>
-                <input class="input" id="billing-notes" name="billing-notes" type="text" placeholder="若需開立統編或指定收件時段，請在此填寫" />
+                <input class="input" id="billing-notes" name="billing-notes" type="text" placeholder="若需客製賀卡或熨斗，請在此填寫" />
               </div>
             </form>
             <div class="actions">
-              <a class="btn btn--ghost" href="order-confirmation.html">返回</a>
-              <a class="btn btn--primary" href="order-complete.html">確認送出訂單</a>
+              <a class="btn btn--ghost" href="order-confirmation-jp.html">返回</a>
+              <a class="btn btn--primary" href="order-complete-jp.html">確認送出訂單</a>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="wrapper">&copy; 2024 Motion Club Store. 全方位支援你的賽季節奏。</div>
+      <div class="wrapper">&copy; 2024 Hikari Atelier. 為您送上溫柔的生活風景。</div>
     </footer>
   </body>
 </html>
