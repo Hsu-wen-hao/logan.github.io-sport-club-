@@ -12,6 +12,8 @@ html.theme-jp {
   --color-card: #fff8f2;
   --color-card-alt: #f3e7e1;
   --color-highlight: rgba(225, 107, 140, 0.18);
+  --color-cta-start: #f6bfbc; /* 撫子 - Nadeshiko */
+  --color-cta-end: #f3d5c9; /* 桃花 - Momohana */
   --gradient-hero: linear-gradient(135deg, rgba(225, 107, 140, 0.58), rgba(255, 253, 249, 0.92));
   --gradient-card: linear-gradient(160deg, rgba(225, 107, 140, 0.16), rgba(255, 253, 249, 0.85));
   color-scheme: only light;
@@ -127,6 +129,32 @@ html.theme-jp .btn--ghost:focus {
   color: #b5495b;
 }
 
+html.theme-jp .cta {
+  background: linear-gradient(135deg, var(--color-cta-start), var(--color-cta-end));
+  color: #3b312b;
+}
+
+html.theme-jp .cta h2,
+html.theme-jp .cta p {
+  color: inherit;
+}
+
+html.theme-jp .cta .btn--primary {
+  background: linear-gradient(135deg, #e16b8c, #f7c242);
+  color: #fffdf9;
+}
+
+html.theme-jp .cta .btn--ghost {
+  border-color: rgba(225, 107, 140, 0.4);
+  color: #b5495b;
+}
+
+html.theme-jp .cta .btn--ghost:hover,
+html.theme-jp .cta .btn--ghost:focus {
+  border-color: rgba(181, 73, 91, 0.65);
+  color: #a7364c;
+}
+
 html.theme-jp .section-head .section-title,
 html.theme-jp h1,
 html.theme-jp h2,
@@ -137,14 +165,60 @@ html.theme-jp h6 {
   color: #3b312b;
 }
 
-html.theme-jp .footer {
-  background: rgba(255, 255, 255, 0.92);
+html.theme-jp .footer,
+html.theme-jp .site-footer {
+  background: rgba(255, 253, 249, 0.95);
   border-top: 1px solid rgba(209, 196, 182, 0.7);
   color: #6c5a4c;
 }
 
 html.theme-jp .footer a:hover,
-html.theme-jp .footer a:focus {
+html.theme-jp .footer a:focus,
+html.theme-jp .site-footer a:hover,
+html.theme-jp .site-footer a:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .site-footer__top h3,
+html.theme-jp .site-footer__links h3,
+html.theme-jp .site-footer__subscribe h3,
+html.theme-jp .site-footer__brand h3 {
+  color: #b5495b;
+}
+
+html.theme-jp .site-footer__newsletter input,
+html.theme-jp .site-footer__newsletter button,
+html.theme-jp .site-footer__subscribe input,
+html.theme-jp .site-footer__subscribe button {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(181, 73, 91, 0.25);
+  color: inherit;
+}
+
+html.theme-jp .site-footer__newsletter input::placeholder,
+html.theme-jp .site-footer__subscribe input::placeholder {
+  color: rgba(108, 90, 76, 0.7);
+}
+
+html.theme-jp .site-footer__newsletter button,
+html.theme-jp .site-footer__subscribe button {
+  color: #fffdf9;
+  background: linear-gradient(135deg, #e16b8c, #f7c242);
+}
+
+html.theme-jp .site-footer__bottom,
+html.theme-jp .site-footer__bottom .container,
+html.theme-jp .site-footer__bottom-inner {
+  background: rgba(250, 246, 241, 0.9);
+  color: #6c5a4c;
+}
+
+html.theme-jp .site-footer__social a {
+  color: inherit;
+}
+
+html.theme-jp .site-footer__social a:hover,
+html.theme-jp .site-footer__social a:focus {
   color: var(--color-primary);
 }
 
