@@ -1,19 +1,19 @@
 html.theme-jp {
-  --color-primary: #d76b6b;
-  --color-primary-dark: #c65959;
-  --color-accent: #f2b880;
-  --color-surface: #ffffff;
-  --color-surface-alt: #f6efe6;
-  --color-muted: #81766c;
-  --color-muted-light: #b3a89f;
-  --color-border: rgba(121, 108, 96, 0.22);
-  --color-background: #f7f4ef;
-  --color-section: #f0ede6;
-  --color-card: #fffaf4;
-  --color-card-alt: #f5ece1;
-  --color-highlight: rgba(242, 184, 128, 0.18);
-  --gradient-hero: linear-gradient(135deg, rgba(215, 107, 107, 0.55), rgba(255, 255, 255, 0.9));
-  --gradient-card: linear-gradient(160deg, rgba(215, 107, 107, 0.18), rgba(255, 255, 255, 0.85));
+  --color-primary: #e16b8c; /* 紅梅 - KouBai */
+  --color-primary-dark: #b5495b; /* 蘇芳 - Suou */
+  --color-accent: #f7c242; /* 菜の花色 - Nanohana-iro */
+  --color-surface: #fffdf9; /* 胡粉 - Gofun */
+  --color-surface-alt: #f4eee8; /* 白練 - Shironeri */
+  --color-muted: #8f7e74; /* 丁子茶 - Choujicha */
+  --color-muted-light: #bfaea4;
+  --color-border: rgba(179, 161, 150, 0.32);
+  --color-background: #faf6f1;
+  --color-section: #f2ece6;
+  --color-card: #fff8f2;
+  --color-card-alt: #f3e7e1;
+  --color-highlight: rgba(225, 107, 140, 0.18);
+  --gradient-hero: linear-gradient(135deg, rgba(225, 107, 140, 0.58), rgba(255, 253, 249, 0.92));
+  --gradient-card: linear-gradient(160deg, rgba(225, 107, 140, 0.16), rgba(255, 253, 249, 0.85));
   color-scheme: only light;
   background-color: var(--color-background);
 }
@@ -44,13 +44,26 @@ html.theme-jp .site-header--plain {
   background: rgba(255, 255, 255, 0.96);
 }
 
-html.theme-jp .brand__mark {
-  background: linear-gradient(135deg, rgba(215, 107, 107, 0.65), rgba(239, 212, 179, 0.95));
-  color: #55392c;
+html.theme-jp .brand__icon {
+  background: linear-gradient(135deg, rgba(225, 107, 140, 0.68), rgba(247, 194, 66, 0.45));
+  color: #b5495b;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.55), 0 12px 28px rgba(181, 73, 91, 0.18);
 }
 
 html.theme-jp .site-nav__list a:hover,
 html.theme-jp .site-nav__list a:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .site-nav__sublist {
+  background: rgba(255, 253, 249, 0.98);
+  border: 1px solid rgba(181, 73, 91, 0.15);
+  box-shadow: 0 24px 48px rgba(181, 73, 91, 0.18);
+  color: #5f4c44;
+}
+
+html.theme-jp .site-nav__sublist a:hover,
+html.theme-jp .site-nav__sublist a:focus {
   color: var(--color-primary);
 }
 
@@ -83,35 +96,35 @@ html.theme-jp .header-cart:focus {
 }
 
 html.theme-jp .btn--primary {
-  background: linear-gradient(135deg, #d76b6b, #f2b880);
-  color: #fffaf4;
+  background: linear-gradient(135deg, #e16b8c, #f7c242);
+  color: #fffdf9;
 }
 
 html.theme-jp .btn--primary:hover,
 html.theme-jp .btn--primary:focus {
-  background: linear-gradient(135deg, #c65959, #ec9d62);
+  background: linear-gradient(135deg, #b5495b, #e3a121);
 }
 
 html.theme-jp .btn--accent {
-  background: rgba(242, 184, 128, 0.95);
-  color: #3a3129;
+  background: rgba(247, 194, 66, 0.9);
+  color: #5f4c44;
 }
 
 html.theme-jp .btn--accent:hover,
 html.theme-jp .btn--accent:focus {
-  background: rgba(236, 157, 98, 0.95);
-  color: #fff;
+  background: rgba(227, 161, 33, 0.9);
+  color: #fffdf9;
 }
 
 html.theme-jp .btn--ghost {
-  border-color: rgba(215, 107, 107, 0.45);
-  color: #a46363;
+  border-color: rgba(225, 107, 140, 0.45);
+  color: #b5495b;
 }
 
 html.theme-jp .btn--ghost:hover,
 html.theme-jp .btn--ghost:focus {
-  border-color: rgba(198, 89, 89, 0.7);
-  color: #c65959;
+  border-color: rgba(181, 73, 91, 0.7);
+  color: #b5495b;
 }
 
 html.theme-jp .section-head .section-title,
@@ -184,18 +197,18 @@ html.theme-jp .form-field input:focus,
 html.theme-jp .form-field select:focus,
 html.theme-jp .form-field textarea:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 4px rgba(215, 107, 107, 0.15);
+  box-shadow: 0 0 0 4px rgba(225, 107, 140, 0.16);
 }
 
 html.theme-jp .timeline__item::before {
-  background: #e0d6cb;
+  background: #e8dfd6;
 }
 
 html.theme-jp .timeline__item::after {
-  border-color: #e0d6cb;
+  border-color: #e8dfd6;
 }
 
 html.theme-jp .badge {
-  background: rgba(215, 107, 107, 0.18);
-  color: #a46363;
+  background: rgba(225, 107, 140, 0.18);
+  color: #b5495b;
 }

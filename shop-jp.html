@@ -21,19 +21,28 @@
     <header class="site-header site-header--plain" aria-label="主要導覽">
       <div class="wrapper site-header__inner">
         <a class="brand" href="index-jp.html">
-          <span class="brand__mark">MC</span>
+          <span class="brand__icon" aria-hidden="true">
+            <svg class="brand__icon-shape" viewBox="0 0 32 32" focusable="false" aria-hidden="true">
+              <rect x="3" y="3" width="26" height="26" rx="6" ry="6" fill="currentColor" opacity="0.14" />
+              <path d="M8 22.5 12.2 10.5 16 17.5 19.8 10.5 24 22.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
           <span class="brand__text">動能運動俱樂部</span>
         </a>
         <nav class="site-nav" aria-label="主選單">
           <button class="site-nav__toggle" aria-expanded="false" aria-controls="primary-nav">選單</button>
           <ul id="primary-nav" class="site-nav__list">
-            <li><a href="index-jp.html">首頁</a></li>
-            <li><a href="about-jp.html">關於我們</a></li>
-            <li><a href="shop-jp.html" aria-current="page">商店</a></li>
-            <li><a href="tennis-jp.html">網球</a></li>
-            <li><a href="index-jp.html#sports">運動項目</a></li>
-            <li><a href="index-jp.html#memberships">會員方案</a></li>
-            <li><a href="index-jp.html#contact">聯絡我們</a></li>
+            <li class="site-nav__item"><a href="index-jp.html">首頁</a></li>
+            <li class="site-nav__item"><a href="about-jp.html">關於我們</a></li>
+            <li class="site-nav__item site-nav__item--has-children">
+              <a href="shop-jp.html" aria-current="page">商店</a>
+              <ul class="site-nav__sublist" aria-label="商店子選單">
+                <li><a href="tennis-jp.html">網球</a></li>
+              </ul>
+            </li>
+            <li class="site-nav__item"><a href="index-jp.html#sports">運動項目</a></li>
+            <li class="site-nav__item"><a href="index-jp.html#memberships">會員方案</a></li>
+            <li class="site-nav__item"><a href="index-jp.html#contact">聯絡我們</a></li>
           </ul>
         </nav>
         <div class="site-header__actions">
