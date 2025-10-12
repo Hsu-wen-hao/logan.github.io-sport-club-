@@ -25,14 +25,20 @@
         </a>
         <nav class="site-nav" aria-label="主選單">
           <button class="site-nav__toggle" aria-expanded="false" aria-controls="primary-nav">選單</button>
-          <ul id="primary-nav" class="site-nav__list">
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="about.html" aria-current="page">關於我們</a></li>
-            <li><a href="shop.html">商店</a></li>
-            <li><a href="index.html#programs">訓練課程</a></li>
-            <li><a href="index.html#memberships">會員方案</a></li>
-            <li><a href="index.html#contact">聯絡我們</a></li>
-          </ul>
+          <div class="site-nav__overlay" tabindex="-1"></div>
+          <div class="site-nav__drawer" aria-hidden="true">
+            <div class="site-nav__panel">
+              <button class="site-nav__close" type="button" aria-label="關閉選單">關閉</button>
+              <ul id="primary-nav" class="site-nav__list">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html" aria-current="page">關於我們</a></li>
+                <li><a href="shop.html">商店</a></li>
+                <li><a href="index.html#programs">訓練課程</a></li>
+                <li><a href="index.html#memberships">會員方案</a></li>
+                <li><a href="index.html#contact">聯絡我們</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
         <a class="btn btn--accent" href="index.html#memberships">立即加入</a>
       </div>
