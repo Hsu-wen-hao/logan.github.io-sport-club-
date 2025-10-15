@@ -134,6 +134,38 @@ html.theme-jp .cta {
   color: #3b312b;
 }
 
+html.theme-jp .auth-card,
+html.theme-jp .auth-meta__card {
+  background: rgba(255, 255, 249, 0.94);
+  border-color: rgba(209, 196, 182, 0.65);
+  color: inherit;
+}
+
+html.theme-jp .auth-card__text,
+html.theme-jp .auth-meta__text,
+html.theme-jp .auth-note {
+  color: #8f7e74;
+}
+
+html.theme-jp .form-field input,
+html.theme-jp .form-field select,
+html.theme-jp .form-field textarea {
+  background: #fffdf9;
+  border-color: rgba(209, 196, 182, 0.6);
+  color: inherit;
+}
+
+html.theme-jp .form-field input:focus,
+html.theme-jp .form-field select:focus,
+html.theme-jp .form-field textarea:focus {
+  outline-color: var(--color-primary);
+}
+
+html.theme-jp .auth-meta__icon {
+  background: rgba(225, 107, 140, 0.15);
+  color: var(--color-primary);
+}
+
 html.theme-jp .cta h2,
 html.theme-jp .cta p {
   color: inherit;
