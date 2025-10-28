@@ -52,6 +52,7 @@
   justify-content: space-between;
   gap: 24px;
   padding: 18px 0;
+  flex-wrap: nowrap;
 }
 
 .brand {
@@ -111,6 +112,7 @@
 
 .site-nav {
   margin-left: auto;
+  min-width: 0;
 }
 
 .site-nav__toggle {
@@ -127,23 +129,26 @@
 .site-nav__list {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   list-style: none;
   padding: 0;
   margin: 0;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  flex-wrap: nowrap;
 }
 
 .site-nav__list a {
   padding: 8px 0;
   display: inline-block;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .site-nav__item {
   position: relative;
+  white-space: nowrap;
 }
 
 .site-nav__item--has-children > a {
@@ -210,7 +215,19 @@
 .site-header__actions {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
+}
+
+.site-header__actions .theme-switch,
+.site-header__actions .header-cart {
+  padding: 8px 14px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.site-header__actions .btn {
+  padding: 10px 20px;
+  font-size: 0.85rem;
 }
 
 .theme-switch {
@@ -258,8 +275,8 @@
 }
 
 .header-cart__icon {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 
 .header-cart__text {
@@ -418,6 +435,11 @@
 @media (max-width: 768px) {
   .site-nav__toggle {
     display: inline-flex;
+  }
+
+  .site-nav__list a,
+  .site-nav__item {
+    white-space: normal;
   }
 
   .header-cart {
