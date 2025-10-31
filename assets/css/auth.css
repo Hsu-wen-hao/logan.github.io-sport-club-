@@ -1,4 +1,7 @@
+
 .auth-hero {
+  position: relative;
+  overflow: hidden;
   background: var(--gradient-hero);
   color: #f8fafc;
   padding: 64px 0;
@@ -9,6 +12,64 @@
   grid-template-columns: minmax(0, 1fr);
   gap: 32px;
   align-items: center;
+}
+
+.auth-hero__content {
+  max-width: 560px;
+}
+
+.auth-hero--with-visual .wrapper {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.auth-hero__visual {
+  position: relative;
+  justify-self: end;
+  max-width: clamp(280px, 32vw, 420px);
+  aspect-ratio: 4 / 3;
+  display: grid;
+  align-items: end;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  background: rgba(6, 11, 26, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 26px 54px rgba(4, 9, 20, 0.45);
+}
+
+.auth-hero__visual::before,
+.auth-hero__visual::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(0);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.auth-hero__visual::before {
+  inset: auto -18% 36% auto;
+  width: clamp(220px, 24vw, 320px);
+  height: clamp(220px, 24vw, 320px);
+  background: linear-gradient(135deg, rgba(255, 95, 60, 0.6), rgba(14, 165, 233, 0.5));
+}
+
+.auth-hero__visual::after {
+  inset: 40% auto auto -14%;
+  width: clamp(140px, 18vw, 220px);
+  height: clamp(140px, 18vw, 220px);
+  background: rgba(255, 209, 102, 0.55);
+}
+
+.auth-hero__visual img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: calc(var(--radius-lg) - 8px);
+  box-shadow: 0 18px 38px rgba(4, 9, 20, 0.35);
+  border: 0;
+  background: transparent;
 }
 
 .auth-hero__eyebrow {
@@ -191,6 +252,17 @@
 }
 
 @media (max-width: 960px) {
+  .auth-hero--with-visual .wrapper {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .auth-hero__visual {
+    order: -1;
+    justify-self: center;
+    max-width: clamp(240px, 60vw, 360px);
+    margin-bottom: 24px;
+  }
+
   .auth-grid {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -201,6 +273,10 @@
 }
 
 @media (max-width: 600px) {
+  .auth-hero__visual {
+    padding: 16px;
+  }
+
   .auth-card {
     padding: 32px;
   }
