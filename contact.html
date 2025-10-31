@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聯絡運動生態平台｜預約體驗與導覽</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要內容</a>
+
+    <div class="topbar" aria-label="聯絡資訊">
+      <div class="wrapper topbar__inner">
+        <div class="topbar__contact">
+          <a href="tel:+886212345678">電話 +886 2 1234 5678</a>
+          <a href="mailto:service@motionclub.tw">service@motionclub.tw</a>
+          <span>營業時間 06:00 – 22:00</span>
+        </div>
+        <ul class="social-list" aria-label="社群連結">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="site-header" aria-label="主要導覽">
+      <div class="wrapper site-header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__icon" aria-hidden="true">
+            <img src="assets/images/logo-placeholder-100.svg" alt="" width="100" height="100" />
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">運動生態平台</span>
+            <span class="brand__tagline">SPORTS ECOSYSTEM PLATFORM</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="主選單">
+          <button class="site-nav__toggle" aria-expanded="false" aria-controls="primary-nav">選單</button>
+          <ul id="primary-nav" class="site-nav__list">
+            <li class="site-nav__item"><a href="index.html">首頁</a></li>
+            <li class="site-nav__item"><a href="about.html">關於我們</a></li>
+            <li class="site-nav__item site-nav__item--has-children">
+              <a href="shop.html">商店</a>
+              <ul class="site-nav__sublist" aria-label="商店子選單">
+                <li><a href="tennis.html">網球</a></li>
+              </ul>
+            </li>
+            <li class="site-nav__item"><a href="login.html">會員登入</a></li>
+            <li class="site-nav__item"><a href="contact.html" aria-current="page">聯絡我們</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <a class="theme-switch" href="contact-jp.html" aria-label="切換到 LIGHT 版">LIGHT</a>
+          <a class="header-cart" href="cart.html" aria-label="查看購物車並前往結帳">
+            <svg class="header-cart__icon" viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M7.5 20.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm11 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM3.05 4.5h1.6l.66 1.8 2.44 6.51a.75.75 0 0 0 .7.49h8.28a.75.75 0 0 0 .71-.52l1.98-5.96a.75.75 0 0 0-.71-.98H6.72l-.5-1.38a1.5 1.5 0 0 0-1.4-.96H3.05a.75.75 0 0 0 0 1.5h.68Z"
+              />
+            </svg>
+            <span class="header-cart__text">結帳</span>
+          </a>
+          <a class="btn btn--accent" href="index.html#memberships">立即加入</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero hero--contact" aria-label="聯絡我們主視覺">
+        <div class="hero__slides" role="region" aria-roledescription="carousel">
+          <article class="hero-slide is-active">
+            <div class="hero-slide__media">
+              <img src="assets/images/hero-3-placeholder.svg" alt="教練向會員介紹運動生態平台場館設施" />
+              <span class="image-note image-note--overlay">1920×1080 主視覺圖片位</span>
+            </div>
+            <div class="wrapper hero-slide__inner">
+              <div class="hero-slide__content">
+                <p class="eyebrow">預約導覽</p>
+                <h1 class="hero-slide__title">聯絡運動生態平台團隊</h1>
+                <p class="hero-slide__text">
+                  想預約場館導覽、了解跨項方案或洽談企業合作，留下需求讓顧問為你規畫最合適的運動體驗。
+                </p>
+                <div class="hero-slide__actions">
+                  <a class="btn btn--primary" href="#contact">預約諮詢</a>
+                  <a class="btn btn--ghost" href="index.html#memberships">了解會員方案</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <div class="hero__dots" role="tablist" aria-label="聯絡我們主視覺切換">
+            <button class="is-active" aria-label="第 1 張"></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact contact--standalone" aria-label="聯絡我們">
+        <div class="wrapper contact__inner">
+          <div class="contact__info">
+            <h2>聯絡資訊</h2>
+            <p>臺北市信義區競技大道 88 號｜捷運藍線運動生態站 3 號出口</p>
+            <ul>
+              <li>電話：+886 2 1234 5678</li>
+              <li>Email：service@motionclub.tw</li>
+              <li>官方 LINE：@motionclub</li>
+            </ul>
+            <div class="contact__hours">
+              <h3>服務時間</h3>
+              <p>週一至週日 06:00 – 22:00｜國定假日照常營業</p>
+            </div>
+          </div>
+          <form class="contact__form">
+            <div class="form-group">
+              <label for="contact-name">姓名</label>
+              <input id="contact-name" name="name" type="text" placeholder="請輸入姓名" />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" placeholder="example@mail.com" />
+            </div>
+            <div class="form-group">
+              <label for="contact-topic">想了解的項目</label>
+              <select id="contact-topic" name="topic">
+                <option>網球訓練</option>
+                <option>籃球訓練</option>
+                <option>游泳訓練</option>
+                <option>體能訓練</option>
+                <option>企業合作</option>
+                <option>其他需求</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">留言</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="請留下需求或問題"></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">送出諮詢</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="cta" aria-label="加入會員">
+        <div class="wrapper cta__inner">
+          <div class="cta__copy">
+            <h2>一起加入運動生態平台</h2>
+            <p>透過專屬顧問與客製方案，快速找到適合你的訓練夥伴與場域。</p>
+          </div>
+          <a class="btn btn--accent" href="index.html#memberships">查看會員方案</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="頁尾">
+      <div class="wrapper site-footer__top">
+        <div class="site-footer__about">
+          <a class="brand" href="index.html">
+            <span class="brand__icon" aria-hidden="true">
+              <img src="assets/images/logo-placeholder-100.svg" alt="" width="100" height="100" />
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">運動生態平台</span>
+              <span class="brand__tagline">SPORTS ECOSYSTEM PLATFORM</span>
+            </span>
+          </a>
+          <p>結合多運動項目、科技化訓練與菁英教練團隊，打造全方位的運動生活圈。</p>
+        </div>
+        <div class="site-footer__links">
+          <h3>快速導覽</h3>
+          <ul>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="shop.html">運動裝備商店</a></li>
+            <li><a href="contact.html">預約導覽</a></li>
+            <li><a href="#">加入合作</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__newsletter">
+          <h3>訂閱電子報</h3>
+          <p>第一時間獲得課程開班、活動體驗與限時優惠資訊。</p>
+          <form class="newsletter-form">
+            <label class="visually-hidden" for="footer-email">Email</label>
+            <input id="footer-email" type="email" name="email" placeholder="example@mail.com" />
+            <button class="btn btn--primary" type="submit">訂閱</button>
+          </form>
+        </div>
+      </div>
+      <div class="wrapper site-footer__bottom-inner">
+        <span>© 2024 運動生態平台 SPORTS ECOSYSTEM PLATFORM. All rights reserved.</span>
+        <ul class="social-list">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="assets/js/global.js" defer></script>
+  </body>
+</html>
