@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="theme-jp" lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>結帳 | SPORTS ECOSYSTEM PLATFORM LIGHT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/checkout-jp.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="brand">
+          <span class="brand__symbol" aria-hidden="true">
+            <img src="assets/images/logo-placeholder-100.svg" alt="" width="80" height="80" />
+          </span>
+          <div class="brand__title">
+            <span class="brand__name">運動生態平台</span>
+            <span class="brand__tagline">SPORTS ECOSYSTEM PLATFORM LIGHT</span>
+          </div>
+        </div>
+        <a class="theme-switch" href="checkout.html" aria-label="切換到 DARK 版">DARK</a>
+        <ol class="progress">
+          <li class="progress__step">
+            <span class="progress__index">1</span>
+            購物車
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">2</span>
+            確認訂單內容
+          </li>
+          <li class="progress__step progress__step--current">
+            <span class="progress__index">3</span>
+            結帳
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">4</span>
+            完成
+          </li>
+        </ol>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="wrapper">
+          <h1>選擇付款方式</h1>
+          <p class="lead">
+            SPORTS ECOSYSTEM PLATFORM LIGHT 採用符合 PCI-DSS 的金流服務，卡片與帳戶資訊皆以加密傳輸，請安心填寫。
+          </p>
+          <div class="card">
+            <h2>付款方式</h2>
+            <form class="payment-methods" aria-label="付款方式">
+              <div class="payment-method">
+                <input class="payment-method__radio" type="radio" name="payment-method" id="method-card" checked />
+                <label class="payment-method__header" for="method-card">
+                  <span class="payment-method__title">
+                    <span class="payment-method__icon" aria-hidden="true">💳</span>
+                    信用卡
+                  </span>
+                  <span class="payment-method__summary">支援 Visa / Mastercard / JCB</span>
+                </label>
+                <div class="payment-method__panel" aria-live="polite">
+                  <div class="form-grid" aria-label="信用卡資訊">
+                    <label class="label" for="card-name">持卡人姓名</label>
+                    <input class="input" id="card-name" name="card-name" type="text" placeholder="CHEN KUAN YU" />
+                    <div class="form-grid form-grid--two">
+                      <div>
+                        <label class="label" for="card-number">卡號</label>
+                        <input class="input" id="card-number" name="card-number" type="text" inputmode="numeric" placeholder="4312 5678 9012 3456" />
+                      </div>
+                      <div>
+                        <label class="label" for="card-exp">有效期限</label>
+                        <input class="input" id="card-exp" name="card-exp" type="text" placeholder="07 / 27" />
+                      </div>
+                    </div>
+                    <div class="form-grid form-grid--two">
+                      <div>
+                        <label class="label" for="card-cvc">安全碼</label>
+                        <input class="input" id="card-cvc" name="card-cvc" type="password" inputmode="numeric" placeholder="***" />
+                      </div>
+                      <div>
+                        <label class="label" for="card-zip">郵遞區號</label>
+                        <input class="input" id="card-zip" name="card-zip" type="text" inputmode="numeric" placeholder="110" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="note">※ 卡片驗證將於合作銀行的安全伺服器進行，SPORTS ECOSYSTEM PLATFORM 不會儲存完整卡號。</p>
+                </div>
+              </div>
+              <div class="payment-method">
+                <input class="payment-method__radio" type="radio" name="payment-method" id="method-bank" />
+                <label class="payment-method__header" for="method-bank">
+                  <span class="payment-method__title">
+                    <span class="payment-method__icon" aria-hidden="true">🏦</span>
+                    銀行轉帳
+                  </span>
+                  <span class="payment-method__summary">下單後 3 日內完成匯款即可</span>
+                </label>
+                <div class="payment-method__panel">
+                  <p class="note">請於 3 個工作天內轉帳至下列帳戶，並於備註留下訂單編號以利對帳：</p>
+                  <div class="summary-list">
+                    <div class="summary-row">
+                      <span>銀行</span>
+                      <span>臺灣銀行 信義分行（代碼 004）</span>
+                    </div>
+                    <div class="summary-row">
+                      <span>帳號</span>
+                      <span>123456789012</span>
+                    </div>
+                    <div class="summary-row">
+                      <span>戶名</span>
+                      <span>運動生態平台股份有限公司</span>
+                    </div>
+                  </div>
+                  <p class="note">※ 匯款完成後將以電子郵件與簡訊同步通知出貨時程。</p>
+                </div>
+              </div>
+              <div class="payment-method">
+                <input class="payment-method__radio" type="radio" name="payment-method" id="method-mobile" />
+                <label class="payment-method__header" for="method-mobile">
+                  <span class="payment-method__title">
+                    <span class="payment-method__icon" aria-hidden="true">📱</span>
+                    行動支付
+                  </span>
+                  <span class="payment-method__summary">支援 Apple Pay、LINE Pay、PayPay</span>
+                </label>
+                <div class="payment-method__panel">
+                  <p class="note">選擇行動支付後，確認送出訂單即會引導至合作支付頁面完成交易。</p>
+                  <p class="note">※ 建議於付款前確認裝置網路穩定並已綁定指定帳戶。</p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="card">
+            <h2>帳單資訊</h2>
+            <form class="form-grid form-grid--two" aria-label="帳單資訊">
+              <div>
+                <label class="label" for="billing-name">姓名</label>
+                <input class="input" id="billing-name" name="billing-name" type="text" placeholder="陳 冠宇" />
+              </div>
+              <div>
+                <label class="label" for="billing-phone">聯絡電話</label>
+                <input class="input" id="billing-phone" name="billing-phone" type="tel" placeholder="09xx-xxx-xxx" />
+              </div>
+              <div>
+                <label class="label" for="billing-address">地址</label>
+                <input class="input" id="billing-address" name="billing-address" type="text" placeholder="臺北市信義區松智路1號 28F" />
+              </div>
+              <div>
+                <label class="label" for="billing-notes">備註</label>
+                <input class="input" id="billing-notes" name="billing-notes" type="text" placeholder="若需開立統編或指定收件時段，請在此填寫" />
+              </div>
+            </form>
+            <div class="actions">
+              <a class="btn btn--ghost" href="order-confirmation-jp.html">返回</a>
+              <a class="btn btn--primary" href="order-complete-jp.html">確認送出訂單</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">&copy; 2024 SPORTS ECOSYSTEM PLATFORM LIGHT. 陪你沉著備戰每一步。</div>
+    </footer>
+  </body>
+</html>

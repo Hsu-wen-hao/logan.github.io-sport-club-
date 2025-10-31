@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="theme-jp" lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>購物車 | SPORTS ECOSYSTEM PLATFORM LIGHT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/checkout-jp.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="brand">
+          <span class="brand__symbol" aria-hidden="true">
+            <img src="assets/images/logo-placeholder-100.svg" alt="" width="80" height="80" />
+          </span>
+          <div class="brand__title">
+            <span class="brand__name">運動生態平台</span>
+            <span class="brand__tagline">SPORTS ECOSYSTEM PLATFORM LIGHT</span>
+          </div>
+        </div>
+        <a class="theme-switch" href="cart.html" aria-label="切換到 DARK 版">DARK</a>
+        <ol class="progress">
+          <li class="progress__step progress__step--current">
+            <span class="progress__index">1</span>
+            購物車
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">2</span>
+            確認訂單內容
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">3</span>
+            結帳
+          </li>
+          <li class="progress__step">
+            <span class="progress__index">4</span>
+            完成
+          </li>
+        </ol>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="wrapper">
+          <h1>購物車</h1>
+          <p class="lead">
+            請確認目前選購的訓練與恢復裝備，若需要調整數量或規格可直接於此更新。
+          </p>
+          <div class="card">
+            <table class="table" aria-label="購物車內容">
+              <thead>
+                <tr>
+                  <th scope="col">商品</th>
+                  <th scope="col">選項</th>
+                  <th scope="col">數量</th>
+                  <th scope="col">小計</th>
+                  <th scope="col" class="visually-hidden">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>爆發力訓練組</strong>
+                    <div class="note">阻力繩、短槓護腕與訓練海綿一次備齊</div>
+                  </td>
+                  <td>力量 / S 號</td>
+                  <td>
+                    <div class="quantity-control" role="group" aria-label="爆發力訓練組 數量">
+                      <button type="button" aria-label="減少數量">−</button>
+                      <input type="number" value="1" min="1" inputmode="numeric" aria-live="polite" />
+                      <button type="button" aria-label="增加數量">＋</button>
+                    </div>
+                  </td>
+                  <td>NT$3,280</td>
+                  <td class="product-actions">
+                    <a class="remove-link" href="#" aria-label="移除爆發力訓練組">
+                      <span aria-hidden="true">✕</span>
+                      移除
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>冰感恢復泡棉滾筒</strong>
+                    <div class="note">冷觸材質協助肌群放鬆，加速訓後恢復</div>
+                  </td>
+                  <td>冷灰</td>
+                  <td>
+                    <div class="quantity-control" role="group" aria-label="冰感恢復泡棉滾筒 數量">
+                      <button type="button" aria-label="減少數量">−</button>
+                      <input type="number" value="2" min="1" inputmode="numeric" aria-live="polite" />
+                      <button type="button" aria-label="增加數量">＋</button>
+                    </div>
+                  </td>
+                  <td>NT$2,960</td>
+                  <td class="product-actions">
+                    <a class="remove-link" href="#" aria-label="移除冰感恢復泡棉滾筒">
+                      <span aria-hidden="true">✕</span>
+                      移除
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="summary-list">
+              <div class="summary-row">
+                <span>小計</span>
+                <span>NT$6,240</span>
+              </div>
+              <div class="summary-row">
+                <span>運費</span>
+                <span>NT$120</span>
+              </div>
+              <div class="summary-row">
+                <span>折價卷</span>
+                <span>−NT$0</span>
+              </div>
+              <div class="summary-row summary-row--total">
+                <span>合計</span>
+                <span>NT$6,360</span>
+              </div>
+            </div>
+            <form class="coupon-form" aria-label="折價卷">
+              <label for="coupon-code">擁有折價卷嗎？</label>
+              <div class="coupon-inputs">
+                <input
+                  class="input"
+                  id="coupon-code"
+                  name="coupon-code"
+                  type="text"
+                  placeholder="輸入折扣代碼"
+                  autocomplete="off"
+                />
+                <button class="btn btn--ghost" type="submit">套用折扣</button>
+              </div>
+              <p class="note">※ 使用訓練季專屬代碼可獲得加碼優惠。</p>
+            </form>
+            <div class="actions">
+              <a class="btn btn--ghost" href="shop-jp.html">繼續購物</a>
+              <a class="btn btn--primary" href="order-confirmation-jp.html">前往確認訂單</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">&copy; 2024 SPORTS ECOSYSTEM PLATFORM LIGHT. 陪你沉著備戰每一步。</div>
+    </footer>
+  </body>
+</html>
