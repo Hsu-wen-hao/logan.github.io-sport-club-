@@ -1,4 +1,6 @@
 html.theme-jp {
+  --font-base: "Zen Kaku Gothic New", "Noto Sans JP", "Noto Sans TC", sans-serif;
+  --font-display: "Noto Serif JP", "Zen Kaku Gothic New", serif;
   --color-primary: #e16b8c; /* 紅梅 - KouBai */
   --color-primary-dark: #b5495b; /* 蘇芳 - Suou */
   --color-accent: #f7c242; /* 菜の花色 - Nanohana-iro */
@@ -14,8 +16,13 @@ html.theme-jp {
   --color-highlight: rgba(225, 107, 140, 0.18);
   --color-cta-start: #f6bfbc; /* 撫子 - Nadeshiko */
   --color-cta-end: #f3d5c9; /* 桃花 - Momohana */
+  --color-mizu: #81c7d4; /* 水 - Mizu */
+  --color-wakaba: #a8d8b9; /* 若葉 - Wakaba */
+  --color-fuji: #bbbcde; /* 藤紫 - Fujimurasaki */
   --gradient-hero: linear-gradient(135deg, rgba(225, 107, 140, 0.58), rgba(255, 253, 249, 0.92));
   --gradient-card: linear-gradient(160deg, rgba(225, 107, 140, 0.16), rgba(255, 253, 249, 0.85));
+  --shadow-soft: 0 18px 42px rgba(181, 73, 91, 0.16);
+  --shadow-card: 0 16px 36px rgba(181, 73, 91, 0.12);
   color-scheme: only light;
   background-color: var(--color-background);
 }
@@ -23,6 +30,14 @@ html.theme-jp {
 html.theme-jp body {
   background-color: var(--color-background);
   color: #2b2622;
+}
+
+html.theme-jp body,
+html.theme-jp .topbar,
+html.theme-jp .site-header,
+html.theme-jp .site-footer,
+html.theme-jp .footer {
+  font-family: var(--font-base);
 }
 
 html.theme-jp .topbar {
@@ -54,6 +69,20 @@ html.theme-jp .brand__icon {
 
 html.theme-jp .brand__tagline {
   color: #9d8374;
+}
+
+html.theme-jp .breadcrumb {
+  background: rgba(255, 253, 249, 0.92);
+  border-bottom: 1px solid rgba(181, 73, 91, 0.18);
+  color: #7c685c;
+}
+
+html.theme-jp .breadcrumb ol {
+  color: #7c685c;
+}
+
+html.theme-jp .breadcrumb li + li::before {
+  color: rgba(181, 73, 91, 0.35);
 }
 
 html.theme-jp .site-nav__list a:hover,
@@ -133,6 +162,27 @@ html.theme-jp .btn--ghost:focus {
   color: #b5495b;
 }
 
+html.theme-jp .hero-slide__title {
+  color: #453830;
+  letter-spacing: 0.08em;
+}
+
+html.theme-jp .hero-slide__text {
+  color: #7c685c;
+}
+
+html.theme-jp .hero-slide__media::after {
+  background: linear-gradient(125deg, rgba(225, 107, 140, 0.35), rgba(255, 253, 249, 0.92));
+}
+
+html.theme-jp .hero__dots button {
+  background: rgba(181, 73, 91, 0.22);
+}
+
+html.theme-jp .hero__dots button.is-active {
+  background: rgba(225, 107, 140, 0.82);
+}
+
 html.theme-jp .cta {
   background: linear-gradient(135deg, var(--color-cta-start), var(--color-cta-end));
   color: #3b312b;
@@ -199,6 +249,43 @@ html.theme-jp h4,
 html.theme-jp h5,
 html.theme-jp h6 {
   color: #3b312b;
+}
+
+html.theme-jp .gallery__item::after {
+  background: linear-gradient(160deg, rgba(225, 107, 140, 0.1), rgba(255, 253, 249, 0.78));
+}
+
+html.theme-jp .gallery__item--court {
+  background-image: linear-gradient(135deg, #f6bfbc, #f3d5c9);
+}
+
+html.theme-jp .gallery__item--pool {
+  background-image: linear-gradient(135deg, var(--color-mizu), #f0f7fa);
+}
+
+html.theme-jp .gallery__item--gym {
+  background-image: linear-gradient(135deg, rgba(225, 107, 140, 0.26), #f4eee8);
+}
+
+html.theme-jp .gallery__item--arena {
+  background-image: linear-gradient(135deg, rgba(225, 107, 140, 0.35), #fbe7e3);
+}
+
+html.theme-jp .gallery__item--soccer {
+  background-image: linear-gradient(135deg, var(--color-wakaba), #f4f7f2);
+}
+
+html.theme-jp .gallery__item--lounge {
+  background-image: linear-gradient(135deg, var(--color-fuji), #f3f1fb);
+}
+
+html.theme-jp .plan-card--featured {
+  background: linear-gradient(135deg, rgba(225, 107, 140, 0.22), rgba(255, 253, 249, 0.95));
+  border: 1px solid rgba(225, 107, 140, 0.35);
+}
+
+html.theme-jp .plan-card__badge {
+  color: #b5495b;
 }
 
 html.theme-jp .footer,
@@ -283,6 +370,36 @@ html.theme-jp .cart-item {
   color: inherit;
 }
 
+html.theme-jp .hero--shop .hero-slide__media::after {
+  background: linear-gradient(120deg, rgba(225, 107, 140, 0.28), rgba(255, 253, 249, 0.92));
+}
+
+html.theme-jp .hero--shop .hero-slide__content {
+  background: rgba(255, 253, 249, 0.9);
+  box-shadow: var(--shadow-soft);
+  color: #453830;
+}
+
+html.theme-jp .hero--shop .hero-slide__content p {
+  color: #7c685c;
+}
+
+html.theme-jp .category-card__media--racket {
+  background-image: linear-gradient(135deg, rgba(246, 191, 188, 0.85), rgba(255, 253, 249, 0.92));
+}
+
+html.theme-jp .category-card__media--shoe {
+  background-image: linear-gradient(135deg, rgba(168, 216, 185, 0.8), rgba(244, 247, 242, 0.95));
+}
+
+html.theme-jp .category-card__media--apparel {
+  background-image: linear-gradient(135deg, rgba(187, 188, 222, 0.78), rgba(243, 241, 251, 0.96));
+}
+
+html.theme-jp .category-card__media--gear {
+  background-image: linear-gradient(135deg, rgba(129, 199, 212, 0.78), rgba(240, 247, 250, 0.96));
+}
+
 html.theme-jp .cart-summary,
 html.theme-jp .checkout-panel,
 html.theme-jp .order-panel,
@@ -321,4 +438,36 @@ html.theme-jp .timeline__item::after {
 html.theme-jp .badge {
   background: rgba(225, 107, 140, 0.18);
   color: #b5495b;
+}
+
+html.theme-jp .page-hero__media::after {
+  background: linear-gradient(135deg, rgba(225, 107, 140, 0.28), rgba(255, 253, 249, 0.88));
+}
+
+html.theme-jp .page-hero h1 {
+  color: #463a32;
+}
+
+html.theme-jp .page-hero p {
+  color: #7c685c;
+}
+
+html.theme-jp .team-card__avatar {
+  background: linear-gradient(135deg, rgba(225, 107, 140, 0.28), rgba(255, 253, 249, 0.88));
+}
+
+html.theme-jp .team-card__avatar--lead {
+  background-image: linear-gradient(135deg, rgba(246, 191, 188, 0.85), rgba(243, 213, 201, 0.95));
+}
+
+html.theme-jp .team-card__avatar--coach {
+  background-image: linear-gradient(135deg, rgba(129, 199, 212, 0.78), rgba(240, 247, 250, 0.96));
+}
+
+html.theme-jp .team-card__avatar--performance {
+  background-image: linear-gradient(135deg, rgba(168, 216, 185, 0.8), rgba(244, 247, 242, 0.96));
+}
+
+html.theme-jp .team-card__avatar--community {
+  background-image: linear-gradient(135deg, rgba(187, 188, 222, 0.78), rgba(243, 241, 251, 0.96));
 }
