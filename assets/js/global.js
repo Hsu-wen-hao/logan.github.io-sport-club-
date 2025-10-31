@@ -1,12 +1,67 @@
 const navToggle = document.querySelector('.site-nav__toggle');
 const navList = document.querySelector('.site-nav__list');
+const pageBody = document.body;
 
-if (navToggle && navList) {
+if (navToggle && navList && pageBody) {
+  const openLabel = navToggle.getAttribute('data-label-open') || navToggle.textContent.trim();
+  const closeLabel = navToggle.getAttribute('data-label-close') || '關閉';
+  const navLinks = navList.querySelectorAll('a');
+  const mobileBreakpoint = window.matchMedia('(max-width: 768px)');
+
+  const closeNav = () => {
+    navList.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.textContent = openLabel;
+    pageBody.classList.remove('nav-open');
+  };
+
+  const openNav = () => {
+    navList.classList.add('is-open');
+    navToggle.setAttribute('aria-expanded', 'true');
+    navToggle.textContent = closeLabel;
+    pageBody.classList.add('nav-open');
+  };
+
   navToggle.addEventListener('click', () => {
     const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-    navToggle.setAttribute('aria-expanded', (!expanded).toString());
-    navList.classList.toggle('is-open');
+    if (expanded) {
+      closeNav();
+    } else {
+      openNav();
+    }
   });
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (navList.classList.contains('is-open')) {
+        closeNav();
+      }
+    });
+  });
+
+  navList.addEventListener('click', (event) => {
+    if (event.target === navList) {
+      closeNav();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navList.classList.contains('is-open')) {
+      closeNav();
+    }
+  });
+
+  const handleBreakpointChange = (event) => {
+    if (!event.matches) {
+      closeNav();
+    }
+  };
+
+  if (typeof mobileBreakpoint.addEventListener === 'function') {
+    mobileBreakpoint.addEventListener('change', handleBreakpointChange);
+  } else if (typeof mobileBreakpoint.addListener === 'function') {
+    mobileBreakpoint.addListener(handleBreakpointChange);
+  }
 }
 
 function createCarousel(slideSelector, dotSelector, interval = 6000) {
