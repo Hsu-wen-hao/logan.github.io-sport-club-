@@ -1,0 +1,493 @@
+html.theme-jp {
+  --font-base: "Zen Kaku Gothic New", "Noto Sans JP", "Noto Sans TC", sans-serif;
+  --font-display: "Noto Serif JP", "Zen Kaku Gothic New", serif;
+  --color-primary: #e16b8c; /* 紅梅 - KouBai */
+  --color-primary-dark: #b5495b; /* 蘇芳 - Suou */
+  --color-accent: #f7c242; /* 菜の花色 - Nanohana-iro */
+  --color-surface: #fffdf9; /* 胡粉 - Gofun */
+  --color-surface-alt: #f4eee8; /* 白練 - Shironeri */
+  --color-muted: #8f7e74; /* 丁子茶 - Choujicha */
+  --color-muted-light: #bfaea4;
+  --color-border: rgba(179, 161, 150, 0.32);
+  --color-background: #faf6f1;
+  --color-section: #f2ece6;
+  --color-card: #fff8f2;
+  --color-card-alt: #f3e7e1;
+  --color-highlight: rgba(225, 107, 140, 0.18);
+  --color-cta-start: #f6bfbc; /* 撫子 - Nadeshiko */
+  --color-cta-end: #f3d5c9; /* 桃花 - Momohana */
+  --color-mizu: #81c7d4; /* 水 - Mizu */
+  --color-wakaba: #a8d8b9; /* 若葉 - Wakaba */
+  --color-fuji: #bbbcde; /* 藤紫 - Fujimurasaki */
+  --gradient-hero: linear-gradient(135deg, rgba(225, 107, 140, 0.58), rgba(255, 253, 249, 0.92));
+  --gradient-card: linear-gradient(160deg, rgba(225, 107, 140, 0.16), rgba(255, 253, 249, 0.85));
+  --shadow-soft: 0 18px 42px rgba(181, 73, 91, 0.16);
+  --shadow-card: 0 16px 36px rgba(181, 73, 91, 0.12);
+  color-scheme: only light;
+  background-color: var(--color-background);
+}
+
+html.theme-jp body {
+  background-color: var(--color-background);
+  color: #2b2622;
+}
+
+html.theme-jp body,
+html.theme-jp .topbar,
+html.theme-jp .site-header,
+html.theme-jp .site-footer,
+html.theme-jp .footer {
+  font-family: var(--font-base);
+}
+
+html.theme-jp .topbar {
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(209, 196, 182, 0.7);
+  color: #695d53;
+}
+
+html.theme-jp .topbar a:hover,
+html.theme-jp .topbar a:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .site-header {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid rgba(209, 196, 182, 0.7);
+  color: #43372d;
+}
+
+html.theme-jp .site-header--plain {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+html.theme-jp .brand__icon {
+  background: rgba(255, 253, 249, 0.92);
+  border-color: rgba(181, 73, 91, 0.35);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.75), 0 14px 32px rgba(181, 73, 91, 0.14);
+}
+
+html.theme-jp .brand__tagline {
+  color: #9d8374;
+}
+
+html.theme-jp .breadcrumb {
+  background: rgba(255, 253, 249, 0.92);
+  border-bottom: 1px solid rgba(181, 73, 91, 0.18);
+  color: #7c685c;
+}
+
+html.theme-jp .breadcrumb ol {
+  color: #7c685c;
+}
+
+html.theme-jp .breadcrumb li + li::before {
+  color: rgba(181, 73, 91, 0.35);
+}
+
+html.theme-jp .site-nav__list a:hover,
+html.theme-jp .site-nav__list a:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .site-nav__sublist {
+  background: rgba(255, 253, 249, 0.98);
+  border: 1px solid rgba(181, 73, 91, 0.15);
+  box-shadow: 0 24px 48px rgba(181, 73, 91, 0.18);
+  color: #5f4c44;
+}
+
+html.theme-jp .site-nav__sublist a:hover,
+html.theme-jp .site-nav__sublist a:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .site-header__actions {
+  color: inherit;
+}
+
+html.theme-jp .theme-switch {
+  border-color: rgba(209, 196, 182, 0.9);
+  background: rgba(255, 255, 255, 0.8);
+  color: #6c5a4c;
+}
+
+html.theme-jp .theme-switch:hover,
+html.theme-jp .theme-switch:focus {
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+
+html.theme-jp .header-cart {
+  border-color: rgba(209, 196, 182, 0.9);
+  background: rgba(255, 255, 255, 0.92);
+  color: #6c5a4c;
+}
+
+html.theme-jp .header-cart:hover,
+html.theme-jp .header-cart:focus {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+html.theme-jp .btn--primary {
+  background: linear-gradient(135deg, #e16b8c, #f7c242);
+  color: #fffdf9;
+}
+
+html.theme-jp .btn--primary:hover,
+html.theme-jp .btn--primary:focus {
+  background: linear-gradient(135deg, #b5495b, #e3a121);
+}
+
+html.theme-jp .btn--accent {
+  background: rgba(247, 194, 66, 0.9);
+  color: #5f4c44;
+}
+
+html.theme-jp .btn--accent:hover,
+html.theme-jp .btn--accent:focus {
+  background: rgba(227, 161, 33, 0.9);
+  color: #fffdf9;
+}
+
+html.theme-jp .btn--ghost {
+  border-color: rgba(225, 107, 140, 0.45);
+  color: #b5495b;
+}
+
+html.theme-jp .btn--ghost:hover,
+html.theme-jp .btn--ghost:focus {
+  border-color: rgba(181, 73, 91, 0.7);
+  color: #b5495b;
+}
+
+html.theme-jp .hero-slide__title {
+  color: #453830;
+  letter-spacing: 0.08em;
+}
+
+html.theme-jp .hero-slide__text {
+  color: #7c685c;
+}
+
+html.theme-jp .hero-slide__media::after {
+  background: linear-gradient(125deg, rgba(225, 107, 140, 0.35), rgba(255, 253, 249, 0.92));
+}
+
+html.theme-jp .hero__dots button {
+  background: rgba(181, 73, 91, 0.22);
+}
+
+html.theme-jp .hero__dots button.is-active {
+  background: rgba(225, 107, 140, 0.82);
+}
+
+html.theme-jp .cta {
+  background: linear-gradient(135deg, var(--color-cta-start), var(--color-cta-end));
+  color: #3b312b;
+}
+
+html.theme-jp .auth-card,
+html.theme-jp .auth-meta__card {
+  background: rgba(255, 255, 249, 0.94);
+  border-color: rgba(209, 196, 182, 0.65);
+  color: inherit;
+}
+
+html.theme-jp .auth-hero__visual {
+  background: rgba(255, 253, 249, 0.92);
+  box-shadow: 0 24px 48px rgba(181, 73, 91, 0.14);
+  border: 1px solid rgba(209, 196, 182, 0.55);
+}
+
+html.theme-jp .auth-hero__visual::before {
+  background: linear-gradient(135deg, rgba(225, 107, 140, 0.38), rgba(129, 199, 212, 0.32));
+}
+
+html.theme-jp .auth-hero__visual::after {
+  background: rgba(247, 194, 66, 0.45);
+}
+
+html.theme-jp .auth-hero__visual img {
+  box-shadow: 0 18px 42px rgba(181, 73, 91, 0.16);
+  border-color: rgba(209, 196, 182, 0.45);
+  background: rgba(255, 253, 249, 0.9);
+}
+
+html.theme-jp .auth-card__text,
+html.theme-jp .auth-meta__text,
+html.theme-jp .auth-note {
+  color: #8f7e74;
+}
+
+html.theme-jp .form-field input,
+html.theme-jp .form-field select,
+html.theme-jp .form-field textarea {
+  background: #fffdf9;
+  border-color: rgba(209, 196, 182, 0.6);
+  color: inherit;
+}
+
+html.theme-jp .form-field input:focus,
+html.theme-jp .form-field select:focus,
+html.theme-jp .form-field textarea:focus {
+  outline-color: var(--color-primary);
+}
+
+html.theme-jp .auth-meta__icon {
+  background: rgba(225, 107, 140, 0.15);
+  color: var(--color-primary);
+}
+
+html.theme-jp .cta h2,
+html.theme-jp .cta p {
+  color: inherit;
+}
+
+html.theme-jp .cta .btn--primary {
+  background: linear-gradient(135deg, #e16b8c, #f7c242);
+  color: #fffdf9;
+}
+
+html.theme-jp .cta .btn--ghost {
+  border-color: rgba(225, 107, 140, 0.4);
+  color: #b5495b;
+}
+
+html.theme-jp .cta .btn--ghost:hover,
+html.theme-jp .cta .btn--ghost:focus {
+  border-color: rgba(181, 73, 91, 0.65);
+  color: #a7364c;
+}
+
+html.theme-jp .section-head .section-title,
+html.theme-jp h1,
+html.theme-jp h2,
+html.theme-jp h3,
+html.theme-jp h4,
+html.theme-jp h5,
+html.theme-jp h6 {
+  color: #3b312b;
+}
+
+html.theme-jp .gallery__item::after {
+  background: linear-gradient(160deg, rgba(225, 107, 140, 0.1), rgba(255, 253, 249, 0.78));
+}
+
+html.theme-jp .gallery__item--court {
+  background-image: linear-gradient(135deg, #f6bfbc, #f3d5c9);
+}
+
+html.theme-jp .gallery__item--pool {
+  background-image: linear-gradient(135deg, var(--color-mizu), #f0f7fa);
+}
+
+html.theme-jp .gallery__item--gym {
+  background-image: linear-gradient(135deg, rgba(225, 107, 140, 0.26), #f4eee8);
+}
+
+html.theme-jp .gallery__item--arena {
+  background-image: linear-gradient(135deg, rgba(225, 107, 140, 0.35), #fbe7e3);
+}
+
+html.theme-jp .gallery__item--soccer {
+  background-image: linear-gradient(135deg, var(--color-wakaba), #f4f7f2);
+}
+
+html.theme-jp .gallery__item--lounge {
+  background-image: linear-gradient(135deg, var(--color-fuji), #f3f1fb);
+}
+
+html.theme-jp .plan-card--featured {
+  background: linear-gradient(135deg, rgba(225, 107, 140, 0.22), rgba(255, 253, 249, 0.95));
+  border: 1px solid rgba(225, 107, 140, 0.35);
+}
+
+html.theme-jp .plan-card__badge {
+  color: #b5495b;
+}
+
+html.theme-jp .footer,
+html.theme-jp .site-footer {
+  background: rgba(255, 253, 249, 0.95);
+  border-top: 1px solid rgba(209, 196, 182, 0.7);
+  color: #6c5a4c;
+}
+
+html.theme-jp .footer a:hover,
+html.theme-jp .footer a:focus,
+html.theme-jp .site-footer a:hover,
+html.theme-jp .site-footer a:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .site-footer__top h3,
+html.theme-jp .site-footer__links h3,
+html.theme-jp .site-footer__subscribe h3,
+html.theme-jp .site-footer__brand h3 {
+  color: #b5495b;
+}
+
+html.theme-jp .site-footer__newsletter input,
+html.theme-jp .site-footer__newsletter button,
+html.theme-jp .site-footer__subscribe input,
+html.theme-jp .site-footer__subscribe button {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(181, 73, 91, 0.25);
+  color: inherit;
+}
+
+html.theme-jp .site-footer__newsletter input::placeholder,
+html.theme-jp .site-footer__subscribe input::placeholder {
+  color: rgba(108, 90, 76, 0.7);
+}
+
+html.theme-jp .site-footer__newsletter button,
+html.theme-jp .site-footer__subscribe button {
+  color: #fffdf9;
+  background: linear-gradient(135deg, #e16b8c, #f7c242);
+}
+
+html.theme-jp .site-footer__bottom,
+html.theme-jp .site-footer__bottom .container,
+html.theme-jp .site-footer__bottom-inner {
+  background: rgba(250, 246, 241, 0.9);
+  color: #6c5a4c;
+}
+
+html.theme-jp .site-footer__social a {
+  color: inherit;
+}
+
+html.theme-jp .site-footer__social a:hover,
+html.theme-jp .site-footer__social a:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .image-note {
+  background: rgba(239, 212, 179, 0.82);
+  color: #5b4c42;
+}
+
+html.theme-jp .breadcrumb__link {
+  color: #6c5a4c;
+}
+
+html.theme-jp .breadcrumb__link:hover,
+html.theme-jp .breadcrumb__link:focus {
+  color: var(--color-primary);
+}
+
+html.theme-jp .card,
+html.theme-jp .category-card,
+html.theme-jp .promo-card,
+html.theme-jp .plan-card,
+html.theme-jp .faq-item,
+html.theme-jp .cart-item {
+  background: var(--color-card);
+  box-shadow: 0 12px 32px rgba(115, 101, 89, 0.12);
+  color: inherit;
+}
+
+html.theme-jp .hero--shop .hero-slide__media::after {
+  background: linear-gradient(120deg, rgba(225, 107, 140, 0.28), rgba(255, 253, 249, 0.92));
+}
+
+html.theme-jp .hero--shop .hero-slide__content {
+  background: rgba(255, 253, 249, 0.9);
+  box-shadow: var(--shadow-soft);
+  color: #453830;
+}
+
+html.theme-jp .hero--shop .hero-slide__content p {
+  color: #7c685c;
+}
+
+html.theme-jp .category-card__media--racket {
+  background-image: linear-gradient(135deg, rgba(246, 191, 188, 0.85), rgba(255, 253, 249, 0.92));
+}
+
+html.theme-jp .category-card__media--shoe {
+  background-image: linear-gradient(135deg, rgba(168, 216, 185, 0.8), rgba(244, 247, 242, 0.95));
+}
+
+html.theme-jp .category-card__media--apparel {
+  background-image: linear-gradient(135deg, rgba(187, 188, 222, 0.78), rgba(243, 241, 251, 0.96));
+}
+
+html.theme-jp .category-card__media--gear {
+  background-image: linear-gradient(135deg, rgba(129, 199, 212, 0.78), rgba(240, 247, 250, 0.96));
+}
+
+html.theme-jp .cart-summary,
+html.theme-jp .checkout-panel,
+html.theme-jp .order-panel,
+html.theme-jp .form-card {
+  background: var(--color-card);
+  box-shadow: 0 18px 48px rgba(115, 101, 89, 0.12);
+}
+
+html.theme-jp table {
+  background: var(--color-card);
+}
+
+html.theme-jp .form-field input,
+html.theme-jp .form-field select,
+html.theme-jp .form-field textarea {
+  border-color: rgba(209, 196, 182, 0.7);
+  background: rgba(255, 255, 255, 0.95);
+  color: inherit;
+}
+
+html.theme-jp .form-field input:focus,
+html.theme-jp .form-field select:focus,
+html.theme-jp .form-field textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(225, 107, 140, 0.16);
+}
+
+html.theme-jp .timeline__item::before {
+  background: #e8dfd6;
+}
+
+html.theme-jp .timeline__item::after {
+  border-color: #e8dfd6;
+}
+
+html.theme-jp .badge {
+  background: rgba(225, 107, 140, 0.18);
+  color: #b5495b;
+}
+
+html.theme-jp .page-hero__media::after {
+  background: linear-gradient(135deg, rgba(225, 107, 140, 0.28), rgba(255, 253, 249, 0.88));
+}
+
+html.theme-jp .page-hero h1 {
+  color: #463a32;
+}
+
+html.theme-jp .page-hero p {
+  color: #7c685c;
+}
+
+html.theme-jp .team-card__avatar {
+  background: linear-gradient(135deg, rgba(225, 107, 140, 0.28), rgba(255, 253, 249, 0.88));
+}
+
+html.theme-jp .team-card__avatar--lead {
+  background-image: linear-gradient(135deg, rgba(246, 191, 188, 0.85), rgba(243, 213, 201, 0.95));
+}
+
+html.theme-jp .team-card__avatar--coach {
+  background-image: linear-gradient(135deg, rgba(129, 199, 212, 0.78), rgba(240, 247, 250, 0.96));
+}
+
+html.theme-jp .team-card__avatar--performance {
+  background-image: linear-gradient(135deg, rgba(168, 216, 185, 0.8), rgba(244, 247, 242, 0.96));
+}
+
+html.theme-jp .team-card__avatar--community {
+  background-image: linear-gradient(135deg, rgba(187, 188, 222, 0.78), rgba(243, 241, 251, 0.96));
+}

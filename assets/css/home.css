@@ -557,6 +557,33 @@
   gap: 40px;
 }
 
+.contact__info {
+  display: grid;
+  gap: 16px;
+}
+
+.contact__info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.contact__hours {
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  display: grid;
+  gap: 4px;
+}
+
+.contact__hours h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
 .contact__form {
   background: var(--color-card);
   border-radius: var(--radius-md);
